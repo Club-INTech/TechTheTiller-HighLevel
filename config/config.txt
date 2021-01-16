@@ -1,0 +1,136 @@
+[Common]
+# DIMENSIONS DE L'ADVERSAIRE
+ENNEMY_RAY                          = 150
+
+# PARAMETRES DU GRAPHE
+NBR_NOEUDS_X                        = 30
+NBR_NOEUDS_Y                        = 20
+NBR_NOEUDS_CIRCLE                   = 14
+ESPACEMENT_CIRCLE                   = 1.2
+
+#Couleur
+COULEUR                             = jaune
+
+#CHEMIN D'EXECUTION DU PROCESSUS LIDAR
+LIDAR_PROCESS_PATH                  =../bin/LiDAR_UST_10LX
+VISUALISATION                       =false
+SIMULATION                          =false
+
+USING_BALISE_IMAGE                  =false
+USING_CYLINDER_DETECTION            =false
+CONNECT_TO_BUDDY                    =false
+
+MODE_MONTHLERY                      =false
+OPEN_THE_GATE                       =false
+
+
+#________________________________________________________________________________________________________________________
+
+[Master]
+MASTER                              = true
+
+USING_PANEL                         = false
+USING_LIDAR			                = false
+LED_COUNT			                = 16
+HOMOLOGATION                        = false
+
+# DIMENSIONS DES ROBOTS
+ROBOT_RAY                           = 190
+BUDDY_RAY                           = 70
+VECTOR_COMPARISON_THRESHOLD         = 5
+RECALAGE_ACC                        =false
+SECOURS                             =false
+RECALAGE_MECA_ACC                   =true
+
+#________________________________________________________________________________________________________________________
+
+[Slave]
+MASTER                              = false
+USING_PANEL				= false
+USING_7_SEGMENTS                    = false
+USING_LIDAR			                =false
+LED_COUNT			                = 1
+HOMOLOGATION                        = false
+RECALAGE_MECA_BLUE_ACC              = false
+
+# DIMENSIONS DES ROBOTS
+ROBOT_RAY                           = 142
+BUDDY_RAY                           = 190
+VECTOR_COMPARISON_THRESHOLD         = 15
+
+#________________________________________________________________________________________________________________________
+[Offsets]
+
+GOBELETS_PORT_X_JAUNE_RED_SUP       =1
+GOBELETS_PORT_Y_JAUNE_RED_SUP       =1
+GOBELETS_PORT_X_JAUNE_VERT_SUP      =1
+GOBELETS_PORT_Y_JAUNE_VERT_SUP      =1
+GOBELETS_PORT_X_JAUNE_RED_INF       =1
+GOBELETS_PORT_Y_JAUNE_RED_INF       =1
+GOBELETS_PORT_X_JAUNE_VERT_INF      =1
+GOBELETS_PORT_Y_JAUNE_VERT_INF      =1
+
+GOBELETS_PORT_X_BLEU_VERT_SUP       =1
+GOBELETS_PORT_Y_BLEU_VERT_SUP       =1
+GOBELETS_PORT_X_BLEU_RED_SUP        =1
+GOBELETS_PORT_Y_BLEU_RED_SUP        =1
+GOBELETS_PORT_X_BLEU_VERT_INF       =1
+GOBELETS_PORT_Y_BLEU_VERT_INF       =1
+GOBELETS_PORT_X_BLEU_RED_INF        =1
+GOBELETS_PORT_Y_BLEU_RED_INF        =1
+
+GOBELETS_MILIEU_X_JAUNE_RED_SUP     =1
+GOBELETS_MILIEU_Y_JAUNE_RED_SUP     =1
+GOBELETS_MILIEU_X_JAUNE_VERT_SUP    =1
+GOBELETS_MILIEU_Y_JAUNE_VERT_SUP    =1
+GOBELETS_MILIEU_X_JAUNE_RED_INF     =1
+GOBELETS_MILIEU_Y_JAUNE_RED_INF     =1
+GOBELETS_MILIEU_X_JAUNE_VERT_INF    =1
+GOBELETS_MILIEU_Y_JAUNE_VERT_INF    =1
+
+GOBELETS_MILIEU_X_BLEU_VERT_SUP     =1
+GOBELETS_MILIEU_Y_BLEU_VERT_SUP     =1
+GOBELETS_MILIEU_X_BLEU_RED_SUP      =1
+GOBELETS_MILIEU_Y_BLEU_RED_SUP      =1
+GOBELETS_MILIEU_X_BLEU_VERT_INF     =1
+GOBELETS_MILIEU_Y_BLEU_VERT_INF     =1
+GOBELETS_MILIEU_X_BLEU_RED_INF      =1
+GOBELETS_MILIEU_Y_BLEU_RED_INF      =1
+
+GOBELETS_PETIT_PORT_X_JAUNE_RED     =1
+GOBELETS_PETIT_PORT_Y_JAUNE_RED     =1
+GOBELETS_PETIT_PORT_X_JAUNE_VERT    =1
+GOBELETS_PETIT_PORT_Y_JAUNE_VERT    =1
+
+GOBELETS_PETIT_PORT_X_BLEU_RED      =1
+GOBELETS_PETIT_PORT_Y_BLEU_RED      =1
+GOBELETS_PETIT_PORT_X_BLEU_VERT     =1
+GOBELETS_PETIT_PORT_Y_BLEU_VERT     =1
+
+GIROUETTE_X                         =1
+GIROUETTE_Y                         =1
+
+PHARE_X_JAUNE                       =1
+PHARE_Y_JAUNE                       =1
+PHARE_X_BLEU                        =1
+PHARE_Y_BLEU                        =1
+
+MANCHE1_X_JAUNE                     =1
+MANCHE1_Y_JAUNE                     =1
+MANCHE2_X_JAUNE                     =1
+MANCHE2_Y_JAUNE                     =1
+
+MANCHE1_X_BLEU                      =1
+MANCHE1_Y_BLEU                      =1
+MANCHE2_X_BLEU                      =1
+MANCHE2_Y_BLEU                      =1
+
+MILIEU_ECUEIL_COMMUN_X_JAUNE        =1
+MILIEU_ECUEIL_COMMUN_Y_JAUNE        =1
+MILIEU_ECUEIL_COMMUN_X_BLEU         =1
+MILIEU_ECUEIL_COMMUN_Y_BLEU         =1
+
+MILIEU_ECUEIL_PRIVE_X_JAUNE         =1
+MILIEU_ECUEIL_PRIVE_Y_JAUNE         =1
+MILIEU_ECUEIL_PRIVE_XBLEU           =1
+MILIEU_ECUEIL_PRIVE_Y_BLEU          =1

@@ -1,0 +1,58 @@
+[[34m22:40:19.126 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:104)] Version : cba31ff on (HEAD détachée sur cba31ff) - [merge][0m
+[[34m22:40:19.137 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 4.15.0-128-generic amd64[0m
+[[34m22:40:19.148 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 13.0.2, max memory : 3.89G, available processors : 4[0m
+[[34m22:40:19.148 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:117)] [0m
+[[34m22:40:19.149 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[0m
+[[34m22:40:19.150 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...[0m
+[[34m22:40:19.178 STDOUT (DEBUG) on main pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/yasmine/TechTheTiller-HighLevel/bin/../config/config.txt[0m
+[[31m22:40:19.207 STDERR (CRITICAL) on main] Unknown key : OPEN_THE_GATE, also tried openTheGate[0m
+[[31m22:40:19.208 STDERR (CRITICAL) on main] Unknown key : LED_COUNT, also tried ledCount[0m
+[[31m22:40:19.209 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m22:40:19.210 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m22:40:19.210 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m22:40:19.212 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[34m22:40:19.214 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :[0m
+[[34m22:40:19.217 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)[0m
+[[34m22:40:19.217 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)[0m
+[[34m22:40:19.218 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)[0m
+[[34m22:40:19.219 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)[0m
+[[34m22:40:19.219 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)[0m
+[[34m22:40:19.220 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)[0m
+[[34m22:40:19.221 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)[0m
+[[34m22:40:19.222 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)[0m
+[[34m22:40:19.222 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)[0m
+[[34m22:40:19.236 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table[0m
+[[34m22:40:19.238 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.[0m
+[[34m22:40:19.252 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false[0m
+[[34m22:40:19.254 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000[0m
+[[34m22:40:19.255 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000[0m
+[[34m22:40:19.256 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190[0m
+[[34m22:40:19.257 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70[0m
+[[34m22:40:19.258 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150[0m
+[[34m22:40:19.258 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5[0m
+[[31m22:40:19.259 STDERR (CRITICAL) on main] java.lang.IllegalArgumentException: Config key 'openTheGate' unknown (when loading config for field data.Table#openTheGate[0m
+[[31m22:40:19.260 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:267)[0m
+[[31m22:40:19.260 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:254)[0m
+[[31m22:40:19.261 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:289)[0m
+[[31m22:40:19.261 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:266)[0m
+[[31m22:40:19.262 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:266)[0m
+[[31m22:40:19.263 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:205)[0m
+[[31m22:40:19.264 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:57)[0m
+[[31m22:40:19.265 STDERR (CRITICAL) on main] 	at MainMaster.start(MainMaster.java:56)[0m
+[[31m22:40:19.266 STDERR (CRITICAL) on main] 	at MainMaster.main(MainMaster.java:51)[0m
+[[31m22:40:19.268 STDERR (CRITICAL) on main] 	at LaunchSimulatorMaster.main(LaunchSimulatorMaster.java:23)[0m
+[[31m22:40:19.269 STDERR (CRITICAL) on main] Exception in thread "main" utils.container.ContainerException: java.lang.IllegalArgumentException: Config key 'openTheGate' unknown (when loading config for field data.Table#openTheGate[0m
+[[31m22:40:19.270 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:310)[0m
+[[31m22:40:19.271 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:266)[0m
+[[31m22:40:19.272 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:266)[0m
+[[31m22:40:19.273 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:205)[0m
+[[31m22:40:19.273 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:57)[0m
+[[31m22:40:19.274 STDERR (CRITICAL) on main] 	at MainMaster.start(MainMaster.java:56)[0m
+[[31m22:40:19.275 STDERR (CRITICAL) on main] 	at MainMaster.main(MainMaster.java:51)[0m
+[[31m22:40:19.276 STDERR (CRITICAL) on main] 	at LaunchSimulatorMaster.main(LaunchSimulatorMaster.java:23)[0m
+[[31m22:40:19.277 STDERR (CRITICAL) on main] Caused by: java.lang.IllegalArgumentException: Config key 'openTheGate' unknown (when loading config for field data.Table#openTheGate[0m
+[[31m22:40:19.277 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:267)[0m
+[[31m22:40:19.278 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:254)[0m
+[[31m22:40:19.279 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:289)[0m
+[[31m22:40:19.280 STDERR (CRITICAL) on main] 	... 7 more[0m
