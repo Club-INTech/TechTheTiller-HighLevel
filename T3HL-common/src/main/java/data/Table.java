@@ -279,6 +279,56 @@ public class Table implements Module {
         Obstacle verre24 = new StillCircularObstacle(formeVerre24);
         this.addTemporaryObstacle(verre24);
 
+        /**zone de haut fond **/
+        Random rand = new Random();
+        int[] rx_random = new int[3];
+        int[] ry_random = new int[3];
+        int[] vx_random = new int[3];
+        int[] vy_random = new int[3];
+        for (int i = 0; i <rx_random.length; i++) {
+            rx_random[i]= 1000 + rand.nextInt(1000);
+            ry_random[i]= rand.nextInt(500);
+            vx_random[i]= 1000 + rand.nextInt(1000);
+            vy_random[i]= rand.nextInt(500);
+            while (Math.sqrt(Math.pow(rx_random[i]-1500, rx_random[i]-1500) + Math.pow(ry_random[i],ry_random[i])) > 500) {
+                vx_random[i]= 1000 + rand.nextInt(1000);
+                vy_random[i]= rand.nextInt(500);
+                rx_random[i]= 1000 + rand.nextInt(1000);
+                ry_random[i]= rand.nextInt(500);
+            }
+        }
+
+
+        Vec2 positionVerre26 = new VectCartesian(rx_random[0], ry_random[0]);
+        Circle formeVerre26 = new Circle(positionVerre26,glassRay + robotRay);
+        Obstacle verre26 = new StillCircularObstacle(formeVerre26);
+        this.addTemporaryObstacle(verre26);
+
+        Vec2 positionVerre27 = new VectCartesian(rx_random[1], ry_random[1]);
+        Circle formeVerre27 = new Circle(positionVerre27,glassRay + robotRay);
+        Obstacle verre27 = new StillCircularObstacle(formeVerre27);
+        this.addTemporaryObstacle(verre27);
+
+        Vec2 positionVerre28 = new VectCartesian(rx_random[2], ry_random[2]);
+        Circle formeVerre28 = new Circle(positionVerre28,glassRay + robotRay);
+        Obstacle verre28 = new StillCircularObstacle(formeVerre28);
+        this.addTemporaryObstacle(verre28);
+
+        Vec2 positionVerre29 = new VectCartesian(vx_random[0], vy_random[0]);
+        Circle formeVerre29 = new Circle(positionVerre29,glassRay + robotRay);
+        Obstacle verre29 = new StillCircularObstacle(formeVerre29);
+        this.addTemporaryObstacle(verre29);
+
+        Vec2 positionVerre30 = new VectCartesian(vx_random[1], vy_random[1]);
+        Circle formeVerre30 = new Circle(positionVerre30,glassRay + robotRay);
+        Obstacle verre30 = new StillCircularObstacle(formeVerre30);
+        this.addTemporaryObstacle(verre30);
+
+        Vec2 positionVerre31 = new VectCartesian(vx_random[2], vy_random[2]);
+        Circle formeVerre31 = new Circle(positionVerre31,glassRay + robotRay);
+        Obstacle verre31 = new StillCircularObstacle(formeVerre31);
+        this.addTemporaryObstacle(verre31);
+
 
         //Tasseaux
 

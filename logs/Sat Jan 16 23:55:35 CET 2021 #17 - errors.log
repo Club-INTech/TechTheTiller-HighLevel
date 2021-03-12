@@ -1,0 +1,46 @@
+[[31m23:55:35.483 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m23:55:35.484 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m23:55:35.485 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m23:55:35.486 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[31m23:55:36.320 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[31m23:55:37.970 STDERR (CRITICAL) on AWT-EventQueue-0] Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException: Cannot invoke "data.Table.getGraphe()" because "this.table" is null[0m
+[[31m23:55:37.971 STDERR (CRITICAL) on AWT-EventQueue-0] 	at simulator.GraphicalInterface.drawGraphe(GraphicalInterface.java:609)[0m
+[[31m23:55:37.974 STDERR (CRITICAL) on AWT-EventQueue-0] 	at simulator.GraphicalInterface.updateGraphics(GraphicalInterface.java:556)[0m
+[[31m23:55:37.974 STDERR (CRITICAL) on AWT-EventQueue-0] 	at simulator.GraphicalInterface$1.paintComponent(GraphicalInterface.java:110)[0m
+[[31m23:55:37.975 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paint(JComponent.java:1074)[0m
+[[31m23:55:37.975 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paintChildren(JComponent.java:907)[0m
+[[31m23:55:37.975 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paint(JComponent.java:1083)[0m
+[[31m23:55:37.975 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paintChildren(JComponent.java:907)[0m
+[[31m23:55:37.976 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paint(JComponent.java:1083)[0m
+[[31m23:55:37.976 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JLayeredPane.paint(JLayeredPane.java:586)[0m
+[[31m23:55:37.976 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paintChildren(JComponent.java:907)[0m
+[[31m23:55:37.977 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paintToOffscreen(JComponent.java:5262)[0m
+[[31m23:55:37.977 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.BufferStrategyPaintManager.paint(BufferStrategyPaintManager.java:246)[0m
+[[31m23:55:37.977 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.RepaintManager.paint(RepaintManager.java:1323)[0m
+[[31m23:55:37.977 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.JComponent.paint(JComponent.java:1060)[0m
+[[31m23:55:37.978 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.GraphicsCallback$PaintCallback.run(GraphicsCallback.java:39)[0m
+[[31m23:55:37.978 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/sun.awt.SunGraphicsCallback.runOneComponent(SunGraphicsCallback.java:75)[0m
+[[31m23:55:37.978 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/sun.awt.SunGraphicsCallback.runComponents(SunGraphicsCallback.java:112)[0m
+[[31m23:55:37.980 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.Container.paint(Container.java:2002)[0m
+[[31m23:55:37.980 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.Window.paint(Window.java:3933)[0m
+[[31m23:55:37.980 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.RepaintManager$4.run(RepaintManager.java:876)[0m
+[[31m23:55:37.981 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.RepaintManager$4.run(RepaintManager.java:848)[0m
+[[31m23:55:37.981 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)[0m
+[[31m23:55:37.981 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)[0m
+[[31m23:55:37.982 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:848)[0m
+[[31m23:55:37.982 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:823)[0m
+[[31m23:55:37.982 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.RepaintManager.prePaintDirtyRegions(RepaintManager.java:772)[0m
+[[31m23:55:37.982 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/javax.swing.RepaintManager$ProcessingRunnable.run(RepaintManager.java:1884)[0m
+[[31m23:55:37.983 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316)[0m
+[[31m23:55:37.983 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)[0m
+[[31m23:55:37.983 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)[0m
+[[31m23:55:37.983 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)[0m
+[[31m23:55:37.991 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)[0m
+[[31m23:55:37.991 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)[0m
+[[31m23:55:37.992 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)[0m
+[[31m23:55:37.992 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)[0m
+[[31m23:55:37.992 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)[0m
+[[31m23:55:37.992 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)[0m
+[[31m23:55:37.992 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)[0m
+[[31m23:55:37.993 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)[0m
+[[31m23:55:37.993 STDERR (CRITICAL) on AWT-EventQueue-0] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)[0m

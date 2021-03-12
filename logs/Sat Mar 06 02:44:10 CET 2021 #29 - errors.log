@@ -1,0 +1,13 @@
+[[31m02:44:10.615 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m02:44:10.615 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m02:44:10.616 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m02:44:10.617 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[31m02:44:11.233 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[31m02:44:12.225 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m02:44:13.727 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m02:44:15.228 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m02:44:16.730 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m02:44:18.231 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m02:44:19.732 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m02:44:21.234 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m02:44:22.748 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m

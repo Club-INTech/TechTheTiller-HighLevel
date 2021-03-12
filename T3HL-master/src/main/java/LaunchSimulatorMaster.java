@@ -4,7 +4,6 @@ import utils.HLInstance;
 import utils.container.ContainerException;
 
 /**
- * C'est shlag mais ça marche
  * @author jglrxavpok
  */
 public class LaunchSimulatorMaster {

@@ -17,6 +17,7 @@ import java.io.File;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.Arrays;
 import java.awt.geom.Area;
@@ -376,6 +377,19 @@ public class TableVisualisation extends JPanel {
     }
 
     public void initGobeletsVerts() {
+        /**zone de haut **/
+        Random rand = new Random();
+        int[] vx_random = new int[3];
+        int[] vy_random = new int[3];
+        for (int i = 0; i < vx_random.length; i++) {
+            vx_random[i]= 1000 + rand.nextInt(1000);
+            vy_random[i]= rand.nextInt(500);
+            while (Math.sqrt(Math.pow(vx_random[i]-1500, vx_random[i]-1500) + Math.pow(vy_random[i],vy_random[i])) > 500) {
+                vx_random[i]= 1000 + rand.nextInt(1000);
+                vy_random[i]= rand.nextInt(500);
+            }
+        }
+        /**définition des points verts**/
 
         Point Vert1 = new Point(300, 1200);
         addGobeletsVerts(Vert1);
@@ -413,6 +427,15 @@ public class TableVisualisation extends JPanel {
         Point Vert12 = new Point(2700, 400);
         addGobeletsVerts(Vert12);
 
+        Point Vert13=new Point(1500,440);
+        addGobeletsVerts(Vert13);
+
+        Point Vert14=new Point(0,0);
+        addGobeletsVerts(Vert14);
+
+        Point Vert15=new Point(vx_random[2],vy_random[2]);
+        addGobeletsRouges(Vert15);
+
         //Les gobelets dans les éceuils sont numérotés de haut en bas
 
         Point EcueilJauneVert1 = new Point(3067,1750);
@@ -421,18 +444,31 @@ public class TableVisualisation extends JPanel {
         Point EcueilJauneVert2 = new Point (3067,1600);
         addGobeletsVerts(EcueilJauneVert2);
 
-        Point EcueilJauneVert3 = new Point (3067, 1450);
+      /*  Point EcueilJauneVert3 = new Point (3067, 1450);
         addGobeletsVerts(EcueilJauneVert3);
 
         Point EceuilBleuVert1 = new Point (-67, 1675);
         addGobeletsVerts(EceuilBleuVert1);
 
         Point EceuilBleuVert2 = new  Point (-67, 1525);
-        addGobeletsVerts(EceuilBleuVert2);
+        addGobeletsVerts(EceuilBleuVert2);*/
     }
 
 
     public void initGobeletsRouges() {
+        /**zone de haut fond **/
+        Random rand = new Random();
+        int[] rx_random = new int[3];
+        int[] ry_random = new int[3];
+        for (int i = 0; i <rx_random.length; i++) {
+            rx_random[i]= 1000 + rand.nextInt(1000);
+            ry_random[i]= rand.nextInt(500);
+            while (Math.sqrt(Math.pow(rx_random[i]-1500, rx_random[i]-1500) + Math.pow(ry_random[i],ry_random[i])) > 500) {
+                rx_random[i]= 1000 + rand.nextInt(1000);
+                ry_random[i]= rand.nextInt(500);
+            }
+        }
+        /**définition des gobelets**/
 
         Point Rouge1 = new Point(300, 400);
         addGobeletsRouges(Rouge1);
@@ -469,6 +505,15 @@ public class TableVisualisation extends JPanel {
 
         Point Rouge12 = new Point(2700, 1200);
         addGobeletsRouges(Rouge12);
+
+        Point Rouge13=new Point(rx_random[0],ry_random[0]);
+        addGobeletsRouges(Rouge13);
+
+        Point Rouge14=new Point(rx_random[1],ry_random[1]);
+        addGobeletsRouges(Rouge14);
+
+        Point Rouge15=new Point(rx_random[2],ry_random[2]);
+        addGobeletsRouges(Rouge15);
 
         //Les gobelets dans les écueils sont numérotés de haut en bas
 

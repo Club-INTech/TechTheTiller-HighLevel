@@ -25,7 +25,12 @@ public class Match extends Script {
 
 
         try {
-            moveLengthwise(-100, false);
+            moveLengthwise(1000, false);
+            turnTowards(1.6);
+            moveLengthwise(1000, false);
+
+
+
         } catch (UnableToMoveException e) {
             e.printStackTrace();
 
