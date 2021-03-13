@@ -49,7 +49,7 @@ public class SimulatedRobot implements IRobot {
     private boolean isLaunched;
 
     // variables utiles pour le mode montlhery
-    private boolean montlheryMode = false;
+    private boolean montlheryMode = true;
     private boolean forcedMovement;
     private float forcedTranslationSpeed;
     private float forcedRotationSpeed;

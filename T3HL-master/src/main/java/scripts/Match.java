@@ -22,13 +22,15 @@ public class Match extends Script {
     @Override
     public void execute(int version) {
         //TODO: Code lançant les différents scripts du principal
+        boolean safe = true; //indique mode safe
+        if (safe) {
+            try {
+                moveLengthwise(115, false);
 
+            } catch (UnableToMoveException e) {
+                e.printStackTrace();
 
-        try {
-            moveLengthwise(-100, false);
-        } catch (UnableToMoveException e) {
-            e.printStackTrace();
-
+            }
         }
 
 

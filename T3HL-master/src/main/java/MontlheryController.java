@@ -63,14 +63,14 @@ public class MontlheryController extends Thread implements Module {
                     // Y: descendre asc droit
                     // LEFT BUMPER: active pompe droite
                     // RIGHT BUMPER: désactive pompe droite
-                    if(aPressed && !wasAPressed && armPosition != ArmState.GROUND) {
+                    /*if(aPressed && !wasAPressed && armPosition != ArmState.GROUND) {
                         armPosition = ArmState.GROUND;
                         // TODO: remplacer robot.useActuator(ActuatorsOrder.ENVOIE_LE_BRAS_DROIT_A_LA_POSITION_SOL);
                     }
                     if(bPressed && !wasBPressed && armPosition != ArmState.ELEVATOR) {
                         armPosition = ArmState.ELEVATOR;
                         // TODO: remplacer robot.useActuator(ActuatorsOrder.ENVOIE_LE_BRAS_DROIT_A_LA_POSITION_ASCENSEUR);
-                    }
+                    }*/
                    /* if(xPressed && !wasXPressed) {
                         robot.perform(ElevatorOrders.RaiseRightElevator);
                     }
