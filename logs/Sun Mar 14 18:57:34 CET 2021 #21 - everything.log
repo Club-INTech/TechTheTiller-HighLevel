@@ -1,0 +1,1324 @@
+[[34m18:57:34.066 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:104)] Version : 138dd36 on dev_LoloElDeglingo - [oups][0m
+[[34m18:57:34.069 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-44-generic amd64[0m
+[[34m18:57:34.076 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 3.88G, available processors : 8[0m
+[[34m18:57:34.077 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:117)] [0m
+[[34m18:57:34.077 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[0m
+[[34m18:57:34.077 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...[0m
+[[34m18:57:34.095 STDOUT (DEBUG) on main pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/bin/../config/config.txt[0m
+[[31m18:57:34.112 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m18:57:34.112 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m18:57:34.112 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m18:57:34.113 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[34m18:57:34.114 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :[0m
+[[34m18:57:34.114 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)[0m
+[[34m18:57:34.114 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)[0m
+[[34m18:57:34.114 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)[0m
+[[34m18:57:34.115 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)[0m
+[[34m18:57:34.115 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)[0m
+[[34m18:57:34.115 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)[0m
+[[34m18:57:34.115 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)[0m
+[[34m18:57:34.116 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)[0m
+[[34m18:57:34.116 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)[0m
+[[34m18:57:34.116 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)[0m
+[[34m18:57:34.125 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table[0m
+[[34m18:57:34.126 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.[0m
+[[34m18:57:34.133 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false[0m
+[[34m18:57:34.134 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000[0m
+[[34m18:57:34.134 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000[0m
+[[34m18:57:34.134 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190[0m
+[[34m18:57:34.135 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70[0m
+[[34m18:57:34.135 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150[0m
+[[34m18:57:34.135 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5[0m
+[[34m18:57:34.136 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false[0m
+[[34m18:57:34.136 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Table prêt[0m
+[[34m18:57:34.137 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe[0m
+[[34m18:57:34.138 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.[0m
+[[34m18:57:34.138 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m18:57:34.138 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m18:57:34.139 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m18:57:34.139 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m18:57:34.139 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m18:57:34.140 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m18:57:34.140 GRAPHE (DEBUG) on main data.Graphe.init(Graphe.java:147)] Initialisation du Graphe...[0m
+[[34m18:57:34.140 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:241)] Placement des noeuds en quadrillage[0m
+[[34m18:57:34.141 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,0)[0m
+[[34m18:57:34.141 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,100)[0m
+[[34m18:57:34.142 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,200)[0m
+[[34m18:57:34.142 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,300)[0m
+[[34m18:57:34.142 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,400)[0m
+[[34m18:57:34.142 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,500)[0m
+[[34m18:57:34.143 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,600)[0m
+[[34m18:57:34.143 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,700)[0m
+[[34m18:57:34.143 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,800)[0m
+[[34m18:57:34.143 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,900)[0m
+[[34m18:57:34.143 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1000)[0m
+[[34m18:57:34.143 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1100)[0m
+[[34m18:57:34.144 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1200)[0m
+[[34m18:57:34.144 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1300)[0m
+[[34m18:57:34.144 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1400)[0m
+[[34m18:57:34.144 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1500)[0m
+[[34m18:57:34.144 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1600)[0m
+[[34m18:57:34.145 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1700)[0m
+[[34m18:57:34.145 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1800)[0m
+[[34m18:57:34.145 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1900)[0m
+[[34m18:57:34.145 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,0)[0m
+[[34m18:57:34.145 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,100)[0m
+[[34m18:57:34.146 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,200)[0m
+[[34m18:57:34.146 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,300)[0m
+[[34m18:57:34.146 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,400)[0m
+[[34m18:57:34.146 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,500)[0m
+[[34m18:57:34.146 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,600)[0m
+[[34m18:57:34.146 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,700)[0m
+[[34m18:57:34.147 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,800)[0m
+[[34m18:57:34.147 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,900)[0m
+[[34m18:57:34.147 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1000)[0m
+[[34m18:57:34.147 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1100)[0m
+[[34m18:57:34.147 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1200)[0m
+[[34m18:57:34.147 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1300)[0m
+[[34m18:57:34.148 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1400)[0m
+[[34m18:57:34.148 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1500)[0m
+[[34m18:57:34.148 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1600)[0m
+[[34m18:57:34.148 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1700)[0m
+[[34m18:57:34.148 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1800)[0m
+[[34m18:57:34.148 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1900)[0m
+[[34m18:57:34.149 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,0)[0m
+[[34m18:57:34.149 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,100)[0m
+[[34m18:57:34.149 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,200)[0m
+[[34m18:57:34.149 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,300)[0m
+[[34m18:57:34.149 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,400)[0m
+[[34m18:57:34.149 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,500)[0m
+[[34m18:57:34.150 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,600)[0m
+[[34m18:57:34.150 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,700)[0m
+[[34m18:57:34.150 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,800)[0m
+[[34m18:57:34.150 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,900)[0m
+[[34m18:57:34.150 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1000)[0m
+[[34m18:57:34.150 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1100)[0m
+[[34m18:57:34.151 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1200)[0m
+[[34m18:57:34.151 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1300)[0m
+[[34m18:57:34.151 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1400)[0m
+[[34m18:57:34.151 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1500)[0m
+[[34m18:57:34.151 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1600)[0m
+[[34m18:57:34.151 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1700)[0m
+[[34m18:57:34.152 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1800)[0m
+[[34m18:57:34.152 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1900)[0m
+[[34m18:57:34.152 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,0)[0m
+[[34m18:57:34.152 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,100)[0m
+[[34m18:57:34.152 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,200)[0m
+[[34m18:57:34.152 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,300)[0m
+[[34m18:57:34.152 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,400)[0m
+[[34m18:57:34.153 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,500)[0m
+[[34m18:57:34.153 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,600)[0m
+[[34m18:57:34.153 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,700)[0m
+[[34m18:57:34.153 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,800)[0m
+[[34m18:57:34.153 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,900)[0m
+[[34m18:57:34.153 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1000)[0m
+[[34m18:57:34.153 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1100)[0m
+[[34m18:57:34.154 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1200)[0m
+[[34m18:57:34.154 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1300)[0m
+[[34m18:57:34.154 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1400)[0m
+[[34m18:57:34.154 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1500)[0m
+[[34m18:57:34.154 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1600)[0m
+[[34m18:57:34.154 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1700)[0m
+[[34m18:57:34.154 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1800)[0m
+[[34m18:57:34.155 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1900)[0m
+[[34m18:57:34.155 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,0)[0m
+[[34m18:57:34.155 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,100)[0m
+[[34m18:57:34.155 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,200)[0m
+[[34m18:57:34.155 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,300)[0m
+[[34m18:57:34.156 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,400)[0m
+[[34m18:57:34.156 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,500)[0m
+[[34m18:57:34.156 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,600)[0m
+[[34m18:57:34.157 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,700)[0m
+[[34m18:57:34.157 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,800)[0m
+[[34m18:57:34.157 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,900)[0m
+[[34m18:57:34.157 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1000)[0m
+[[34m18:57:34.157 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1100)[0m
+[[34m18:57:34.158 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1200)[0m
+[[34m18:57:34.158 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1300)[0m
+[[34m18:57:34.158 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1400)[0m
+[[34m18:57:34.158 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1500)[0m
+[[34m18:57:34.159 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1600)[0m
+[[34m18:57:34.159 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1700)[0m
+[[34m18:57:34.159 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1800)[0m
+[[34m18:57:34.159 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1900)[0m
+[[34m18:57:34.159 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,0)[0m
+[[34m18:57:34.160 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,100)[0m
+[[34m18:57:34.160 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,200)[0m
+[[34m18:57:34.160 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,300)[0m
+[[34m18:57:34.160 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,400)[0m
+[[34m18:57:34.160 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,500)[0m
+[[34m18:57:34.160 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,600)[0m
+[[34m18:57:34.161 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,700)[0m
+[[34m18:57:34.161 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,800)[0m
+[[34m18:57:34.161 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,900)[0m
+[[34m18:57:34.161 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1000)[0m
+[[34m18:57:34.161 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1100)[0m
+[[34m18:57:34.161 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1200)[0m
+[[34m18:57:34.161 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1300)[0m
+[[34m18:57:34.162 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1400)[0m
+[[34m18:57:34.162 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1500)[0m
+[[34m18:57:34.162 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1600)[0m
+[[34m18:57:34.162 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1700)[0m
+[[34m18:57:34.162 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1800)[0m
+[[34m18:57:34.162 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1900)[0m
+[[34m18:57:34.162 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,0)[0m
+[[34m18:57:34.163 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,100)[0m
+[[34m18:57:34.163 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,200)[0m
+[[34m18:57:34.163 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,300)[0m
+[[34m18:57:34.163 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,400)[0m
+[[34m18:57:34.164 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,500)[0m
+[[34m18:57:34.164 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,600)[0m
+[[34m18:57:34.164 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,700)[0m
+[[34m18:57:34.164 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,800)[0m
+[[34m18:57:34.164 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,900)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1000)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1100)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1200)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1300)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1400)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1500)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1600)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1700)[0m
+[[34m18:57:34.165 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1800)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1900)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,0)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,100)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,200)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,300)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,400)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,500)[0m
+[[34m18:57:34.166 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,600)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,700)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,800)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,900)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1000)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1100)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1200)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1300)[0m
+[[34m18:57:34.167 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1400)[0m
+[[34m18:57:34.168 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1500)[0m
+[[34m18:57:34.168 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1600)[0m
+[[34m18:57:34.168 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1700)[0m
+[[34m18:57:34.168 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1800)[0m
+[[34m18:57:34.168 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1900)[0m
+[[34m18:57:34.168 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,0)[0m
+[[34m18:57:34.169 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,100)[0m
+[[34m18:57:34.169 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,200)[0m
+[[34m18:57:34.169 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,300)[0m
+[[34m18:57:34.169 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,400)[0m
+[[34m18:57:34.169 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,500)[0m
+[[34m18:57:34.170 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,600)[0m
+[[34m18:57:34.170 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,700)[0m
+[[34m18:57:34.170 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,800)[0m
+[[34m18:57:34.170 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,900)[0m
+[[34m18:57:34.170 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1000)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1100)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1200)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1300)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1400)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1500)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1600)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1700)[0m
+[[34m18:57:34.171 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1800)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1900)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,0)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,100)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,200)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,300)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,400)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,500)[0m
+[[34m18:57:34.172 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,600)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,700)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,800)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,900)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1000)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1100)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1200)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1300)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1400)[0m
+[[34m18:57:34.173 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1500)[0m
+[[34m18:57:34.174 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1600)[0m
+[[34m18:57:34.174 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1700)[0m
+[[34m18:57:34.174 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1800)[0m
+[[34m18:57:34.174 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1900)[0m
+[[34m18:57:34.174 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,0)[0m
+[[34m18:57:34.175 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,100)[0m
+[[34m18:57:34.175 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,200)[0m
+[[34m18:57:34.175 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,300)[0m
+[[34m18:57:34.175 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,400)[0m
+[[34m18:57:34.175 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,500)[0m
+[[34m18:57:34.176 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,600)[0m
+[[34m18:57:34.176 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,700)[0m
+[[34m18:57:34.176 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,800)[0m
+[[34m18:57:34.176 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,900)[0m
+[[34m18:57:34.176 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1000)[0m
+[[34m18:57:34.177 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1100)[0m
+[[34m18:57:34.177 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1200)[0m
+[[34m18:57:34.177 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1300)[0m
+[[34m18:57:34.177 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1400)[0m
+[[34m18:57:34.177 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1500)[0m
+[[34m18:57:34.178 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1600)[0m
+[[34m18:57:34.178 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1700)[0m
+[[34m18:57:34.178 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1800)[0m
+[[34m18:57:34.178 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1900)[0m
+[[34m18:57:34.178 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,0)[0m
+[[34m18:57:34.178 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,100)[0m
+[[34m18:57:34.179 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,200)[0m
+[[34m18:57:34.179 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,300)[0m
+[[34m18:57:34.179 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,400)[0m
+[[34m18:57:34.179 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,500)[0m
+[[34m18:57:34.179 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,600)[0m
+[[34m18:57:34.179 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,700)[0m
+[[34m18:57:34.180 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,800)[0m
+[[34m18:57:34.180 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,900)[0m
+[[34m18:57:34.180 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1000)[0m
+[[34m18:57:34.180 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1100)[0m
+[[34m18:57:34.180 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1200)[0m
+[[34m18:57:34.181 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1300)[0m
+[[34m18:57:34.181 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1400)[0m
+[[34m18:57:34.181 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1500)[0m
+[[34m18:57:34.181 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1600)[0m
+[[34m18:57:34.181 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1700)[0m
+[[34m18:57:34.181 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1800)[0m
+[[34m18:57:34.182 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1900)[0m
+[[34m18:57:34.182 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,0)[0m
+[[34m18:57:34.182 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,100)[0m
+[[34m18:57:34.182 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,200)[0m
+[[34m18:57:34.182 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,300)[0m
+[[34m18:57:34.182 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,400)[0m
+[[34m18:57:34.183 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,500)[0m
+[[34m18:57:34.183 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,600)[0m
+[[34m18:57:34.183 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,700)[0m
+[[34m18:57:34.183 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,800)[0m
+[[34m18:57:34.183 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,900)[0m
+[[34m18:57:34.184 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1000)[0m
+[[34m18:57:34.184 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1100)[0m
+[[34m18:57:34.184 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1200)[0m
+[[34m18:57:34.184 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1300)[0m
+[[34m18:57:34.184 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1400)[0m
+[[34m18:57:34.184 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1500)[0m
+[[34m18:57:34.185 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1600)[0m
+[[34m18:57:34.185 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1700)[0m
+[[34m18:57:34.185 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1800)[0m
+[[34m18:57:34.185 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1900)[0m
+[[34m18:57:34.185 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,0)[0m
+[[34m18:57:34.185 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,100)[0m
+[[34m18:57:34.186 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,200)[0m
+[[34m18:57:34.186 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,300)[0m
+[[34m18:57:34.186 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,400)[0m
+[[34m18:57:34.186 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,500)[0m
+[[34m18:57:34.186 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,600)[0m
+[[34m18:57:34.186 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,700)[0m
+[[34m18:57:34.186 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,800)[0m
+[[34m18:57:34.187 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,900)[0m
+[[34m18:57:34.187 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1000)[0m
+[[34m18:57:34.187 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1100)[0m
+[[34m18:57:34.187 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1200)[0m
+[[34m18:57:34.187 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1300)[0m
+[[34m18:57:34.187 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1400)[0m
+[[34m18:57:34.188 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1500)[0m
+[[34m18:57:34.188 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1600)[0m
+[[34m18:57:34.188 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1700)[0m
+[[34m18:57:34.188 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1800)[0m
+[[34m18:57:34.188 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1900)[0m
+[[34m18:57:34.189 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,0)[0m
+[[34m18:57:34.189 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,100)[0m
+[[34m18:57:34.189 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,200)[0m
+[[34m18:57:34.189 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,300)[0m
+[[34m18:57:34.189 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,400)[0m
+[[34m18:57:34.189 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,500)[0m
+[[34m18:57:34.189 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,600)[0m
+[[34m18:57:34.190 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,700)[0m
+[[34m18:57:34.190 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,800)[0m
+[[34m18:57:34.190 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,900)[0m
+[[34m18:57:34.190 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1000)[0m
+[[34m18:57:34.190 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1100)[0m
+[[34m18:57:34.190 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1200)[0m
+[[34m18:57:34.190 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1300)[0m
+[[34m18:57:34.191 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1400)[0m
+[[34m18:57:34.191 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1500)[0m
+[[34m18:57:34.191 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1600)[0m
+[[34m18:57:34.191 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1700)[0m
+[[34m18:57:34.191 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1800)[0m
+[[34m18:57:34.191 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1900)[0m
+[[34m18:57:34.192 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,0)[0m
+[[34m18:57:34.192 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,100)[0m
+[[34m18:57:34.192 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,200)[0m
+[[34m18:57:34.192 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,300)[0m
+[[34m18:57:34.192 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,400)[0m
+[[34m18:57:34.192 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,500)[0m
+[[34m18:57:34.192 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,600)[0m
+[[34m18:57:34.193 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,700)[0m
+[[34m18:57:34.193 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,800)[0m
+[[34m18:57:34.193 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,900)[0m
+[[34m18:57:34.193 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1000)[0m
+[[34m18:57:34.193 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1100)[0m
+[[34m18:57:34.193 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1200)[0m
+[[34m18:57:34.194 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1300)[0m
+[[34m18:57:34.194 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1400)[0m
+[[34m18:57:34.194 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1500)[0m
+[[34m18:57:34.194 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1600)[0m
+[[34m18:57:34.194 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1700)[0m
+[[34m18:57:34.194 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1800)[0m
+[[34m18:57:34.194 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1900)[0m
+[[34m18:57:34.195 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,0)[0m
+[[34m18:57:34.195 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,100)[0m
+[[34m18:57:34.195 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,200)[0m
+[[34m18:57:34.195 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,300)[0m
+[[34m18:57:34.195 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,400)[0m
+[[34m18:57:34.195 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,500)[0m
+[[34m18:57:34.195 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,600)[0m
+[[34m18:57:34.196 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,700)[0m
+[[34m18:57:34.196 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,800)[0m
+[[34m18:57:34.196 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,900)[0m
+[[34m18:57:34.196 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1000)[0m
+[[34m18:57:34.196 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1100)[0m
+[[34m18:57:34.196 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1200)[0m
+[[34m18:57:34.197 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1300)[0m
+[[34m18:57:34.197 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1400)[0m
+[[34m18:57:34.197 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1500)[0m
+[[34m18:57:34.197 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1600)[0m
+[[34m18:57:34.197 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1700)[0m
+[[34m18:57:34.197 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1800)[0m
+[[34m18:57:34.198 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1900)[0m
+[[34m18:57:34.198 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,0)[0m
+[[34m18:57:34.198 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,100)[0m
+[[34m18:57:34.198 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,200)[0m
+[[34m18:57:34.198 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,300)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,400)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,500)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,600)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,700)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,800)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,900)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1000)[0m
+[[34m18:57:34.199 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1100)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1200)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1300)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1400)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1500)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1600)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1700)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1800)[0m
+[[34m18:57:34.200 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1900)[0m
+[[34m18:57:34.201 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,0)[0m
+[[34m18:57:34.201 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,100)[0m
+[[34m18:57:34.201 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,200)[0m
+[[34m18:57:34.201 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,300)[0m
+[[34m18:57:34.201 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,400)[0m
+[[34m18:57:34.201 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,500)[0m
+[[34m18:57:34.201 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,600)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,700)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,800)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,900)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1000)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1100)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1200)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1300)[0m
+[[34m18:57:34.202 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1400)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1500)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1600)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1700)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1800)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1900)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,0)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,100)[0m
+[[34m18:57:34.203 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,200)[0m
+[[34m18:57:34.204 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,300)[0m
+[[34m18:57:34.204 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,400)[0m
+[[34m18:57:34.204 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,500)[0m
+[[34m18:57:34.204 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,600)[0m
+[[34m18:57:34.204 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,700)[0m
+[[34m18:57:34.204 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,800)[0m
+[[34m18:57:34.204 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,900)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1000)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1100)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1200)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1300)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1400)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1500)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1600)[0m
+[[34m18:57:34.205 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1700)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1800)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1900)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,0)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,100)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,200)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,300)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,400)[0m
+[[34m18:57:34.206 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,500)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,600)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,700)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,800)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,900)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1000)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1100)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1200)[0m
+[[34m18:57:34.207 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1300)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1400)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1500)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1600)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1700)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1800)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1900)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,0)[0m
+[[34m18:57:34.208 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,100)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,200)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,300)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,400)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,500)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,600)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,700)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,800)[0m
+[[34m18:57:34.209 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,900)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1000)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1100)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1200)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1300)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1400)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1500)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1600)[0m
+[[34m18:57:34.210 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1700)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1800)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1900)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,0)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,100)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,200)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,300)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,400)[0m
+[[34m18:57:34.211 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,500)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,600)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,700)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,800)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,900)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1000)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1100)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1200)[0m
+[[34m18:57:34.212 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1300)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1400)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1500)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1600)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1700)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1800)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1900)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,0)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,100)[0m
+[[34m18:57:34.213 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,200)[0m
+[[34m18:57:34.214 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,300)[0m
+[[34m18:57:34.214 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,400)[0m
+[[34m18:57:34.214 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,500)[0m
+[[34m18:57:34.214 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,600)[0m
+[[34m18:57:34.214 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,700)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,800)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,900)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1000)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1100)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1200)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1300)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1400)[0m
+[[34m18:57:34.215 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1500)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1600)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1700)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1800)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1900)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,0)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,100)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,200)[0m
+[[34m18:57:34.216 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,300)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,400)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,500)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,600)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,700)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,800)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,900)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1000)[0m
+[[34m18:57:34.217 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1100)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1200)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1300)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1400)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1500)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1600)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1700)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1800)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1900)[0m
+[[34m18:57:34.218 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,0)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,100)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,200)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,300)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,400)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,500)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,600)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,700)[0m
+[[34m18:57:34.219 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,800)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,900)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1000)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1100)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1200)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1300)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1400)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1500)[0m
+[[34m18:57:34.220 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1600)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1700)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1800)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1900)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,0)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,100)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,200)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,300)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,400)[0m
+[[34m18:57:34.221 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,500)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,600)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,700)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,800)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,900)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1000)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1100)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1200)[0m
+[[34m18:57:34.222 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1300)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1400)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1500)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1600)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1700)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1800)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1900)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,0)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,100)[0m
+[[34m18:57:34.223 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,200)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,300)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,400)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,500)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,600)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,700)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,800)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,900)[0m
+[[34m18:57:34.224 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1000)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1100)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1200)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1300)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1400)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1500)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1600)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1700)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1800)[0m
+[[34m18:57:34.225 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1900)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,0)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,100)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,200)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,300)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,400)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,500)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,600)[0m
+[[34m18:57:34.226 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,700)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,800)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,900)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1000)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1100)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1200)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1300)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1400)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1500)[0m
+[[34m18:57:34.227 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1600)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1700)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1800)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1900)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,0)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,100)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,200)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,300)[0m
+[[34m18:57:34.228 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,400)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,500)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,600)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,700)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,800)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,900)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1000)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1100)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1200)[0m
+[[34m18:57:34.229 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1300)[0m
+[[34m18:57:34.230 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1400)[0m
+[[34m18:57:34.230 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1500)[0m
+[[34m18:57:34.230 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1600)[0m
+[[34m18:57:34.230 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1700)[0m
+[[34m18:57:34.230 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1800)[0m
+[[34m18:57:34.230 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1900)[0m
+[[34m18:57:34.230 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:253)] Fin du placement des noeuds en quadrillage[0m
+[[34m18:57:34.231 GRAPHE (DEBUG) on main data.Graphe.placeRidges(Graphe.java:262)] Initialisation des arrêtes[0m
+[[34m18:57:34.459 GRAPHE (DEBUG) on main data.Graphe.placeRidges(Graphe.java:272)] Fin d'initialisation des arrêtes, 179700 arrêtes créées[0m
+[[34m18:57:34.461 GRAPHE (DEBUG) on main data.Graphe.init(Graphe.java:162)] Initialisation terminée : 600 noeuds, 179700 arrêtes[0m
+[[34m18:57:34.461 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt[0m
+[[34m18:57:34.462 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Pathfinder[0m
+[[34m18:57:34.462 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Pathfinder après son initialisation.[0m
+[[34m18:57:34.463 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Pathfinder prêt[0m
+[[34m18:57:34.464 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper[0m
+[[34m18:57:34.464 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.[0m
+[[34m18:57:34.465 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false[0m
+[[34m18:57:34.467 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to false[0m
+[[34m18:57:34.468 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false[0m
+[[34m18:57:34.470 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt[0m
+[[34m18:57:34.470 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PathFollower[0m
+[[34m18:57:34.471 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PathFollower après son initialisation.[0m
+[[34m18:57:34.472 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionLoopDelay to 20[0m
+[[34m18:57:34.472 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionDistanceCheck to 200[0m
+[[34m18:57:34.472 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionRadiusCheck to 200[0m
+[[34m18:57:34.472 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionObstructedTimeout to 2000[0m
+[[34m18:57:34.473 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean locomotion.PathFollower.simulation to false[0m
+[[34m18:57:34.477 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PathFollower prêt[0m
+[[34m18:57:34.478 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Locomotion[0m
+[[34m18:57:34.478 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Locomotion après son initialisation.[0m
+[[34m18:57:34.479 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.Locomotion.vectorComparisonThreshold to 5[0m
+[[34m18:57:34.479 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.Locomotion.locomotionObstructedTimeout to 2000[0m
+[[34m18:57:34.479 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Locomotion prêt[0m
+[[34m18:57:34.479 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass HookFactory[0m
+[[34m18:57:34.479 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass HookFactory après son initialisation.[0m
+[[34m18:57:34.479 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module HookFactory prêt[0m
+[[34m18:57:34.480 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager[0m
+[[34m18:57:34.480 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.[0m
+[[34m18:57:34.481 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt[0m
+[[34m18:57:34.481 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SimulatorDebug[0m
+[[34m18:57:34.481 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SimulatorDebug après son initialisation.[0m
+[[34m18:57:34.481 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean utils.communication.SimulatorDebug.active to false[0m
+[[34m18:57:34.481 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SimulatorDebug prêt[0m
+[[34m18:57:34.481 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PanneauModule[0m
+[[34m18:57:34.481 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PanneauModule après son initialisation.[0m
+[[34m18:57:34.483 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.PanneauModule.scoreUpdatePeriod to 100[0m
+[[34m18:57:34.484 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.PanneauModule.couleur to jaune[0m
+[[34m18:57:34.484 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledProgramPort to 19500[0m
+[[34m18:57:34.484 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledCount to 16[0m
+[[34m18:57:34.485 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.PanneauModule.using7Segments to true[0m
+[[34m18:57:34.485 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PanneauModule prêt[0m
+[[34m18:57:34.485 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Master[0m
+[[34m18:57:34.489 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SynchronizationWithBuddy[0m
+[[34m18:57:34.489 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SynchronizationWithBuddy après son initialisation.[0m
+[[34m18:57:34.490 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.symetry to false[0m
+[[34m18:57:34.490 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.simulation to false[0m
+[[34m18:57:34.490 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.master to true[0m
+[[34m18:57:34.490 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SynchronizationWithBuddy prêt[0m
+[[34m18:57:34.490 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Listener[0m
+[[34m18:57:34.491 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Listener après son initialisation.[0m
+[[34m18:57:34.491 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.master to true[0m
+[[34m18:57:34.491 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.simulation to false[0m
+[[34m18:57:34.491 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingLidar to false[0m
+[[34m18:57:34.492 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingCylinderDetection to false[0m
+[[34m18:57:34.492 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseImage to false[0m
+[[34m18:57:34.492 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.visualisation to false[0m
+[[34m18:57:34.492 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseConnection to false[0m
+[[34m18:57:34.492 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.connectToBuddy to false[0m
+[[34m18:57:34.493 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.Listener.timeBetweenPosUpdates to 200[0m
+[[34m18:57:34.495 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Listener prêt[0m
+[[34m18:57:34.495 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MatchTimer[0m
+[[34m18:57:34.495 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:186)] Listener lancé : connection aux devices...[0m
+[[34m18:57:34.495 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MatchTimer après son initialisation.[0m
+[[34m18:57:34.495 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:199)] Lidar[0m
+[[34m18:57:34.495 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:200)] Balise[0m
+[[34m18:57:34.495 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MatchTimer prêt[0m
+[[34m18:57:34.495 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass DataController[0m
+[[34m18:57:34.496 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass DataController après son initialisation.[0m
+[[34m18:57:34.497 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.master to true[0m
+[[34m18:57:34.497 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.symetry to false[0m
+[[34m18:57:34.503 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module DataController prêt[0m
+[[34m18:57:34.503 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:164)] Controller lancé : en attente du listener...[0m
+[[34m18:57:34.503 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Master après son initialisation.[0m
+[[34m18:57:34.504 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long robot.Robot.locomotionLoopDelay to 20[0m
+[[34m18:57:34.504 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.simulation to false[0m
+[[34m18:57:34.504 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.master to true[0m
+[[34m18:57:34.505 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.symetry to false[0m
+[[34m18:57:34.505 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.usingPanel to false[0m
+[[34m18:57:34.505 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Master prêt[0m
+[[31m18:57:34.505 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[34m18:57:34.506 STRATEGY (DEBUG) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:198)] Couleur: jaune[0m
+[[34m18:57:34.506 COMMUNICATION (DEBUG) on pool-1-thread-1 utils.communication.SerialInterface.init(SerialInterface.java:65)] Ouverture de ttyACM0[0m
+[[34m18:57:34.506 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ScriptManagerMaster[0m
+[[34m18:57:34.506 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ScriptManagerMaster après son initialisation.[0m
+[[34m18:57:34.507 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ScriptManagerMaster prêt[0m
+[[34m18:57:34.507 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:203)] Teensy Master[0m
+[[34m18:57:34.509 TABLE (DEBUG) on main data.Table.addFixedObstacleNoGraphChange(Table.java:528)] ajout de l'obstacle Obstacle fixe rectangulaire rectangle [center : (1500,1000), length (x) : 380.0, width (y) : 2000.0][0m
+[[34m18:57:34.510 TABLE (DEBUG) on main data.Table.addFixedObstacleNoGraphChange(Table.java:528)] ajout de l'obstacle Obstacle fixe rectangulaire rectangle [center : (-1500,1000), length (x) : 380.0, width (y) : 2000.0][0m
+[[34m18:57:34.510 TABLE (DEBUG) on main data.Table.addFixedObstacleNoGraphChange(Table.java:528)] ajout de l'obstacle Obstacle fixe rectangulaire rectangle [center : (0,2000), length (x) : 3000.0, width (y) : 380.0][0m
+[[34m18:57:34.510 TABLE (DEBUG) on main data.Table.addFixedObstacleNoGraphChange(Table.java:528)] ajout de l'obstacle Obstacle fixe rectangulaire rectangle [center : (0,0), length (x) : 3000.0, width (y) : 380.0][0m
+[[34m18:57:34.515 TABLE (DEBUG) on main data.Table.addFixedObstacleNoGraphChange(Table.java:528)] ajout de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (-600,1925), length (x) : 22.0, width (y) : 150.0], circle arcs 0 : Circle [center: (-611,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (-600,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (-494,1925), length (x) : 190.0, width (y) : 150.0]][0m
+[[34m18:57:34.516 TABLE (DEBUG) on main data.Table.addFixedObstacleNoGraphChange(Table.java:528)] ajout de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (600,1925), length (x) : 22.0, width (y) : 150.0], circle arcs 0 : Circle [center: (589,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (600,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (706,1925), length (x) : 190.0, width (y) : 150.0]][0m
+[[34m18:57:34.516 TABLE (DEBUG) on main data.Table.addFixedObstacleNoGraphChange(Table.java:528)] ajout de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (0,1850), length (x) : 22.0, width (y) : 300.0], circle arcs 0 : Circle [center: (-11,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (0,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (106,1850), length (x) : 190.0, width (y) : 300.0]][0m
+[[34m18:57:34.518 GRAPHE (DEBUG) on main data.Graphe.init(Graphe.java:147)] Initialisation du Graphe...[0m
+[[34m18:57:34.518 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:189)] Placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (1500,1000), length (x) : 380.0, width (y) : 2000.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:202)] Fin du placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (1500,1000), length (x) : 380.0, width (y) : 2000.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:189)] Placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (-1500,1000), length (x) : 380.0, width (y) : 2000.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:202)] Fin du placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (-1500,1000), length (x) : 380.0, width (y) : 2000.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:189)] Placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (0,2000), length (x) : 3000.0, width (y) : 380.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:202)] Fin du placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (0,2000), length (x) : 3000.0, width (y) : 380.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:189)] Placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (0,0), length (x) : 3000.0, width (y) : 380.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:202)] Fin du placement de noeuds autour de l'obstacle Obstacle fixe rectangulaire rectangle [center : (0,0), length (x) : 3000.0, width (y) : 380.0][0m
+[[34m18:57:34.519 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:189)] Placement de noeuds autour de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (-600,1925), length (x) : 22.0, width (y) : 150.0], circle arcs 0 : Circle [center: (-611,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (-600,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (-494,1925), length (x) : 190.0, width (y) : 150.0]][0m
+[[34m18:57:34.520 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:202)] Fin du placement de noeuds autour de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (-600,1925), length (x) : 22.0, width (y) : 150.0], circle arcs 0 : Circle [center: (-611,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (-600,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (-494,1925), length (x) : 190.0, width (y) : 150.0]][0m
+[[34m18:57:34.520 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:189)] Placement de noeuds autour de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (600,1925), length (x) : 22.0, width (y) : 150.0], circle arcs 0 : Circle [center: (589,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (600,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (706,1925), length (x) : 190.0, width (y) : 150.0]][0m
+[[34m18:57:34.520 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:202)] Fin du placement de noeuds autour de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (600,1925), length (x) : 22.0, width (y) : 150.0], circle arcs 0 : Circle [center: (589,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (600,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (706,1925), length (x) : 190.0, width (y) : 150.0]][0m
+[[34m18:57:34.520 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:189)] Placement de noeuds autour de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (0,1850), length (x) : 22.0, width (y) : 300.0], circle arcs 0 : Circle [center: (-11,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (0,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (106,1850), length (x) : 190.0, width (y) : 300.0]][0m
+[[34m18:57:34.520 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:202)] Fin du placement de noeuds autour de l'obstacle Obstacle fixe rectangulaireArrondi Circular Rectangle [mainRectangle :rectangle [center : (0,1850), length (x) : 22.0, width (y) : 300.0], circle arcs 0 : Circle [center: (-11,2000), ray : 190.0, angleStart : 1.57080, angleEnd : 3.14159, side rectangle 1 & 2 : rectangle [center : (0,2095), length (x) : 22.0, width (y) : 190.0] & rectangle [center : (106,1850), length (x) : 190.0, width (y) : 300.0]][0m
+[[34m18:57:34.520 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:241)] Placement des noeuds en quadrillage[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,0)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,200)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,300)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,400)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,500)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,600)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,700)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,800)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,900)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1000)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1100)[0m
+[[34m18:57:34.521 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1200)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1300)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1400)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1500)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1600)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1700)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1800)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,200)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,300)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,400)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,500)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,600)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,700)[0m
+[[34m18:57:34.522 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,800)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,900)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1000)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1100)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1200)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1300)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1400)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1500)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1600)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1700)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1800)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,200)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,300)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,400)[0m
+[[34m18:57:34.523 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,500)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,600)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,700)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,800)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,900)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1000)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1100)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1200)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1300)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1400)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1500)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1600)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1700)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1800)[0m
+[[34m18:57:34.524 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,200)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,300)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,400)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,500)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,600)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,700)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,800)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,900)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1000)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1100)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1200)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1300)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1400)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1500)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1600)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1700)[0m
+[[34m18:57:34.525 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1800)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,200)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,300)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,400)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,500)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,600)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,700)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,800)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,900)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1000)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1100)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1200)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1300)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1400)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1500)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1600)[0m
+[[34m18:57:34.526 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1700)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1800)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,200)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,300)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,400)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,500)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,600)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,700)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,800)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,900)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1000)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1100)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1200)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1300)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1400)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1500)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1600)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1700)[0m
+[[34m18:57:34.527 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1800)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,200)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,300)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,400)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,500)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,600)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,700)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,800)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,900)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1000)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1100)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1200)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1300)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1400)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1500)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1600)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,200)[0m
+[[34m18:57:34.528 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,300)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,400)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,500)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,600)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,700)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,800)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,900)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1000)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1100)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1200)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1300)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1400)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1500)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1600)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,200)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,300)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,400)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,500)[0m
+[[34m18:57:34.529 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,600)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,700)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,800)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,900)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1000)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1100)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1200)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1300)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1400)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1500)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1600)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,200)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,300)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,400)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,500)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,600)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,700)[0m
+[[34m18:57:34.530 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,800)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,900)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1000)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1100)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1200)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1300)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1400)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1500)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1600)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1700)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1800)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,200)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,300)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,400)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,500)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,600)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,700)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,800)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,900)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1000)[0m
+[[34m18:57:34.531 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1100)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1200)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1300)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1400)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1500)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1600)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1700)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1800)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,200)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,300)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,400)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,500)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,600)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,700)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,800)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,900)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1000)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1100)[0m
+[[34m18:57:34.532 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1200)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1300)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1400)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1500)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1600)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,200)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,300)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,400)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,500)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,600)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,700)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,800)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,900)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1000)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1100)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1200)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1300)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1400)[0m
+[[34m18:57:34.533 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1500)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,200)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,300)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,400)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,500)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,600)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,700)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,800)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,900)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1000)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1100)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1200)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1300)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1400)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1500)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,200)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,300)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,400)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,500)[0m
+[[34m18:57:34.534 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,600)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,700)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,800)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,900)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1000)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1100)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1200)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1300)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1400)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1500)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,200)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,300)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,400)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,500)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,600)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,700)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,800)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,900)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1000)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1100)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1200)[0m
+[[34m18:57:34.535 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1300)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1400)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1500)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1600)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,200)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,300)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,400)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,500)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,600)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,700)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,800)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,900)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1000)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1100)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1200)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1300)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1400)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1500)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1600)[0m
+[[34m18:57:34.536 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1700)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1800)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,200)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,300)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,400)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,500)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,600)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,700)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,800)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,900)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1000)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1100)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1200)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1300)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1400)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1500)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1600)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1700)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1800)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,200)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,300)[0m
+[[34m18:57:34.537 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,400)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,500)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,600)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,700)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,800)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,900)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1000)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1100)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1200)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1300)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1400)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1500)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1600)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,200)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,300)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,400)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,500)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,600)[0m
+[[34m18:57:34.538 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,700)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,800)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,900)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1000)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1100)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1200)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1300)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1400)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1500)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1600)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,200)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,300)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,400)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,500)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,600)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,700)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,800)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,900)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1000)[0m
+[[34m18:57:34.539 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1100)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1200)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1300)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1400)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1500)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1600)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,200)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,300)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,400)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,500)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,600)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,700)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,800)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,900)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1000)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1100)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1200)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1300)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1400)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1500)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1600)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1700)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1800)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,200)[0m
+[[34m18:57:34.540 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,300)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,400)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,500)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,600)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,700)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,800)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,900)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1000)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1100)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1200)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1300)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1400)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1500)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1600)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1700)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1800)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,200)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,300)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,400)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,500)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,600)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,700)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,800)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,900)[0m
+[[34m18:57:34.541 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1000)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1100)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1200)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1300)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1400)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1500)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1600)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1700)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1800)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,200)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,300)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,400)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,500)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,600)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,700)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,800)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,900)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1000)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1100)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1200)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1300)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1400)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1500)[0m
+[[34m18:57:34.542 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1600)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1700)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1800)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,200)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,300)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,400)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,500)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,600)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,700)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,800)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,900)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1000)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1100)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1200)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1300)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1400)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1500)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1600)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1700)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1800)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,200)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,300)[0m
+[[34m18:57:34.543 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,400)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,500)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,600)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,700)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,800)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,900)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1000)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1100)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1200)[0m
+[[34m18:57:34.544 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1300)[0m
+[[34m18:57:34.551 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1400)[0m
+[[34m18:57:34.551 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1500)[0m
+[[34m18:57:34.551 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1600)[0m
+[[34m18:57:34.551 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1700)[0m
+[[34m18:57:34.551 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1800)[0m
+[[34m18:57:34.551 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:253)] Fin du placement des noeuds en quadrillage[0m
+[[34m18:57:34.552 GRAPHE (DEBUG) on main data.Graphe.placeRidges(Graphe.java:262)] Initialisation des arrêtes[0m
+[[34m18:57:34.739 GRAPHE (DEBUG) on main data.Graphe.placeRidges(Graphe.java:272)] Fin d'initialisation des arrêtes, 90217 arrêtes créées[0m
+[[34m18:57:34.739 GRAPHE (DEBUG) on main data.Graphe.init(Graphe.java:162)] Initialisation terminée : 435 noeuds, 90217 arrêtes[0m
+[[34m18:57:34.740 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass LidarController[0m
+[[34m18:57:34.740 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass LidarController après son initialisation.[0m
+[[34m18:57:34.741 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.symetry to false[0m
+[[34m18:57:34.741 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.robotRay to 190[0m
+[[34m18:57:34.741 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.ennemyRay to 150[0m
+[[34m18:57:34.741 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.LidarController.lidarProcessPath to ../bin/LiDAR_UST_10LX[0m
+[[34m18:57:34.741 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.usingLidar to false[0m
+[[34m18:57:34.742 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module LidarController prêt[0m
+[[34m18:57:34.743 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass CylinderDetectionController[0m
+[[34m18:57:34.744 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass CylinderDetectionController après son initialisation.[0m
+[[34m18:57:34.744 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.usingCylinderDetection to false[0m
+[[34m18:57:34.744 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.symetry to false[0m
+[[34m18:57:34.745 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module CylinderDetectionController prêt[0m
+[[34m18:57:34.745 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass AIModule[0m
+[[34m18:57:34.748 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass AIModule après son initialisation.[0m
+[[34m18:57:34.749 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m18:57:34.749 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m18:57:34.749 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m18:57:34.749 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m18:57:34.749 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m18:57:34.749 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m18:57:34.749 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module AIModule prêt[0m
+[[34m18:57:34.750 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MontlheryController[0m
+[[34m18:57:34.750 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MontlheryController après son initialisation.[0m
+[[34m18:57:34.751 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MontlheryController prêt[0m
+[[31m18:57:34.753 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m18:57:35.254 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[34m18:57:35.556 COMMUNICATION (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:61)] Connection established, starting match[0m
+[[34m18:57:35.708 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:257)] Listener opérationnel[0m
+[[34m18:57:35.755 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:39)] Sent to LL: montlhery[0m
+[[34m18:57:35.755 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:39)] Sent to LL: maxro 0.7853981633974483[0m
+[[34m18:57:35.755 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:39)] Sent to LL: maxtr 180[0m
+[[34m18:57:35.886 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:35.905 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:172)] Controller opérationnel[0m
+[[34m18:57:35.905 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (1) Received 'montlhery'[0m
+[[34m18:57:35.905 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] monthlery received[0m
+[[34m18:57:35.905 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (2) Received 'maxro 0.7853981633974483'[0m
+[[34m18:57:35.905 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (3) Received 'maxtr 180'[0m
+[[34m18:57:35.905 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (4) Received 'sstop'[0m
+[[34m18:57:35.905 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:43.053 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:107)] Sent to LL: av[0m
+[[34m18:57:43.055 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (5) Received 'av'[0m
+[[34m18:57:43.057 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] av received[0m
+[[34m18:57:43.246 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:43.247 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:43.250 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (6) Received 'trstop'[0m
+[[34m18:57:43.252 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (7) Received 'sstop'[0m
+[[34m18:57:43.254 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:44.002 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:107)] Sent to LL: av[0m
+[[34m18:57:44.005 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (8) Received 'av'[0m
+[[34m18:57:44.006 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] av received[0m
+[[34m18:57:44.292 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:44.292 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:44.295 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (9) Received 'trstop'[0m
+[[34m18:57:44.298 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (10) Received 'sstop'[0m
+[[34m18:57:44.300 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:44.871 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:107)] Sent to LL: av[0m
+[[34m18:57:44.874 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (11) Received 'av'[0m
+[[34m18:57:44.876 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] av received[0m
+[[34m18:57:45.000 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:45.001 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:45.004 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (12) Received 'trstop'[0m
+[[34m18:57:45.006 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (13) Received 'sstop'[0m
+[[34m18:57:45.008 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:47.417 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:107)] Sent to LL: av[0m
+[[34m18:57:47.419 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (14) Received 'av'[0m
+[[34m18:57:47.421 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] av received[0m
+[[34m18:57:47.900 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:47.901 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:47.904 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (15) Received 'trstop'[0m
+[[34m18:57:47.906 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (16) Received 'sstop'[0m
+[[34m18:57:47.908 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:49.463 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:107)] Sent to LL: av[0m
+[[34m18:57:49.465 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (17) Received 'av'[0m
+[[34m18:57:49.467 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] av received[0m
+[[34m18:57:49.608 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:49.608 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:49.611 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (18) Received 'trstop'[0m
+[[34m18:57:49.614 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (19) Received 'sstop'[0m
+[[34m18:57:49.615 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:50.076 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:122)] Sent to LL: tg[0m
+[[34m18:57:50.079 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (20) Received 'tg'[0m
+[[34m18:57:50.080 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] tg received[0m
+[[34m18:57:50.237 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: rostop[0m
+[[34m18:57:50.237 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:50.241 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (21) Received 'rostop'[0m
+[[34m18:57:50.243 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (22) Received 'sstop'[0m
+[[34m18:57:50.245 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:50.737 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:122)] Sent to LL: tg[0m
+[[34m18:57:50.739 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (23) Received 'tg'[0m
+[[34m18:57:50.741 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] tg received[0m
+[[34m18:57:50.866 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: rostop[0m
+[[34m18:57:50.866 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:50.869 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (24) Received 'rostop'[0m
+[[34m18:57:50.872 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (25) Received 'sstop'[0m
+[[34m18:57:50.874 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:51.398 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:120)] Sent to LL: td[0m
+[[34m18:57:51.400 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (26) Received 'td'[0m
+[[34m18:57:51.402 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] td received[0m
+[[34m18:57:51.495 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: rostop[0m
+[[34m18:57:51.495 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:51.498 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (27) Received 'rostop'[0m
+[[34m18:57:51.500 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (28) Received 'sstop'[0m
+[[34m18:57:51.502 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:52.252 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:107)] Sent to LL: av[0m
+[[34m18:57:52.254 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (29) Received 'av'[0m
+[[34m18:57:52.256 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] av received[0m
+[[34m18:57:52.655 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:52.655 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:52.658 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (30) Received 'trstop'[0m
+[[34m18:57:52.661 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (31) Received 'sstop'[0m
+[[34m18:57:52.662 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:53.187 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:107)] Sent to LL: av[0m
+[[34m18:57:53.189 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (32) Received 'av'[0m
+[[34m18:57:53.191 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] av received[0m
+[[34m18:57:53.654 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:53.654 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:53.657 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (33) Received 'trstop'[0m
+[[34m18:57:53.660 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (34) Received 'sstop'[0m
+[[34m18:57:53.661 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m
+[[34m18:57:59.152 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:109)] Sent to LL: rc[0m
+[[34m18:57:59.155 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (35) Received 'rc'[0m
+[[34m18:57:59.156 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] rc received[0m
+[[34m18:57:59.313 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: trstop[0m
+[[34m18:57:59.313 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: sstop[0m
+[[34m18:57:59.316 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (36) Received 'trstop'[0m
+[[34m18:57:59.319 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] (37) Received 'sstop'[0m
+[[34m18:57:59.321 LL_DEBUG (DEBUG) on DataController data.controlers.DataController.handleLLDebug(DataController.java:220)] sstop received[0m

@@ -555,8 +555,8 @@ public abstract class Robot implements Module {
      */
     public void switchToMontlheryMode() {
         this.orderWrapper.sendString(MontlheryOrders.Montlhery.toLL());
-        this.orderWrapper.sendString(MontlheryOrders.MaxRotationSpeed.toLL() + " " + Math.PI / 4f);
-        this.orderWrapper.sendString(MontlheryOrders.MaxTranslationSpeed.toLL() + " 180");
+        this.orderWrapper.sendString(MontlheryOrders.MaxRotationSpeed.toLL() + " " + Math.PI / 8f);
+        this.orderWrapper.sendString(MontlheryOrders.MaxTranslationSpeed.toLL() + " 60");
     }
 
     // Gestion des ascenseurs

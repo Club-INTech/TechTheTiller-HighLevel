@@ -1,0 +1,7 @@
+[[31m19:53:21.285 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m19:53:21.286 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m19:53:21.286 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m19:53:21.288 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[31m19:53:21.653 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[31m19:53:21.926 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m19:53:22.426 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m

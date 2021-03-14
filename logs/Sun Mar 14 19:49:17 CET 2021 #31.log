@@ -1,0 +1,762 @@
+[[34m19:49:17.994 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:104)] Version : 138dd36 on dev_LoloElDeglingo - [oups][0m
+[[34m19:49:17.997 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-44-generic amd64[0m
+[[34m19:49:18.005 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 3.88G, available processors : 8[0m
+[[34m19:49:18.005 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:117)] [0m
+[[34m19:49:18.006 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[0m
+[[34m19:49:18.006 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...[0m
+[[34m19:49:18.025 STDOUT (DEBUG) on main pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/bin/../config/config.txt[0m
+[[31m19:49:18.042 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m19:49:18.042 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m19:49:18.043 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m19:49:18.043 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[34m19:49:18.044 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :[0m
+[[34m19:49:18.044 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)[0m
+[[34m19:49:18.045 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)[0m
+[[34m19:49:18.045 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)[0m
+[[34m19:49:18.045 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)[0m
+[[34m19:49:18.046 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)[0m
+[[34m19:49:18.046 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)[0m
+[[34m19:49:18.046 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)[0m
+[[34m19:49:18.046 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)[0m
+[[34m19:49:18.047 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)[0m
+[[34m19:49:18.047 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)[0m
+[[34m19:49:18.057 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table[0m
+[[34m19:49:18.058 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.[0m
+[[34m19:49:18.066 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false[0m
+[[34m19:49:18.066 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000[0m
+[[34m19:49:18.067 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000[0m
+[[34m19:49:18.067 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190[0m
+[[34m19:49:18.067 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70[0m
+[[34m19:49:18.068 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150[0m
+[[34m19:49:18.068 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5[0m
+[[34m19:49:18.068 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false[0m
+[[34m19:49:18.069 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Table prêt[0m
+[[34m19:49:18.069 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe[0m
+[[34m19:49:18.070 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.[0m
+[[34m19:49:18.071 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m19:49:18.071 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m19:49:18.072 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m19:49:18.072 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m19:49:18.073 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m19:49:18.073 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m19:49:18.339 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt[0m
+[[34m19:49:18.339 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Pathfinder[0m
+[[34m19:49:18.340 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Pathfinder après son initialisation.[0m
+[[34m19:49:18.340 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Pathfinder prêt[0m
+[[34m19:49:18.341 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper[0m
+[[34m19:49:18.341 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.[0m
+[[34m19:49:18.342 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false[0m
+[[34m19:49:18.344 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to false[0m
+[[34m19:49:18.345 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false[0m
+[[34m19:49:18.347 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt[0m
+[[34m19:49:18.347 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PathFollower[0m
+[[34m19:49:18.348 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PathFollower après son initialisation.[0m
+[[34m19:49:18.348 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionLoopDelay to 20[0m
+[[34m19:49:18.348 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionDistanceCheck to 200[0m
+[[34m19:49:18.348 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionRadiusCheck to 200[0m
+[[34m19:49:18.349 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionObstructedTimeout to 2000[0m
+[[34m19:49:18.349 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean locomotion.PathFollower.simulation to false[0m
+[[34m19:49:18.353 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PathFollower prêt[0m
+[[34m19:49:18.353 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Locomotion[0m
+[[34m19:49:18.353 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Locomotion après son initialisation.[0m
+[[34m19:49:18.354 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.Locomotion.vectorComparisonThreshold to 5[0m
+[[34m19:49:18.354 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.Locomotion.locomotionObstructedTimeout to 2000[0m
+[[34m19:49:18.354 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Locomotion prêt[0m
+[[34m19:49:18.354 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass HookFactory[0m
+[[34m19:49:18.354 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass HookFactory après son initialisation.[0m
+[[34m19:49:18.354 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module HookFactory prêt[0m
+[[34m19:49:18.355 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager[0m
+[[34m19:49:18.355 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.[0m
+[[34m19:49:18.355 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt[0m
+[[34m19:49:18.355 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SimulatorDebug[0m
+[[34m19:49:18.355 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SimulatorDebug après son initialisation.[0m
+[[34m19:49:18.356 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean utils.communication.SimulatorDebug.active to false[0m
+[[34m19:49:18.356 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SimulatorDebug prêt[0m
+[[34m19:49:18.356 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PanneauModule[0m
+[[34m19:49:18.356 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PanneauModule après son initialisation.[0m
+[[34m19:49:18.357 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.PanneauModule.scoreUpdatePeriod to 100[0m
+[[34m19:49:18.358 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.PanneauModule.couleur to jaune[0m
+[[34m19:49:18.358 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledProgramPort to 19500[0m
+[[34m19:49:18.359 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledCount to 16[0m
+[[34m19:49:18.359 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.PanneauModule.using7Segments to true[0m
+[[34m19:49:18.359 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PanneauModule prêt[0m
+[[34m19:49:18.359 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Master[0m
+[[34m19:49:18.364 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SynchronizationWithBuddy[0m
+[[34m19:49:18.364 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SynchronizationWithBuddy après son initialisation.[0m
+[[34m19:49:18.364 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.symetry to false[0m
+[[34m19:49:18.365 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.simulation to false[0m
+[[34m19:49:18.365 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.master to true[0m
+[[34m19:49:18.365 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SynchronizationWithBuddy prêt[0m
+[[34m19:49:18.365 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Listener[0m
+[[34m19:49:18.365 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Listener après son initialisation.[0m
+[[34m19:49:18.366 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.master to true[0m
+[[34m19:49:18.366 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.simulation to false[0m
+[[34m19:49:18.366 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingLidar to false[0m
+[[34m19:49:18.367 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingCylinderDetection to false[0m
+[[34m19:49:18.367 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseImage to false[0m
+[[34m19:49:18.367 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.visualisation to false[0m
+[[34m19:49:18.367 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseConnection to false[0m
+[[34m19:49:18.368 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.connectToBuddy to false[0m
+[[34m19:49:18.368 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.Listener.timeBetweenPosUpdates to 200[0m
+[[34m19:49:18.370 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Listener prêt[0m
+[[34m19:49:18.370 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MatchTimer[0m
+[[34m19:49:18.370 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:186)] Listener lancé : connection aux devices...[0m
+[[34m19:49:18.370 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MatchTimer après son initialisation.[0m
+[[34m19:49:18.371 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:199)] Lidar[0m
+[[34m19:49:18.371 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MatchTimer prêt[0m
+[[34m19:49:18.371 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:200)] Balise[0m
+[[34m19:49:18.371 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass DataController[0m
+[[34m19:49:18.372 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass DataController après son initialisation.[0m
+[[34m19:49:18.373 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.master to true[0m
+[[34m19:49:18.373 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.symetry to false[0m
+[[34m19:49:18.379 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module DataController prêt[0m
+[[34m19:49:18.380 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:164)] Controller lancé : en attente du listener...[0m
+[[34m19:49:18.380 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Master après son initialisation.[0m
+[[34m19:49:18.380 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long robot.Robot.locomotionLoopDelay to 20[0m
+[[34m19:49:18.381 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.simulation to false[0m
+[[34m19:49:18.381 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.master to true[0m
+[[34m19:49:18.381 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.symetry to false[0m
+[[34m19:49:18.382 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.usingPanel to false[0m
+[[34m19:49:18.382 COMMUNICATION (DEBUG) on pool-1-thread-1 utils.communication.SerialInterface.init(SerialInterface.java:65)] Ouverture de ttyACM0[0m
+[[34m19:49:18.382 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Master prêt[0m
+[[31m19:49:18.382 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[34m19:49:18.382 STRATEGY (DEBUG) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:198)] Couleur: jaune[0m
+[[34m19:49:18.383 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ScriptManagerMaster[0m
+[[34m19:49:18.383 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:203)] Teensy Master[0m
+[[34m19:49:18.383 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ScriptManagerMaster après son initialisation.[0m
+[[34m19:49:18.384 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ScriptManagerMaster prêt[0m
+[[34m19:49:18.708 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass LidarController[0m
+[[34m19:49:18.708 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass LidarController après son initialisation.[0m
+[[34m19:49:18.708 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.symetry to false[0m
+[[34m19:49:18.708 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.robotRay to 190[0m
+[[34m19:49:18.708 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.ennemyRay to 150[0m
+[[34m19:49:18.709 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.LidarController.lidarProcessPath to ../bin/LiDAR_UST_10LX[0m
+[[34m19:49:18.709 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.usingLidar to false[0m
+[[34m19:49:18.709 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module LidarController prêt[0m
+[[34m19:49:18.710 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass CylinderDetectionController[0m
+[[34m19:49:18.711 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass CylinderDetectionController après son initialisation.[0m
+[[34m19:49:18.711 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.usingCylinderDetection to false[0m
+[[34m19:49:18.711 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.symetry to false[0m
+[[34m19:49:18.712 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module CylinderDetectionController prêt[0m
+[[34m19:49:18.713 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass AIModule[0m
+[[34m19:49:18.716 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass AIModule après son initialisation.[0m
+[[34m19:49:18.716 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m19:49:18.716 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m19:49:18.716 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m19:49:18.716 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m19:49:18.716 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m19:49:18.716 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m19:49:18.716 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module AIModule prêt[0m
+[[34m19:49:18.717 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MontlheryController[0m
+[[34m19:49:18.718 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MontlheryController après son initialisation.[0m
+[[34m19:49:18.718 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MontlheryController prêt[0m
+[[31m19:49:18.720 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m19:49:19.221 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[34m19:49:19.423 COMMUNICATION (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:61)] Connection established, starting match[0m
+[[34m19:49:19.585 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:257)] Listener opérationnel[0m
+[[34m19:49:19.722 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:39)] Sent to LL: montlhery[0m
+[[34m19:49:19.722 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:39)] Sent to LL: maxro 0.39269908169872414[0m
+[[34m19:49:19.722 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:39)] Sent to LL: maxtr 60[0m
+[[34m19:49:19.782 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:172)] Controller opérationnel[0m
+[[34m19:49:19.863 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:21.024 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:112)] Sent to LL: av[0m
+[[34m19:49:21.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:21.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:21.749 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:21.862 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:21.862 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:22.168 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:22.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:22.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:22.797 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:112)] Sent to LL: av[0m
+[[34m19:49:23.095 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.095 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.113 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.113 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.154 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.154 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.172 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.172 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.212 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.212 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.231 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.231 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.271 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.271 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.289 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.289 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.330 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.330 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.348 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.348 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.388 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.388 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.407 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.407 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.447 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.447 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.465 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.465 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.506 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.506 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.524 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.524 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.564 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.564 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.583 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.583 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.623 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.623 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.642 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.642 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.682 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.682 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.700 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.701 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.741 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.741 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.759 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.759 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.800 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.800 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.818 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.818 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.858 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.858 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.877 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.877 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.917 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.917 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.935 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.936 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:23.976 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:23.976 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:23.994 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:23.994 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.034 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.035 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.053 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.053 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.093 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.093 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.111 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.111 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.151 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.152 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.170 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.170 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.210 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.210 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.229 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.229 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.269 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.269 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.287 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.287 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.327 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.327 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.386 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.386 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.404 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.404 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:24.444 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:24.444 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:24.463 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:24.463 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:24.463 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:24.882 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:25.075 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:25.075 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:25.284 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:25.413 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:25.413 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:25.622 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:26.379 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:26.379 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:27.023 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:27.233 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:27.233 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:27.475 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:27.620 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:27.620 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:27.926 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:112)] Sent to LL: av[0m
+[[34m19:49:28.352 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.353 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.371 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.371 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.411 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.411 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.429 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.429 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.470 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.470 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.488 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.488 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.528 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.528 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.546 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.546 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.587 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.587 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.605 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.605 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.645 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.646 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.664 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.664 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.704 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.704 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.723 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.723 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.763 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.763 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.781 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.781 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.821 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.822 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.840 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.840 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.880 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.880 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.899 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.899 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.939 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.939 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:28.957 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:28.958 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:28.998 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:28.998 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.016 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.016 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.056 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.056 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.074 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.075 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.115 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.115 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.133 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.133 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.174 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.174 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.192 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.192 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.232 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.232 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.251 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.251 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.291 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.291 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.309 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.309 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.349 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.349 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.368 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.368 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.408 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.408 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.426 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.426 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.467 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.467 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.485 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.485 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.525 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.525 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.544 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.544 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.584 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.584 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.602 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.602 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.642 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.642 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.661 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.661 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.701 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.701 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.719 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.719 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.759 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.760 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.778 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.778 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.818 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.818 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.836 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.837 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.877 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.877 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.895 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.895 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.935 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.935 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:29.953 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:29.953 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:29.994 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:29.994 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:30.012 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:30.012 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:30.052 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:30.052 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:30.071 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:30.071 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:30.111 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:30.111 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:30.130 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:30.130 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:30.170 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:30.170 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:30.188 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:30.189 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:30.229 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:30.229 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:30.247 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:30.247 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:30.287 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:30.288 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:30.306 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:30.306 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:30.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:30.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:30.364 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:30.365 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:112)] Sent to LL: av[0m
+[[34m19:49:30.381 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:30.381 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:31.844 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:32.021 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:32.021 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:32.230 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:32.327 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:32.327 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:32.488 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:34.175 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:34.176 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:34.208 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:34.401 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:34.401 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:34.626 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:34.932 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:34.932 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:35.141 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:35.286 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:35.286 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:35.720 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:112)] Sent to LL: av[0m
+[[34m19:49:36.146 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.146 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.164 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.165 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.205 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.205 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.223 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.223 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.263 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.263 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.282 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.282 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.322 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.322 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.340 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.340 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.380 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.380 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.399 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.399 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.439 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.439 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.457 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.457 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.497 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.498 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.516 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.516 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.556 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.556 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.574 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.574 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.615 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.615 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.633 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.633 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.673 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.673 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.692 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.692 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.732 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.732 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.750 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.750 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.790 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.791 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.809 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.809 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.849 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.849 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.867 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.867 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.907 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.908 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.926 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.926 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:36.966 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:36.966 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:36.984 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:36.985 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.025 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.025 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.043 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.043 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.083 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.083 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.101 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.102 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.142 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.142 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.160 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.160 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.200 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.200 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.218 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.218 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.259 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.259 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.277 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.277 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.317 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.318 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.336 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.336 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.376 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.376 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.394 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.394 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.435 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.435 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.453 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.453 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.493 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.493 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.511 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.512 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.552 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.552 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.570 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.570 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.611 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.611 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.629 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.629 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.669 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.669 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.687 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.687 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.728 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.728 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.746 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.746 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:37.786 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:37.786 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:37.804 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:37.804 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:37.804 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:38.079 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:38.336 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:38.337 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:38.514 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:38.611 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:38.611 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:38.869 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:40.656 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:40.656 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:41.011 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:41.140 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:41.140 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:41.623 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:41.768 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:41.768 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:41.994 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:42.091 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:42.091 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:42.413 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:42.526 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:42.526 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:43.154 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:43.267 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:43.267 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:43.590 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:43.670 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:43.670 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:44.283 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:112)] Sent to LL: av[0m
+[[34m19:49:44.742 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:44.742 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:44.760 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:44.760 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:44.800 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:44.800 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:44.818 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:44.819 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:44.859 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:44.859 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:44.877 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:44.877 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:44.917 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:44.917 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:44.935 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:44.935 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:44.976 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:44.976 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:44.994 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:44.994 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.034 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.034 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.053 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.053 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.093 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.093 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.111 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.111 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.151 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.152 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.170 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.170 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.210 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.210 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.228 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.228 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.269 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.269 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.287 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.287 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.327 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.327 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.345 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.346 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.386 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.386 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.404 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.404 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.444 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.444 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.462 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.462 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.503 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.503 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.521 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.521 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.561 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.561 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.579 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.580 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.620 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.620 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.638 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.638 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.678 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.678 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.697 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.697 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.737 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.737 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.755 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.755 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.796 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.796 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.814 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.814 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.854 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.854 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.872 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.873 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.913 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.913 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.931 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.931 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:45.971 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:45.971 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:45.989 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:45.990 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.030 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.030 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.048 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.048 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.088 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.088 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.107 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.107 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.147 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.147 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.165 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.165 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.206 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.206 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.224 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.224 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.264 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.264 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.282 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.283 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.323 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.323 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.341 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.341 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.381 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.381 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.400 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.400 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.440 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.440 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.458 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.458 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.498 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.498 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.517 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.517 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:100)] Sent to LL: av[0m
+[[34m19:49:46.557 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:102)] Sent to LL: trstop[0m
+[[34m19:49:46.557 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:103)] Sent to LL: td[0m
+[[34m19:49:46.575 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:105)] Sent to LL: rostop[0m
+[[34m19:49:46.575 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:112)] Sent to LL: av[0m
+[[34m19:49:46.624 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:46.624 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:46.914 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:47.622 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:47.622 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:47.735 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:48.104 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:48.105 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:48.233 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.407 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.423 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.423 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.440 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.440 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.456 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.456 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.472 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.472 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.488 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.488 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.505 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.505 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.521 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.521 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.537 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.537 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:49.553 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.554 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:49.570 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:114)] Sent to LL: rc[0m
+[[34m19:49:49.618 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:119)] Sent to LL: trstop[0m
+[[34m19:49:49.619 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:50.198 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:50.376 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:50.376 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:50.601 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:50.762 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:50.762 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:51.004 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:127)] Sent to LL: tg[0m
+[[34m19:49:51.101 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:51.101 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m
+[[34m19:49:51.536 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:125)] Sent to LL: td[0m
+[[34m19:49:51.633 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:132)] Sent to LL: rostop[0m
+[[34m19:49:51.633 ORDERS (DEBUG) on Thread-5 MontlheryController.run(MontlheryController.java:137)] Sent to LL: sstop[0m

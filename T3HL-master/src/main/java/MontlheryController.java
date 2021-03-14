@@ -96,10 +96,16 @@ public class MontlheryController extends Thread implements Module {
                     boolean moving = false;
 
                     if (epsilonCheck(leftAxisY) && epsilonCheck(rightAxisX)) {
-                        if (leftAxisY >0 && rightAxisX >0 ) {
-                            order(MontlheryOrders.GoForward);
-                            order(MontlheryOrders.Right);
-                        }
+                        this.orders.sendString(MontlheryOrders.MaxRotationSpeed.toLL() + " " + Math.PI / 6.5f);
+
+                            order(leftAxisY >0 ? MontlheryOrders.GoForward : MontlheryOrders.GoBackwards);
+                            Thread.sleep(45);
+                            order(MontlheryOrders.StopTranslation);
+                            order(rightAxisX>0 ? MontlheryOrders.Right : MontlheryOrders.Left);
+                            Thread.sleep(12);
+                            order(MontlheryOrders.StopRotation);
+                        this.orders.sendString(MontlheryOrders.MaxRotationSpeed.toLL() + " " + Math.PI / 8f);
+                        continue;
                     }
 
                     if(epsilonCheck(leftAxisY)) {
@@ -131,7 +137,7 @@ public class MontlheryController extends Thread implements Module {
                     if(!moving) {
                         order(MontlheryOrders.Stop);
                     }
-                } catch (ControllerUnpluggedException e) {
+                } catch (ControllerUnpluggedException | InterruptedException e) {
                     e.printStackTrace();
                 }
             } else {

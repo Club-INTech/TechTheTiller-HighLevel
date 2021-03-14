@@ -1,0 +1,32 @@
+[[31m03:04:50.918 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m03:04:50.919 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m03:04:50.919 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m03:04:50.921 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[31m03:04:51.285 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[31m03:04:51.621 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:52.121 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:52.285 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m03:04:52.622 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:53.123 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:53.624 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:53.787 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m03:04:54.125 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:54.625 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:55.126 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:55.287 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m03:04:55.627 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:56.128 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:56.629 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:56.788 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m03:04:57.129 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:57.630 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:58.131 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:58.289 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m03:04:58.632 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:59.133 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:59.633 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:04:59.790 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
+[[31m03:05:00.134 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:05:00.635 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:05:01.135 COMMUNICATION (CRITICAL) on Thread-5 connection.Connection.send(Connection.java:145)] TEENSY_MASTER WAITING FOR OPENNESS[0m
+[[31m03:05:01.291 COMMUNICATION (CRITICAL) on Thread-3 utils.communication.SerialInterface.lambda$init$0(SerialInterface.java:73)] Echec de l'ouverture du port! Réessai dans 0.5s[0m
