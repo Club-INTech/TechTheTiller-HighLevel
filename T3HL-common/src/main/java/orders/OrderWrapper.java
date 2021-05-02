@@ -402,21 +402,7 @@ public class OrderWrapper implements Module {
                 state.setData(true);
                 this.sendString("!"+order.toLL());
                 Module.waitWhileTrue(state);
-////////////////////////////////////////////////////////
-/*            } else if(order instanceof ElevatorOrder && order instanceof SidedOrder) {
-                RobotSide side = RobotSide.RIGHT;
-                if(order instanceof SidedOrder) { // TODO: unsided versions?
-                    side = ((SidedOrder) order).side();
-                }
-                SensorState<Boolean> state = SensorState.RIGHT_ELEVATOR_MOVING;
-                if(side == RobotSide.LEFT) {
-                    state = SensorState.LEFT_ELEVATOR_MOVING;
-                }
-                state.setData(true);
-                this.sendString("!"+order.toLL());
-                Module.waitWhileTrue(state);
 
- */////////////////////////////////////////////////////////////////////////////
             } else {
                 SensorState.ACTUATOR_ACTUATING.setData(true);
                 this.sendString("!"+order.toLL());
@@ -425,5 +411,10 @@ public class OrderWrapper implements Module {
         } else {
             sendString(order.toLL());
         }
+    }
+
+    public void suck(int posventouse, int succion, Runnable[] parallelActions) {
+        sendString(MotionOrders.Suck.with(posventouse,succion));
+        runAll(parallelActions);
     }
 }

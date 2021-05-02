@@ -1,0 +1,6 @@
+[[31m17:32:01.464 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m17:32:01.465 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m17:32:01.466 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m17:32:01.467 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[31m17:32:02.110 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[31m17:32:17.757 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:181)] Failed to reach position because of someone in front of me! Enemy intersects [(1317,985):(1317,785)]: Obstacle mobile circulaire Circle [center: (1420,1028), ray : 340.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (1317,432)[0m

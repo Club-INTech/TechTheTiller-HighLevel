@@ -44,6 +44,7 @@ public class MotionOrders {
     public static final Order DisableRotationControl = OrderBuilder.createSimple("cr0");
     /** Activer l'asserv en rotation */
     public static final Order EnableRotationControl = OrderBuilder.createSimple("cr1");
+    public static OrderWithArgument Suck;
 
     private MotionOrders() {}
 }

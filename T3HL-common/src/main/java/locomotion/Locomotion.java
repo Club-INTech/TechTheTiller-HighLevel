@@ -118,7 +118,9 @@ public class Locomotion implements Module {
      */
     public void moveLengthwise(int distance) throws UnableToMoveException, TimeoutError {
         moveLengthwise(distance, false);
+
     }
+
 
     /**
      * Méthode permettant au robot d'avancer : bloquant
@@ -365,4 +367,6 @@ public class Locomotion implements Module {
     public Graphe getGraphe() {
         return graphe;
     }
+
+
 }

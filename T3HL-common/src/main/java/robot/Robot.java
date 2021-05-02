@@ -1,55 +1,39 @@
-/**
- * Copyright (c) 2018, INTech.
- * this file is part of INTech's HighLevel.
- * <p>
- * INTech's HighLevel is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- * <p>
- * INTech's HighLevel is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * <p>
- * You should have received a copy of the GNU General Public License
- * along with it.  If not, see <http://www.gnu.org/licenses/>.
- **/
 
-package robot;
 
-import com.panneau.Panneau;
-import connection.Connection;
-import data.*;
-import data.controlers.DataController;
-import data.controlers.PanneauModule;
-import data.synchronization.SynchronizationWithBuddy;
-import locomotion.Locomotion;
-import locomotion.UnableToMoveException;
-import locomotion.UnableToMoveReason;
-import lowlevel.order.Order;
-import orders.OrderWrapper;
-import orders.Speed;
-import orders.hooks.HookFactory;
-import orders.hooks.HookNames;
-import orders.order.MontlheryOrders;
-import pfg.config.Configurable;
-import utils.HLInstance;
-import utils.Log;
-import utils.RobotSide;
-import utils.TimeoutError;
-import utils.communication.CommunicationException;
-import utils.communication.SimulatorDebug;
-import utils.container.ContainerException;
-import utils.container.Module;
-import utils.math.Vec2;
-import utils.math.VectCartesian;
+        package robot;
 
-import java.io.IOException;
-import java.util.Objects;
-import java.util.Stack;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
+        import com.panneau.Panneau;
+        import connection.Connection;
+        import data.*;
+        import data.controlers.DataController;
+        import data.controlers.PanneauModule;
+        import data.synchronization.SynchronizationWithBuddy;
+        import locomotion.Locomotion;
+        import locomotion.UnableToMoveException;
+        import locomotion.UnableToMoveReason;
+        import lowlevel.order.Order;
+        import orders.OrderWrapper;
+        import orders.Speed;
+        import orders.hooks.HookFactory;
+        import orders.hooks.HookNames;
+        import orders.order.MontlheryOrders;
+        import pfg.config.Configurable;
+        import utils.HLInstance;
+        import utils.Log;
+        import utils.RobotSide;
+        import utils.TimeoutError;
+        import utils.communication.CommunicationException;
+        import utils.communication.SimulatorDebug;
+        import utils.container.ContainerException;
+        import utils.container.Module;
+        import utils.math.Vec2;
+        import utils.math.VectCartesian;
+
+        import java.io.IOException;
+        import java.util.Objects;
+        import java.util.Stack;
+        import java.util.concurrent.TimeUnit;
+        import java.util.function.Consumer;
 
 /**
  * Classe regroupant tout les services et fonctionnalitées de base du robot
@@ -162,31 +146,7 @@ public abstract class Robot implements Module {
             }
         }
     }
-///////////////////////////////////////////////////////////////////////////////////
-/*    public void waitForLeftElevator() {
-        waitForElevator("left");
-    }
 
-    public void waitForRightElevator() {
-        waitForElevator("right");
-    }
-
-    public void waitForElevator(String side) {
-        SensorState<Boolean> state;
-        switch (side.toLowerCase()) {
-            case "left":
-                state = SensorState.LEFT_ELEVATOR_MOVING;
-                break;
-            case "right":
-                state = SensorState.RIGHT_ELEVATOR_MOVING;
-                break;
-            default:
-                throw new IllegalArgumentException("Côté non reconnu: "+side);
-        }
-        state.setData(true);
-        Module.waitWhileTrue(state::getData);
-    }
-*//////////////////////////////////////////////////////////////////////////////////
 
     /**
      * Ordonnes un 'goto' vers le LL. ATTENTION! Cette méthode ne prend PAS en compte le pathfinding! Si ça va dans le mur c'est votre faute
@@ -310,69 +270,7 @@ public abstract class Robot implements Module {
         this.moveLengthwise((int) Math.round(point.distanceTo(XYO.getRobotInstance().getPosition())), expectingWallImpact);
     }
 
-    //Permet d'attrapper un gobelet avec sa couleur et sa position
 
-    // Pas testé !!!
-
-    public void catchVerre(Vec2 positionVerre, boolean couloir) {   //true = droite
-        int xRobot = XYO.getRobotInstance().getPosition().getX() + 1500;
-        int yRobot = XYO.getRobotInstance().getPosition().getY();
-        int xVerre = positionVerre.getX() + 1500;
-        int yVerre = positionVerre.getY();
-        int d = 50;
-        double xa = xVerre - xRobot;
-        double ya = yVerre - yRobot;
-        double xb;
-        double yb;
-
-        if (xa == 0) {
-            xb = 1;
-            yb = 0;
-        }
-
-        if (ya == 0) {
-            xb = 0;
-            yb = 1;
-        } else {
-            double a = 1 / ((Math.pow(ya, 2) / Math.pow(xa, 2)) + 1);
-            yb = Math.pow(a, 0.5);
-            xb = Math.pow(1 - a, 0.5);
-        }
-
-        if (couloir) {
-            if (xa <= 0) {
-                if (ya > 0) {
-                    xb = -xb;
-                }
-                yb = -yb;
-            }
-            if (xa > 0) {
-                if (ya > 0) {
-                    xb = -xb;
-                }
-            }
-        }
-        if (!couloir) {
-            if (xa <= 0) {
-                if (ya > 0) {
-                    yb = -yb;
-                }
-                xb = -xb;
-            }
-            if (xa > 0) {
-                if (ya > 0) {
-                    yb = -yb;
-                }
-            }
-        }
-        Vec2 point = new VectCartesian(xVerre + xb * d, yVerre + yb * d);
-        try {
-            turnToPoint(point);
-            moveLengthwise((int) Math.pow(Math.pow(xRobot - (xVerre + xb * d), 2) + Math.pow(yRobot - (yVerre + yb * d), 2), 0.5), false);
-        } catch (UnableToMoveException e) {
-            e.printStackTrace();
-        }
-    }
 
     /**
      * Permet au robot d'avancer/recluer en ligne droite
@@ -562,48 +460,6 @@ public abstract class Robot implements Module {
     // Gestion des ascenseurs
 
     /**
-     * Renvoie le nombre de palets dans l'ascenseur de droite
-     * @return
-     */
-    public int getNbPaletsGauches() {
-        if (master && symetry()) { // le secondaire ne fait pas de symétrie ici
-            return getNbPaletsDroitsNoSymetry();
-        } else {
-            return getNbPaletsGauchesNoSymetry();
-        }
-    }
-
-    /**
-     * Renvoie le nombre de palets dans l'ascenseur de droite
-     * @return
-     */
-    public int getNbPaletsDroits() {
-        if (master && symetry()) { // le secondaire ne fait pas de symétrie ici
-            return getNbPaletsGauchesNoSymetry();
-        } else {
-            return getNbPaletsDroitsNoSymetry();
-        }
-    }
-
-    /**
-     * Renvoie le nombre de palets dans l'ascenseur de droite
-     * @return
-     */
-    public int getNbPaletsDroitsNoSymetry() {
-        Objects.requireNonNull(rightElevator, "Tentative de compter le nombre de palets dans l'ascenseur de droite alors qu'il n'y a pas d'ascenseur à droite dans ce robot!");
-        return rightElevator.size();
-    }
-
-    /**
-     * Renvoie le nombre de palets dans l'ascenseur de droite
-     * @return
-     */
-    public int getNbPaletsGauchesNoSymetry() {
-        Objects.requireNonNull(rightElevator, "Tentative de compter le nombre de palets dans l'ascenseur de droite alors qu'il n'y a pas d'ascenseur à droite dans ce robot!");
-        return leftElevator.size();
-    }
-
-    /**
      * Initialises l'ascenseur de droite
      */
     protected void createRightElevator() {
@@ -636,94 +492,7 @@ public abstract class Robot implements Module {
         simulatorDebug.sendCouloirContents(RobotSide.RIGHT, rightCouloir);
     }
 
-    private void sendLighthouseUpdate() {
-        simulatorDebug.sendLighthouseContents(lighthouse);
-    }
 
-    /**
-     * Ajoute un verre dans le couloir de droite
-     */
-
-
-    public void pushCouloirDroit(CouleurVerre verre) {
-
-        if (symetry()) {
-            pushCouloirGaucheNoSymetry(verre);
-        } else {
-            pushCouloirDroitNoSymetry(verre);
-        }
-    }
-
-    /**
-     * Ajoute un verre dans le couloir de gauche
-     */
-    public void pushCouloirGauche(CouleurVerre verre) {
-        if (symetry()) {
-            pushCouloirDroitNoSymetry(verre);
-        } else {
-            pushCouloirGaucheNoSymetry(verre);
-        }
-    }
-
-    public void emptyBothCouloirs() {
-        emptyCouloirDroit();
-        emptyCouloirGauche();
-    }
-
-    public void emptyCouloirDroit() {
-
-        if (symetry()) {
-            emptyCouloirGaucheNoSymetry();
-        } else {
-            emptyCouloirDroitNoSymetry();
-        }
-    }
-
-    public void emptyCouloirGauche() {
-
-        if (symetry()) {
-            emptyCouloirDroitNoSymetry();
-        } else {
-            emptyCouloirGaucheNoSymetry();
-        }
-    }
-
-    public void emptyCouloirDroitNoSymetry() {
-        rightCouloir.clear();
-        sendCouloirUpdate();
-    }
-
-    public void emptyCouloirGaucheNoSymetry() {
-        leftCouloir.clear();
-        sendCouloirUpdate();
-    }
-
-
-    /**
-     * Ajoute un verre dans le couloir de droite
-     */
-    public void pushCouloirDroitNoSymetry(CouleurVerre verre) {
-        rightCouloir.push(verre);
-        sendCouloirUpdate();
-    }
-
-    /**
-     * Ajoute un verre dans le couloir de gauche
-     */
-    public void pushCouloirGaucheNoSymetry(CouleurVerre verre) {
-        leftCouloir.push(verre);
-        sendCouloirUpdate();
-    }
-
-    /** Valide le Phare
-     * */
-
-    public void validateLighthouse() {
-        lighthouse = true;
-        if (simulatorDebug != null) {
-            simulatorDebug.sendLighthouseContents(true);
-        }
-    }
 
     public boolean getLighthouse() {
         return lighthouse;
@@ -744,18 +513,6 @@ public abstract class Robot implements Module {
     }
 
 
-    /**
-     * Ajoute un palet dans l'ascenseur de droite
-     * @throws NullPointerException si l'ascenseur n'existe pas
-     */
-    public void pushPaletDroit(CouleurPalet palet) {
-
-        if (master && symetry()) { // le secondaire ne fait pas de symétrie ici
-            pushPaletGaucheNoSymetry(palet);
-        } else {
-            pushPaletDroitNoSymetry(palet);
-        }
-    }
 
     /**
      * Ajoute un palet dans l'ascenseur de gauche
@@ -787,52 +544,6 @@ public abstract class Robot implements Module {
         Objects.requireNonNull(leftElevator, "Tentative d'insérer un palet dans l'ascenseur de gauche alors qu'il n'y a pas d'ascenseur à droite dans ce robot!");
         leftElevator.push(palet);
         sendElevatorUpdate();
-    }
-
-    /**
-     * Retire un palet dans l'ascenseur de droite
-     * @throws NullPointerException si l'ascenseur n'existe pas
-     */
-    public CouleurPalet popPaletDroit() {
-        if (master && symetry()) { // le secondaire ne fait pas de symétrie ici
-            return popPaletGaucheNoSymetry();
-        } else {
-            return popPaletDroitNoSymetry();
-        }
-    }
-
-    /**
-     * Retire un palet dans l'ascenseur de gauche
-     * @throws NullPointerException si l'ascenseur n'existe pas
-     */
-    public CouleurPalet popPaletGauche() {
-        if (master && symetry()) { // le secondaire ne fait pas de symétrie ici
-            return popPaletDroitNoSymetry();
-        } else {
-            return popPaletGaucheNoSymetry();
-        }
-    }
-
-    /**
-     * Retire un palet dans l'ascenseur de droite
-     * @throws NullPointerException si l'ascenseur n'existe pas
-     */
-    public CouleurPalet popPaletDroitNoSymetry() {
-        Objects.requireNonNull(rightElevator, "Tentative de retirer un palet dans l'ascenseur de droite alors qu'il n'y a pas d'ascenseur à droite dans ce robot!");
-        CouleurPalet result = rightElevator.pop();
-        sendElevatorUpdate();
-        return result;
-    }
-
-    /**
-     * Retire un palet dans l'ascenseur de gauche
-     * @throws NullPointerException si l'ascenseur n'existe pas
-     */
-    public CouleurPalet popPaletGaucheNoSymetry() {
-        Objects.requireNonNull(leftElevator, "Tentative de retirer un palet dans l'ascenseur de gauche alors qu'il n'y a pas d'ascenseur à droite dans ce robot!");
-        CouleurPalet result = leftElevator.pop();
-        sendElevatorUpdate();
-        return result;
     }
 
     /**
@@ -902,4 +613,11 @@ public abstract class Robot implements Module {
         return this.xyo;
     }
 
+    public void suck(int posventouse, int succion, Runnable... runnables) throws UnableToMoveException {
+        this.orderWrapper.suck(posventouse,succion,runnables);
+    }
+
+
 }
+
+

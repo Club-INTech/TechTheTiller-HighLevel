@@ -1,0 +1,973 @@
+[[34m16:28:43.132 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:104)] Version : 820c3d8 on dev_T - [Ecriture script pour l'autre coté avec commande en fonction de posstart][0m
+[[34m16:28:43.149 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-50-generic amd64[0m
+[[34m16:28:43.164 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 15.0.1, max memory : 1.89G, available processors : 4[0m
+[[34m16:28:43.165 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:117)] [0m
+[[34m16:28:43.165 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[0m
+[[34m16:28:43.166 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...[0m
+[[34m16:28:43.196 STDOUT (DEBUG) on main pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/salembien/Bureau/JAVA/INTech/TechTheTiller-HighLevel/bin/../config/config.txt[0m
+[[31m16:28:43.223 STDERR (CRITICAL) on main] Unknown key : RECALAGE_ACC, also tried recalageAcc[0m
+[[31m16:28:43.224 STDERR (CRITICAL) on main] Unknown key : SECOURS, also tried secours[0m
+[[31m16:28:43.225 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc[0m
+[[31m16:28:43.227 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[34m16:28:43.228 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :[0m
+[[34m16:28:43.229 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)[0m
+[[34m16:28:43.229 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)[0m
+[[34m16:28:43.230 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)[0m
+[[34m16:28:43.231 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)[0m
+[[34m16:28:43.232 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)[0m
+[[34m16:28:43.233 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)[0m
+[[34m16:28:43.233 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)[0m
+[[34m16:28:43.234 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)[0m
+[[34m16:28:43.235 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)[0m
+[[34m16:28:43.248 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table[0m
+[[34m16:28:43.250 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.[0m
+[[34m16:28:43.263 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false[0m
+[[34m16:28:43.264 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000[0m
+[[34m16:28:43.265 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000[0m
+[[34m16:28:43.266 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190[0m
+[[34m16:28:43.267 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70[0m
+[[34m16:28:43.267 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150[0m
+[[34m16:28:43.268 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5[0m
+[[34m16:28:43.269 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false[0m
+[[34m16:28:43.270 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Table prêt[0m
+[[34m16:28:43.271 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe[0m
+[[34m16:28:43.273 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.[0m
+[[34m16:28:43.274 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m16:28:43.275 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m16:28:43.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m16:28:43.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m16:28:43.277 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m16:28:43.278 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m16:28:43.279 GRAPHE (DEBUG) on main data.Graphe.init(Graphe.java:147)] Initialisation du Graphe...[0m
+[[34m16:28:43.280 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:241)] Placement des noeuds en quadrillage[0m
+[[34m16:28:43.281 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,0)[0m
+[[34m16:28:43.282 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,100)[0m
+[[34m16:28:43.283 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,200)[0m
+[[34m16:28:43.283 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,300)[0m
+[[34m16:28:43.284 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,400)[0m
+[[34m16:28:43.285 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,500)[0m
+[[34m16:28:43.285 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,600)[0m
+[[34m16:28:43.286 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,700)[0m
+[[34m16:28:43.286 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,800)[0m
+[[34m16:28:43.287 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,900)[0m
+[[34m16:28:43.288 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1000)[0m
+[[34m16:28:43.288 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1100)[0m
+[[34m16:28:43.289 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1200)[0m
+[[34m16:28:43.289 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1300)[0m
+[[34m16:28:43.290 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1400)[0m
+[[34m16:28:43.291 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1500)[0m
+[[34m16:28:43.291 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1600)[0m
+[[34m16:28:43.291 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1700)[0m
+[[34m16:28:43.292 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1800)[0m
+[[34m16:28:43.293 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1500,1900)[0m
+[[34m16:28:43.293 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,0)[0m
+[[34m16:28:43.294 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,100)[0m
+[[34m16:28:43.294 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,200)[0m
+[[34m16:28:43.295 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,300)[0m
+[[34m16:28:43.295 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,400)[0m
+[[34m16:28:43.296 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,500)[0m
+[[34m16:28:43.296 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,600)[0m
+[[34m16:28:43.296 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,700)[0m
+[[34m16:28:43.297 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,800)[0m
+[[34m16:28:43.297 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,900)[0m
+[[34m16:28:43.298 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1000)[0m
+[[34m16:28:43.298 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1100)[0m
+[[34m16:28:43.299 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1200)[0m
+[[34m16:28:43.299 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1300)[0m
+[[34m16:28:43.299 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1400)[0m
+[[34m16:28:43.300 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1500)[0m
+[[34m16:28:43.300 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1600)[0m
+[[34m16:28:43.301 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1700)[0m
+[[34m16:28:43.302 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1800)[0m
+[[34m16:28:43.302 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1400,1900)[0m
+[[34m16:28:43.303 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,0)[0m
+[[34m16:28:43.303 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,100)[0m
+[[34m16:28:43.304 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,200)[0m
+[[34m16:28:43.304 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,300)[0m
+[[34m16:28:43.305 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,400)[0m
+[[34m16:28:43.305 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,500)[0m
+[[34m16:28:43.306 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,600)[0m
+[[34m16:28:43.306 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,700)[0m
+[[34m16:28:43.307 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,800)[0m
+[[34m16:28:43.307 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,900)[0m
+[[34m16:28:43.308 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1000)[0m
+[[34m16:28:43.309 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1100)[0m
+[[34m16:28:43.309 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1200)[0m
+[[34m16:28:43.309 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1300)[0m
+[[34m16:28:43.310 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1400)[0m
+[[34m16:28:43.310 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1500)[0m
+[[34m16:28:43.311 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1600)[0m
+[[34m16:28:43.311 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1700)[0m
+[[34m16:28:43.312 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1800)[0m
+[[34m16:28:43.312 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1300,1900)[0m
+[[34m16:28:43.313 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,0)[0m
+[[34m16:28:43.313 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,100)[0m
+[[34m16:28:43.314 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,200)[0m
+[[34m16:28:43.314 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,300)[0m
+[[34m16:28:43.315 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,400)[0m
+[[34m16:28:43.315 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,500)[0m
+[[34m16:28:43.316 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,600)[0m
+[[34m16:28:43.316 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,700)[0m
+[[34m16:28:43.316 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,800)[0m
+[[34m16:28:43.317 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,900)[0m
+[[34m16:28:43.318 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1000)[0m
+[[34m16:28:43.318 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1100)[0m
+[[34m16:28:43.318 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1200)[0m
+[[34m16:28:43.319 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1300)[0m
+[[34m16:28:43.319 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1400)[0m
+[[34m16:28:43.320 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1500)[0m
+[[34m16:28:43.320 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1600)[0m
+[[34m16:28:43.321 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1700)[0m
+[[34m16:28:43.321 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1800)[0m
+[[34m16:28:43.321 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1200,1900)[0m
+[[34m16:28:43.322 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,0)[0m
+[[34m16:28:43.322 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,100)[0m
+[[34m16:28:43.322 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,200)[0m
+[[34m16:28:43.323 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,300)[0m
+[[34m16:28:43.323 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,400)[0m
+[[34m16:28:43.323 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,500)[0m
+[[34m16:28:43.323 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,600)[0m
+[[34m16:28:43.324 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,700)[0m
+[[34m16:28:43.324 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,800)[0m
+[[34m16:28:43.324 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,900)[0m
+[[34m16:28:43.325 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1000)[0m
+[[34m16:28:43.325 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1100)[0m
+[[34m16:28:43.325 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1200)[0m
+[[34m16:28:43.326 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1300)[0m
+[[34m16:28:43.326 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1400)[0m
+[[34m16:28:43.326 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1500)[0m
+[[34m16:28:43.326 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1600)[0m
+[[34m16:28:43.327 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1700)[0m
+[[34m16:28:43.327 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1800)[0m
+[[34m16:28:43.327 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1100,1900)[0m
+[[34m16:28:43.327 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,0)[0m
+[[34m16:28:43.328 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,100)[0m
+[[34m16:28:43.328 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,200)[0m
+[[34m16:28:43.329 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,300)[0m
+[[34m16:28:43.329 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,400)[0m
+[[34m16:28:43.329 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,500)[0m
+[[34m16:28:43.329 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,600)[0m
+[[34m16:28:43.330 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,700)[0m
+[[34m16:28:43.330 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,800)[0m
+[[34m16:28:43.330 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,900)[0m
+[[34m16:28:43.330 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1000)[0m
+[[34m16:28:43.330 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1100)[0m
+[[34m16:28:43.331 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1200)[0m
+[[34m16:28:43.331 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1300)[0m
+[[34m16:28:43.331 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1400)[0m
+[[34m16:28:43.331 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1500)[0m
+[[34m16:28:43.332 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1600)[0m
+[[34m16:28:43.332 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1700)[0m
+[[34m16:28:43.332 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1800)[0m
+[[34m16:28:43.332 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-1000,1900)[0m
+[[34m16:28:43.332 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,0)[0m
+[[34m16:28:43.333 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,100)[0m
+[[34m16:28:43.333 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,200)[0m
+[[34m16:28:43.333 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,300)[0m
+[[34m16:28:43.334 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,400)[0m
+[[34m16:28:43.334 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,500)[0m
+[[34m16:28:43.334 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,600)[0m
+[[34m16:28:43.335 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,700)[0m
+[[34m16:28:43.335 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,800)[0m
+[[34m16:28:43.336 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,900)[0m
+[[34m16:28:43.336 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1000)[0m
+[[34m16:28:43.336 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1100)[0m
+[[34m16:28:43.336 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1200)[0m
+[[34m16:28:43.337 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1300)[0m
+[[34m16:28:43.337 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1400)[0m
+[[34m16:28:43.337 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1500)[0m
+[[34m16:28:43.338 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1600)[0m
+[[34m16:28:43.338 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1700)[0m
+[[34m16:28:43.338 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1800)[0m
+[[34m16:28:43.339 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-900,1900)[0m
+[[34m16:28:43.339 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,0)[0m
+[[34m16:28:43.339 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,100)[0m
+[[34m16:28:43.340 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,200)[0m
+[[34m16:28:43.340 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,300)[0m
+[[34m16:28:43.340 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,400)[0m
+[[34m16:28:43.340 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,500)[0m
+[[34m16:28:43.340 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,600)[0m
+[[34m16:28:43.341 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,700)[0m
+[[34m16:28:43.341 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,800)[0m
+[[34m16:28:43.341 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,900)[0m
+[[34m16:28:43.341 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1000)[0m
+[[34m16:28:43.341 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1100)[0m
+[[34m16:28:43.342 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1200)[0m
+[[34m16:28:43.342 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1300)[0m
+[[34m16:28:43.342 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1400)[0m
+[[34m16:28:43.342 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1500)[0m
+[[34m16:28:43.342 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1600)[0m
+[[34m16:28:43.343 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1700)[0m
+[[34m16:28:43.343 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1800)[0m
+[[34m16:28:43.343 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-800,1900)[0m
+[[34m16:28:43.343 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,0)[0m
+[[34m16:28:43.343 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,100)[0m
+[[34m16:28:43.343 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,200)[0m
+[[34m16:28:43.344 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,300)[0m
+[[34m16:28:43.344 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,400)[0m
+[[34m16:28:43.344 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,500)[0m
+[[34m16:28:43.344 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,600)[0m
+[[34m16:28:43.344 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,700)[0m
+[[34m16:28:43.345 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,800)[0m
+[[34m16:28:43.345 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,900)[0m
+[[34m16:28:43.345 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1000)[0m
+[[34m16:28:43.345 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1100)[0m
+[[34m16:28:43.345 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1200)[0m
+[[34m16:28:43.346 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1300)[0m
+[[34m16:28:43.346 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1400)[0m
+[[34m16:28:43.346 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1500)[0m
+[[34m16:28:43.346 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1600)[0m
+[[34m16:28:43.346 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1700)[0m
+[[34m16:28:43.347 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1800)[0m
+[[34m16:28:43.347 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-700,1900)[0m
+[[34m16:28:43.347 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,0)[0m
+[[34m16:28:43.347 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,100)[0m
+[[34m16:28:43.347 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,200)[0m
+[[34m16:28:43.348 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,300)[0m
+[[34m16:28:43.348 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,400)[0m
+[[34m16:28:43.348 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,500)[0m
+[[34m16:28:43.348 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,600)[0m
+[[34m16:28:43.348 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,700)[0m
+[[34m16:28:43.348 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,800)[0m
+[[34m16:28:43.349 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,900)[0m
+[[34m16:28:43.349 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1000)[0m
+[[34m16:28:43.349 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1100)[0m
+[[34m16:28:43.349 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1200)[0m
+[[34m16:28:43.349 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1300)[0m
+[[34m16:28:43.350 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1400)[0m
+[[34m16:28:43.350 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1500)[0m
+[[34m16:28:43.350 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1600)[0m
+[[34m16:28:43.350 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1700)[0m
+[[34m16:28:43.350 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1800)[0m
+[[34m16:28:43.351 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-600,1900)[0m
+[[34m16:28:43.351 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,0)[0m
+[[34m16:28:43.351 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,100)[0m
+[[34m16:28:43.351 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,200)[0m
+[[34m16:28:43.351 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,300)[0m
+[[34m16:28:43.351 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,400)[0m
+[[34m16:28:43.352 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,500)[0m
+[[34m16:28:43.352 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,600)[0m
+[[34m16:28:43.352 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,700)[0m
+[[34m16:28:43.352 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,800)[0m
+[[34m16:28:43.353 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,900)[0m
+[[34m16:28:43.353 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1000)[0m
+[[34m16:28:43.353 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1100)[0m
+[[34m16:28:43.354 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1200)[0m
+[[34m16:28:43.354 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1300)[0m
+[[34m16:28:43.354 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1400)[0m
+[[34m16:28:43.355 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1500)[0m
+[[34m16:28:43.355 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1600)[0m
+[[34m16:28:43.355 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1700)[0m
+[[34m16:28:43.355 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1800)[0m
+[[34m16:28:43.356 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-500,1900)[0m
+[[34m16:28:43.356 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,0)[0m
+[[34m16:28:43.356 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,100)[0m
+[[34m16:28:43.357 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,200)[0m
+[[34m16:28:43.357 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,300)[0m
+[[34m16:28:43.357 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,400)[0m
+[[34m16:28:43.358 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,500)[0m
+[[34m16:28:43.358 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,600)[0m
+[[34m16:28:43.358 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,700)[0m
+[[34m16:28:43.359 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,800)[0m
+[[34m16:28:43.359 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,900)[0m
+[[34m16:28:43.359 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1000)[0m
+[[34m16:28:43.359 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1100)[0m
+[[34m16:28:43.359 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1200)[0m
+[[34m16:28:43.360 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1300)[0m
+[[34m16:28:43.360 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1400)[0m
+[[34m16:28:43.360 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1500)[0m
+[[34m16:28:43.360 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1600)[0m
+[[34m16:28:43.361 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1700)[0m
+[[34m16:28:43.361 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1800)[0m
+[[34m16:28:43.361 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-400,1900)[0m
+[[34m16:28:43.362 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,0)[0m
+[[34m16:28:43.362 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,100)[0m
+[[34m16:28:43.362 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,200)[0m
+[[34m16:28:43.363 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,300)[0m
+[[34m16:28:43.363 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,400)[0m
+[[34m16:28:43.363 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,500)[0m
+[[34m16:28:43.363 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,600)[0m
+[[34m16:28:43.364 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,700)[0m
+[[34m16:28:43.364 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,800)[0m
+[[34m16:28:43.364 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,900)[0m
+[[34m16:28:43.364 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1000)[0m
+[[34m16:28:43.365 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1100)[0m
+[[34m16:28:43.365 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1200)[0m
+[[34m16:28:43.365 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1300)[0m
+[[34m16:28:43.365 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1400)[0m
+[[34m16:28:43.366 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1500)[0m
+[[34m16:28:43.366 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1600)[0m
+[[34m16:28:43.366 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1700)[0m
+[[34m16:28:43.367 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1800)[0m
+[[34m16:28:43.367 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-300,1900)[0m
+[[34m16:28:43.367 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,0)[0m
+[[34m16:28:43.367 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,100)[0m
+[[34m16:28:43.367 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,200)[0m
+[[34m16:28:43.368 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,300)[0m
+[[34m16:28:43.368 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,400)[0m
+[[34m16:28:43.368 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,500)[0m
+[[34m16:28:43.368 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,600)[0m
+[[34m16:28:43.368 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,700)[0m
+[[34m16:28:43.368 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,800)[0m
+[[34m16:28:43.368 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,900)[0m
+[[34m16:28:43.369 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1000)[0m
+[[34m16:28:43.369 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1100)[0m
+[[34m16:28:43.369 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1200)[0m
+[[34m16:28:43.370 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1300)[0m
+[[34m16:28:43.370 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1400)[0m
+[[34m16:28:43.370 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1500)[0m
+[[34m16:28:43.370 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1600)[0m
+[[34m16:28:43.370 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1700)[0m
+[[34m16:28:43.371 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1800)[0m
+[[34m16:28:43.371 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-200,1900)[0m
+[[34m16:28:43.371 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,0)[0m
+[[34m16:28:43.371 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,100)[0m
+[[34m16:28:43.371 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,200)[0m
+[[34m16:28:43.372 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,300)[0m
+[[34m16:28:43.372 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,400)[0m
+[[34m16:28:43.372 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,500)[0m
+[[34m16:28:43.372 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,600)[0m
+[[34m16:28:43.372 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,700)[0m
+[[34m16:28:43.372 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,800)[0m
+[[34m16:28:43.373 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,900)[0m
+[[34m16:28:43.373 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1000)[0m
+[[34m16:28:43.373 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1100)[0m
+[[34m16:28:43.373 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1200)[0m
+[[34m16:28:43.373 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1300)[0m
+[[34m16:28:43.373 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1400)[0m
+[[34m16:28:43.374 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1500)[0m
+[[34m16:28:43.374 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1600)[0m
+[[34m16:28:43.374 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1700)[0m
+[[34m16:28:43.374 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1800)[0m
+[[34m16:28:43.374 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (-100,1900)[0m
+[[34m16:28:43.375 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,0)[0m
+[[34m16:28:43.375 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,100)[0m
+[[34m16:28:43.375 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,200)[0m
+[[34m16:28:43.375 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,300)[0m
+[[34m16:28:43.376 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,400)[0m
+[[34m16:28:43.376 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,500)[0m
+[[34m16:28:43.376 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,600)[0m
+[[34m16:28:43.376 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,700)[0m
+[[34m16:28:43.377 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,800)[0m
+[[34m16:28:43.377 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,900)[0m
+[[34m16:28:43.377 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1000)[0m
+[[34m16:28:43.377 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1100)[0m
+[[34m16:28:43.377 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1200)[0m
+[[34m16:28:43.378 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1300)[0m
+[[34m16:28:43.378 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1400)[0m
+[[34m16:28:43.378 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1500)[0m
+[[34m16:28:43.378 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1600)[0m
+[[34m16:28:43.378 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1700)[0m
+[[34m16:28:43.378 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1800)[0m
+[[34m16:28:43.379 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (0,1900)[0m
+[[34m16:28:43.379 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,0)[0m
+[[34m16:28:43.379 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,100)[0m
+[[34m16:28:43.379 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,200)[0m
+[[34m16:28:43.379 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,300)[0m
+[[34m16:28:43.379 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,400)[0m
+[[34m16:28:43.380 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,500)[0m
+[[34m16:28:43.380 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,600)[0m
+[[34m16:28:43.380 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,700)[0m
+[[34m16:28:43.380 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,800)[0m
+[[34m16:28:43.380 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,900)[0m
+[[34m16:28:43.380 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1000)[0m
+[[34m16:28:43.381 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1100)[0m
+[[34m16:28:43.381 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1200)[0m
+[[34m16:28:43.381 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1300)[0m
+[[34m16:28:43.381 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1400)[0m
+[[34m16:28:43.381 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1500)[0m
+[[34m16:28:43.381 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1600)[0m
+[[34m16:28:43.382 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1700)[0m
+[[34m16:28:43.382 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1800)[0m
+[[34m16:28:43.382 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (100,1900)[0m
+[[34m16:28:43.383 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,0)[0m
+[[34m16:28:43.383 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,100)[0m
+[[34m16:28:43.383 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,200)[0m
+[[34m16:28:43.384 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,300)[0m
+[[34m16:28:43.384 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,400)[0m
+[[34m16:28:43.384 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,500)[0m
+[[34m16:28:43.384 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,600)[0m
+[[34m16:28:43.385 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,700)[0m
+[[34m16:28:43.385 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,800)[0m
+[[34m16:28:43.385 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,900)[0m
+[[34m16:28:43.386 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1000)[0m
+[[34m16:28:43.386 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1100)[0m
+[[34m16:28:43.386 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1200)[0m
+[[34m16:28:43.387 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1300)[0m
+[[34m16:28:43.387 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1400)[0m
+[[34m16:28:43.388 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1500)[0m
+[[34m16:28:43.388 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1600)[0m
+[[34m16:28:43.388 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1700)[0m
+[[34m16:28:43.388 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1800)[0m
+[[34m16:28:43.389 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (200,1900)[0m
+[[34m16:28:43.389 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,0)[0m
+[[34m16:28:43.389 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,100)[0m
+[[34m16:28:43.389 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,200)[0m
+[[34m16:28:43.389 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,300)[0m
+[[34m16:28:43.390 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,400)[0m
+[[34m16:28:43.390 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,500)[0m
+[[34m16:28:43.390 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,600)[0m
+[[34m16:28:43.390 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,700)[0m
+[[34m16:28:43.391 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,800)[0m
+[[34m16:28:43.391 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,900)[0m
+[[34m16:28:43.391 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1000)[0m
+[[34m16:28:43.391 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1100)[0m
+[[34m16:28:43.391 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1200)[0m
+[[34m16:28:43.392 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1300)[0m
+[[34m16:28:43.392 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1400)[0m
+[[34m16:28:43.392 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1500)[0m
+[[34m16:28:43.392 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1600)[0m
+[[34m16:28:43.392 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1700)[0m
+[[34m16:28:43.393 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1800)[0m
+[[34m16:28:43.393 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (300,1900)[0m
+[[34m16:28:43.393 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,0)[0m
+[[34m16:28:43.393 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,100)[0m
+[[34m16:28:43.394 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,200)[0m
+[[34m16:28:43.394 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,300)[0m
+[[34m16:28:43.394 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,400)[0m
+[[34m16:28:43.394 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,500)[0m
+[[34m16:28:43.395 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,600)[0m
+[[34m16:28:43.395 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,700)[0m
+[[34m16:28:43.395 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,800)[0m
+[[34m16:28:43.395 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,900)[0m
+[[34m16:28:43.396 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1000)[0m
+[[34m16:28:43.396 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1100)[0m
+[[34m16:28:43.396 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1200)[0m
+[[34m16:28:43.397 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1300)[0m
+[[34m16:28:43.397 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1400)[0m
+[[34m16:28:43.397 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1500)[0m
+[[34m16:28:43.397 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1600)[0m
+[[34m16:28:43.398 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1700)[0m
+[[34m16:28:43.398 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1800)[0m
+[[34m16:28:43.398 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (400,1900)[0m
+[[34m16:28:43.398 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,0)[0m
+[[34m16:28:43.399 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,100)[0m
+[[34m16:28:43.399 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,200)[0m
+[[34m16:28:43.399 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,300)[0m
+[[34m16:28:43.399 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,400)[0m
+[[34m16:28:43.399 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,500)[0m
+[[34m16:28:43.400 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,600)[0m
+[[34m16:28:43.400 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,700)[0m
+[[34m16:28:43.400 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,800)[0m
+[[34m16:28:43.400 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,900)[0m
+[[34m16:28:43.400 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1000)[0m
+[[34m16:28:43.400 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1100)[0m
+[[34m16:28:43.401 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1200)[0m
+[[34m16:28:43.401 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1300)[0m
+[[34m16:28:43.401 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1400)[0m
+[[34m16:28:43.401 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1500)[0m
+[[34m16:28:43.401 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1600)[0m
+[[34m16:28:43.401 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1700)[0m
+[[34m16:28:43.401 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1800)[0m
+[[34m16:28:43.402 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (500,1900)[0m
+[[34m16:28:43.402 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,0)[0m
+[[34m16:28:43.402 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,100)[0m
+[[34m16:28:43.402 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,200)[0m
+[[34m16:28:43.403 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,300)[0m
+[[34m16:28:43.403 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,400)[0m
+[[34m16:28:43.403 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,500)[0m
+[[34m16:28:43.403 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,600)[0m
+[[34m16:28:43.404 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,700)[0m
+[[34m16:28:43.404 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,800)[0m
+[[34m16:28:43.404 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,900)[0m
+[[34m16:28:43.404 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1000)[0m
+[[34m16:28:43.405 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1100)[0m
+[[34m16:28:43.405 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1200)[0m
+[[34m16:28:43.405 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1300)[0m
+[[34m16:28:43.406 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1400)[0m
+[[34m16:28:43.406 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1500)[0m
+[[34m16:28:43.406 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1600)[0m
+[[34m16:28:43.406 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1700)[0m
+[[34m16:28:43.407 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1800)[0m
+[[34m16:28:43.407 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (600,1900)[0m
+[[34m16:28:43.407 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,0)[0m
+[[34m16:28:43.407 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,100)[0m
+[[34m16:28:43.408 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,200)[0m
+[[34m16:28:43.408 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,300)[0m
+[[34m16:28:43.408 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,400)[0m
+[[34m16:28:43.408 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,500)[0m
+[[34m16:28:43.409 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,600)[0m
+[[34m16:28:43.409 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,700)[0m
+[[34m16:28:43.409 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,800)[0m
+[[34m16:28:43.409 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,900)[0m
+[[34m16:28:43.410 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1000)[0m
+[[34m16:28:43.410 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1100)[0m
+[[34m16:28:43.410 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1200)[0m
+[[34m16:28:43.410 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1300)[0m
+[[34m16:28:43.411 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1400)[0m
+[[34m16:28:43.411 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1500)[0m
+[[34m16:28:43.411 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1600)[0m
+[[34m16:28:43.411 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1700)[0m
+[[34m16:28:43.411 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1800)[0m
+[[34m16:28:43.412 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (700,1900)[0m
+[[34m16:28:43.412 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,0)[0m
+[[34m16:28:43.412 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,100)[0m
+[[34m16:28:43.412 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,200)[0m
+[[34m16:28:43.413 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,300)[0m
+[[34m16:28:43.413 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,400)[0m
+[[34m16:28:43.413 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,500)[0m
+[[34m16:28:43.413 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,600)[0m
+[[34m16:28:43.414 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,700)[0m
+[[34m16:28:43.414 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,800)[0m
+[[34m16:28:43.415 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,900)[0m
+[[34m16:28:43.415 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1000)[0m
+[[34m16:28:43.415 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1100)[0m
+[[34m16:28:43.415 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1200)[0m
+[[34m16:28:43.416 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1300)[0m
+[[34m16:28:43.416 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1400)[0m
+[[34m16:28:43.416 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1500)[0m
+[[34m16:28:43.416 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1600)[0m
+[[34m16:28:43.417 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1700)[0m
+[[34m16:28:43.417 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1800)[0m
+[[34m16:28:43.417 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (800,1900)[0m
+[[34m16:28:43.417 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,0)[0m
+[[34m16:28:43.418 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,100)[0m
+[[34m16:28:43.418 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,200)[0m
+[[34m16:28:43.418 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,300)[0m
+[[34m16:28:43.418 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,400)[0m
+[[34m16:28:43.419 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,500)[0m
+[[34m16:28:43.419 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,600)[0m
+[[34m16:28:43.419 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,700)[0m
+[[34m16:28:43.419 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,800)[0m
+[[34m16:28:43.420 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,900)[0m
+[[34m16:28:43.420 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1000)[0m
+[[34m16:28:43.420 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1100)[0m
+[[34m16:28:43.420 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1200)[0m
+[[34m16:28:43.421 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1300)[0m
+[[34m16:28:43.421 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1400)[0m
+[[34m16:28:43.421 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1500)[0m
+[[34m16:28:43.421 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1600)[0m
+[[34m16:28:43.421 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1700)[0m
+[[34m16:28:43.422 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1800)[0m
+[[34m16:28:43.422 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (900,1900)[0m
+[[34m16:28:43.422 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,0)[0m
+[[34m16:28:43.422 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,100)[0m
+[[34m16:28:43.423 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,200)[0m
+[[34m16:28:43.423 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,300)[0m
+[[34m16:28:43.423 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,400)[0m
+[[34m16:28:43.423 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,500)[0m
+[[34m16:28:43.424 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,600)[0m
+[[34m16:28:43.424 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,700)[0m
+[[34m16:28:43.424 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,800)[0m
+[[34m16:28:43.424 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,900)[0m
+[[34m16:28:43.425 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1000)[0m
+[[34m16:28:43.425 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1100)[0m
+[[34m16:28:43.425 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1200)[0m
+[[34m16:28:43.425 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1300)[0m
+[[34m16:28:43.426 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1400)[0m
+[[34m16:28:43.426 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1500)[0m
+[[34m16:28:43.426 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1600)[0m
+[[34m16:28:43.426 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1700)[0m
+[[34m16:28:43.427 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1800)[0m
+[[34m16:28:43.427 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1000,1900)[0m
+[[34m16:28:43.427 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,0)[0m
+[[34m16:28:43.427 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,100)[0m
+[[34m16:28:43.428 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,200)[0m
+[[34m16:28:43.428 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,300)[0m
+[[34m16:28:43.428 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,400)[0m
+[[34m16:28:43.428 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,500)[0m
+[[34m16:28:43.434 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,600)[0m
+[[34m16:28:43.435 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,700)[0m
+[[34m16:28:43.435 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,800)[0m
+[[34m16:28:43.435 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,900)[0m
+[[34m16:28:43.435 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1000)[0m
+[[34m16:28:43.436 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1100)[0m
+[[34m16:28:43.436 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1200)[0m
+[[34m16:28:43.436 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1300)[0m
+[[34m16:28:43.437 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1400)[0m
+[[34m16:28:43.437 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1500)[0m
+[[34m16:28:43.437 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1600)[0m
+[[34m16:28:43.437 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1700)[0m
+[[34m16:28:43.437 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1800)[0m
+[[34m16:28:43.438 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1100,1900)[0m
+[[34m16:28:43.438 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,0)[0m
+[[34m16:28:43.438 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,100)[0m
+[[34m16:28:43.438 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,200)[0m
+[[34m16:28:43.439 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,300)[0m
+[[34m16:28:43.439 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,400)[0m
+[[34m16:28:43.439 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,500)[0m
+[[34m16:28:43.439 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,600)[0m
+[[34m16:28:43.439 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,700)[0m
+[[34m16:28:43.440 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,800)[0m
+[[34m16:28:43.440 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,900)[0m
+[[34m16:28:43.440 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1000)[0m
+[[34m16:28:43.440 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1100)[0m
+[[34m16:28:43.440 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1200)[0m
+[[34m16:28:43.441 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1300)[0m
+[[34m16:28:43.441 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1400)[0m
+[[34m16:28:43.442 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1500)[0m
+[[34m16:28:43.442 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1600)[0m
+[[34m16:28:43.442 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1700)[0m
+[[34m16:28:43.442 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1800)[0m
+[[34m16:28:43.443 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1200,1900)[0m
+[[34m16:28:43.443 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,0)[0m
+[[34m16:28:43.443 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,100)[0m
+[[34m16:28:43.443 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,200)[0m
+[[34m16:28:43.444 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,300)[0m
+[[34m16:28:43.444 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,400)[0m
+[[34m16:28:43.444 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,500)[0m
+[[34m16:28:43.444 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,600)[0m
+[[34m16:28:43.445 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,700)[0m
+[[34m16:28:43.445 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,800)[0m
+[[34m16:28:43.445 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,900)[0m
+[[34m16:28:43.445 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1000)[0m
+[[34m16:28:43.445 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1100)[0m
+[[34m16:28:43.446 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1200)[0m
+[[34m16:28:43.446 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1300)[0m
+[[34m16:28:43.446 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1400)[0m
+[[34m16:28:43.446 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1500)[0m
+[[34m16:28:43.446 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1600)[0m
+[[34m16:28:43.447 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1700)[0m
+[[34m16:28:43.447 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1800)[0m
+[[34m16:28:43.447 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1300,1900)[0m
+[[34m16:28:43.447 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,0)[0m
+[[34m16:28:43.447 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,100)[0m
+[[34m16:28:43.448 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,200)[0m
+[[34m16:28:43.448 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,300)[0m
+[[34m16:28:43.448 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,400)[0m
+[[34m16:28:43.448 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,500)[0m
+[[34m16:28:43.448 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,600)[0m
+[[34m16:28:43.449 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,700)[0m
+[[34m16:28:43.449 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,800)[0m
+[[34m16:28:43.449 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,900)[0m
+[[34m16:28:43.449 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1000)[0m
+[[34m16:28:43.449 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1100)[0m
+[[34m16:28:43.450 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1200)[0m
+[[34m16:28:43.450 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1300)[0m
+[[34m16:28:43.450 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1400)[0m
+[[34m16:28:43.450 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1500)[0m
+[[34m16:28:43.451 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1600)[0m
+[[34m16:28:43.451 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1700)[0m
+[[34m16:28:43.451 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1800)[0m
+[[34m16:28:43.451 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:249)] Ajout d'un noeud en (1400,1900)[0m
+[[34m16:28:43.451 GRAPHE (DEBUG) on main data.Graphe.placeNodes(Graphe.java:253)] Fin du placement des noeuds en quadrillage[0m
+[[34m16:28:43.452 GRAPHE (DEBUG) on main data.Graphe.placeRidges(Graphe.java:262)] Initialisation des arrêtes[0m
+[[34m16:28:43.801 GRAPHE (DEBUG) on main data.Graphe.placeRidges(Graphe.java:272)] Fin d'initialisation des arrêtes, 179700 arrêtes créées[0m
+[[34m16:28:43.805 GRAPHE (DEBUG) on main data.Graphe.init(Graphe.java:162)] Initialisation terminée : 600 noeuds, 179700 arrêtes[0m
+[[34m16:28:43.805 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt[0m
+[[34m16:28:43.806 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Pathfinder[0m
+[[34m16:28:43.807 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Pathfinder après son initialisation.[0m
+[[34m16:28:43.808 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Pathfinder prêt[0m
+[[34m16:28:43.810 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper[0m
+[[34m16:28:43.810 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.[0m
+[[34m16:28:43.812 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false[0m
+[[34m16:28:43.815 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to true[0m
+[[34m16:28:43.816 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false[0m
+[[34m16:28:43.818 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt[0m
+[[34m16:28:43.819 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PathFollower[0m
+[[34m16:28:43.820 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PathFollower après son initialisation.[0m
+[[34m16:28:43.820 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionLoopDelay to 20[0m
+[[34m16:28:43.821 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionDistanceCheck to 200[0m
+[[34m16:28:43.821 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionRadiusCheck to 200[0m
+[[34m16:28:43.822 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionObstructedTimeout to 2000[0m
+[[34m16:28:43.822 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean locomotion.PathFollower.simulation to true[0m
+[[34m16:28:43.827 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PathFollower prêt[0m
+[[34m16:28:43.828 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Locomotion[0m
+[[34m16:28:43.828 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Locomotion après son initialisation.[0m
+[[34m16:28:43.829 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.Locomotion.vectorComparisonThreshold to 5[0m
+[[34m16:28:43.830 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.Locomotion.locomotionObstructedTimeout to 2000[0m
+[[34m16:28:43.830 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Locomotion prêt[0m
+[[34m16:28:43.831 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass HookFactory[0m
+[[34m16:28:43.831 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass HookFactory après son initialisation.[0m
+[[34m16:28:43.831 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module HookFactory prêt[0m
+[[34m16:28:43.832 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager[0m
+[[34m16:28:43.832 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.[0m
+[[34m16:28:43.832 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt[0m
+[[34m16:28:43.832 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SimulatorDebug[0m
+[[34m16:28:43.833 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SimulatorDebug après son initialisation.[0m
+[[34m16:28:43.833 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean utils.communication.SimulatorDebug.active to true[0m
+[[34m16:28:43.833 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SimulatorDebug prêt[0m
+[[34m16:28:43.834 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PanneauModule[0m
+[[34m16:28:43.834 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PanneauModule après son initialisation.[0m
+[[34m16:28:43.835 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.PanneauModule.scoreUpdatePeriod to 100[0m
+[[34m16:28:43.836 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.PanneauModule.couleur to jaune[0m
+[[34m16:28:43.836 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledProgramPort to 19500[0m
+[[34m16:28:43.837 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledCount to 16[0m
+[[34m16:28:43.837 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.PanneauModule.using7Segments to true[0m
+[[34m16:28:43.837 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PanneauModule prêt[0m
+[[34m16:28:43.837 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Master[0m
+[[34m16:28:43.841 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SynchronizationWithBuddy[0m
+[[34m16:28:43.842 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SynchronizationWithBuddy après son initialisation.[0m
+[[34m16:28:43.842 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.symetry to false[0m
+[[34m16:28:43.843 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.simulation to true[0m
+[[34m16:28:43.843 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.master to true[0m
+[[34m16:28:43.843 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SynchronizationWithBuddy prêt[0m
+[[34m16:28:43.844 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Listener[0m
+[[34m16:28:43.844 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Listener après son initialisation.[0m
+[[34m16:28:43.844 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.master to true[0m
+[[34m16:28:43.845 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.simulation to true[0m
+[[34m16:28:43.845 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingLidar to false[0m
+[[34m16:28:43.845 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingCylinderDetection to false[0m
+[[34m16:28:43.846 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseImage to false[0m
+[[34m16:28:43.846 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.visualisation to false[0m
+[[34m16:28:43.846 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseConnection to false[0m
+[[34m16:28:43.847 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.connectToBuddy to false[0m
+[[34m16:28:43.847 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.Listener.timeBetweenPosUpdates to 200[0m
+[[34m16:28:43.850 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Listener prêt[0m
+[[34m16:28:43.850 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:186)] Listener lancé : connection aux devices...[0m
+[[34m16:28:43.850 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:189)] Simulation initializing connections...[0m
+[[34m16:28:43.850 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MatchTimer[0m
+[[34m16:28:43.851 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MatchTimer après son initialisation.[0m
+[[34m16:28:43.851 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MatchTimer prêt[0m
+[[34m16:28:43.851 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass DataController[0m
+[[34m16:28:43.852 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass DataController après son initialisation.[0m
+[[34m16:28:43.853 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.master to true[0m
+[[34m16:28:43.854 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.symetry to false[0m
+[[34m16:28:43.855 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:191)] Simulated Teensy Master connected[0m
+[[34m16:28:43.855 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:194)] Debug connection init...[0m
+[[34m16:28:43.856 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:43.858 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:196)] Debug connection ready![0m
+[[34m16:28:43.858 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:43.869 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module DataController prêt[0m
+[[34m16:28:43.869 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Master après son initialisation.[0m
+[[34m16:28:43.870 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:164)] Controller lancé : en attente du listener...[0m
+[[31m16:28:43.870 STDERR (CRITICAL) on main] java.lang.IllegalArgumentException: Config key 'lighthouse' unknown (when loading config for field robot.Robot#lighthouse[0m
+[[31m16:28:43.870 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:267)[0m
+[[31m16:28:43.871 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:279)[0m
+[[31m16:28:43.871 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:254)[0m
+[[31m16:28:43.871 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:289)[0m
+[[31m16:28:43.871 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:205)[0m
+[[31m16:28:43.871 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:57)[0m
+[[31m16:28:43.872 STDERR (CRITICAL) on main] 	at MainMaster.start(MainMaster.java:56)[0m
+[[31m16:28:43.872 STDERR (CRITICAL) on main] 	at MainMaster.main(MainMaster.java:51)[0m
+[[31m16:28:43.872 STDERR (CRITICAL) on main] 	at LaunchSimulatorMaster.main(LaunchSimulatorMaster.java:22)[0m
+[[31m16:28:43.872 STDERR (CRITICAL) on main] Exception in thread "main" utils.container.ContainerException: java.lang.IllegalArgumentException: Config key 'lighthouse' unknown (when loading config for field robot.Robot#lighthouse[0m
+[[31m16:28:43.873 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:310)[0m
+[[31m16:28:43.873 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:205)[0m
+[[31m16:28:43.876 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:57)[0m
+[[31m16:28:43.877 STDERR (CRITICAL) on main] 	at MainMaster.start(MainMaster.java:56)[0m
+[[31m16:28:43.878 STDERR (CRITICAL) on main] 	at MainMaster.main(MainMaster.java:51)[0m
+[[33m16:28:43.878 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[31m16:28:43.878 STDERR (CRITICAL) on main] 	at LaunchSimulatorMaster.main(LaunchSimulatorMaster.java:22)[0m
+[[31m16:28:43.878 STDERR (CRITICAL) on main] Caused by: java.lang.IllegalArgumentException: Config key 'lighthouse' unknown (when loading config for field robot.Robot#lighthouse[0m
+[[33m16:28:43.879 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[31m16:28:43.878 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:267)[0m
+[[31m16:28:43.879 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:279)[0m
+[[31m16:28:43.879 STDERR (CRITICAL) on main] 	at pfg.config.Config.loadInto(Config.java:254)[0m
+[[31m16:28:43.880 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:289)[0m
+[[31m16:28:43.880 STDERR (CRITICAL) on main] 	... 5 more[0m
+[[34m16:28:43.978 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:43.979 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:43.979 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:43.995 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:44.095 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.096 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.096 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.096 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.196 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.197 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.197 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.197 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.298 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.299 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.300 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.300 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.400 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.401 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.402 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.403 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.503 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.505 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.506 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.506 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.607 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.608 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.608 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.609 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.709 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.710 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.710 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.711 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.811 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.812 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.812 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.813 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:44.913 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:44.913 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:44.915 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:44.916 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:45.016 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:45.017 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:45.017 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:45.018 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:45.118 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:45.119 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:45.120 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:45.122 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:45.221 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:45.222 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:45.222 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:45.223 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:45.322 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:45.323 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:45.324 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:45.324 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:45.424 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:45.425 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:45.426 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:45.426 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:45.526 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:45.527 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:45.529 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:45.531 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:45.629 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:45.630 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:45.632 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:45.632 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:45.731 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:45.732 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:45.733 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:45.734 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:45.833 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:45.834 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:45.834 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:45.835 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:45.934 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:45.935 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:45.936 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:45.936 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.036 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:46.037 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.038 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:46.038 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.138 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:46.139 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.140 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:46.140 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.241 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:46.242 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.242 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:46.243 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.343 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:46.344 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:46.344 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.347 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.444 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:46.445 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:46.447 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.448 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.545 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:46.546 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:46.548 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.549 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.647 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:46.649 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:46.650 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.651 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.750 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:46.751 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:46.752 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.753 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.852 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:46.854 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.854 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:46.856 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:46.955 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:46.956 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:46.956 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:46.956 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:47.056 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:47.057 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:47.058 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m16:28:47.059 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:47.159 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m16:28:47.159 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:47.160 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:47.160 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.261 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:47.261 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.263 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:47.263 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.363 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:47.372 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.372 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:47.374 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.473 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:47.474 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:47.474 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.475 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.574 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:47.575 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.576 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:47.577 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.677 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:47.677 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:47.678 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.681 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.778 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:47.779 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:47.782 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.783 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.880 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:47.880 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:47.884 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.884 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:47.981 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:47.982 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:47.985 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:47.986 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.083 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.084 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.086 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.088 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.185 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.186 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.189 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.190 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.286 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.287 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.290 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.291 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.388 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.389 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.391 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.392 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.489 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.491 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.492 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.493 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.592 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.592 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.594 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.594 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.693 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.693 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.695 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.695 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.794 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.796 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.796 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.797 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.896 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m16:28:48.897 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m16:28:48.898 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.898 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:48.997 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:48.999 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:48.999 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:49.000 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:49.100 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:49.100 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:49.101 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:49.102 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:49.201 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:49.202 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:49.202 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:49.203 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:49.303 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:49.303 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:49.304 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:49.304 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:49.404 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:49.404 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:49.405 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:49.405 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:49.505 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:49.506 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:49.507 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:49.508 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m16:28:49.608 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m16:28:49.608 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m16:28:49.608 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m16:28:49.609 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m

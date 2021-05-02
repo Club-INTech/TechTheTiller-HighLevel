@@ -13,7 +13,7 @@ public class Match extends Script {
     private SynchronizationWithBuddy syncBuddy;
     int posxinit;
     int posyinit;
-    String posstart="Yellow";
+    String posstart="Blue";
 
 
     public Match(HLInstance hl, ScriptManagerMaster scriptManagerMaster, SynchronizationWithBuddy syncBuddy) {
