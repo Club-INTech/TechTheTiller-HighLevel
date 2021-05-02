@@ -23,7 +23,7 @@ package utils.math;
  *
  * @author yousra, rem
  */
-public abstract class Vec2 {
+public class Vec2 {
 
     /**
      * Largeur de la table, en mm
@@ -58,7 +58,7 @@ public abstract class Vec2 {
      * @param x abscisse
      * @param y ordonnée
      */
-    protected Vec2(int x, int y) {
+    public Vec2(int x, int y) {
         this.x = x;
         this.y = y;
         this.a = this.computeAngle();

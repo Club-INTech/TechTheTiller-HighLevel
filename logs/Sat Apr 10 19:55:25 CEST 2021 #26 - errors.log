@@ -1,0 +1,61 @@
+[[31m19:55:25.295 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_BLUE_ACC, also tried recalageMecaBlueAcc[0m
+[[31m19:55:25.311 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[31m19:55:26.147 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] java.lang.reflect.InvocationTargetException[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:272)[0m
+[[31m19:55:26.148 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:205)[0m
+[[31m19:55:26.149 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.initServices(RobotEntryPoint.java:199)[0m
+[[31m19:55:26.149 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:58)[0m
+[[31m19:55:26.149 STDERR (CRITICAL) on main] 	at MainSlave.start(MainSlave.java:48)[0m
+[[31m19:55:26.149 STDERR (CRITICAL) on main] 	at MainSlave.main(MainSlave.java:43)[0m
+[[31m19:55:26.149 STDERR (CRITICAL) on main] 	at LaunchSimulatorSlave.main(LaunchSimulatorSlave.java:19)[0m
+[[31m19:55:26.150 STDERR (CRITICAL) on main] Caused by: java.lang.NoClassDefFoundError: scripts/ScriptNamesSlave[0m
+[[31m19:55:26.150 STDERR (CRITICAL) on main] 	at scripts.ScriptManagerSlave.<init>(ScriptManagerSlave.java:38)[0m
+[[31m19:55:26.150 STDERR (CRITICAL) on main] 	... 12 more[0m
+[[31m19:55:26.150 STDERR (CRITICAL) on main] Caused by: java.lang.ClassNotFoundException: scripts.ScriptNamesSlave[0m
+[[31m19:55:26.150 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)[0m
+[[31m19:55:26.150 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)[0m
+[[31m19:55:26.150 STDERR (CRITICAL) on main] 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] 	... 13 more[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] utils.container.ContainerException: java.lang.reflect.InvocationTargetException[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:310)[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:205)[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.initServices(RobotEntryPoint.java:199)[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] 	at main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:58)[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] 	at MainSlave.start(MainSlave.java:48)[0m
+[[31m19:55:26.151 STDERR (CRITICAL) on main] 	at MainSlave.main(MainSlave.java:43)[0m
+[[31m19:55:26.152 STDERR (CRITICAL) on main] 	at LaunchSimulatorSlave.main(LaunchSimulatorSlave.java:19)[0m
+[[31m19:55:26.152 STDERR (CRITICAL) on main] Caused by: java.lang.reflect.InvocationTargetException[0m
+[[31m19:55:26.163 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[[31m19:55:26.163 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)[0m
+[[31m19:55:26.163 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)[0m
+[[31m19:55:26.164 STDERR (CRITICAL) on main] 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)[0m
+[[31m19:55:26.164 STDERR (CRITICAL) on main] 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)[0m
+[[31m19:55:26.164 STDERR (CRITICAL) on main] 	at utils.HLInstance.module(HLInstance.java:272)[0m
+[[31m19:55:26.164 STDERR (CRITICAL) on main] 	... 6 more[0m
+[[31m19:55:26.165 STDERR (CRITICAL) on main] Caused by: java.lang.NoClassDefFoundError: scripts/ScriptNamesSlave[0m
+[[31m19:55:26.165 STDERR (CRITICAL) on main] 	at scripts.ScriptManagerSlave.<init>(ScriptManagerSlave.java:38)[0m
+[[31m19:55:26.166 STDERR (CRITICAL) on main] 	... 12 more[0m
+[[31m19:55:26.166 STDERR (CRITICAL) on main] Caused by: java.lang.ClassNotFoundException: scripts.ScriptNamesSlave[0m
+[[31m19:55:26.166 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)[0m
+[[31m19:55:26.166 STDERR (CRITICAL) on main] 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)[0m
+[[31m19:55:26.166 STDERR (CRITICAL) on main] 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)[0m
+[[31m19:55:26.167 STDERR (CRITICAL) on main] 	... 13 more[0m
+[[31m19:55:26.266 STDERR (CRITICAL) on Thread-6] java.net.BindException: Address already in use[0m
+[[31m19:55:26.267 STDERR (CRITICAL) on Thread-6] 	at java.base/sun.nio.ch.Net.bind0(Native Method)[0m
+[[31m19:55:26.267 STDERR (CRITICAL) on Thread-6] 	at java.base/sun.nio.ch.Net.bind(Net.java:552)[0m
+[[31m19:55:26.267 STDERR (CRITICAL) on Thread-6] 	at java.base/sun.nio.ch.Net.bind(Net.java:541)[0m
+[[31m19:55:26.267 STDERR (CRITICAL) on Thread-6] 	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)[0m
+[[31m19:55:26.267 STDERR (CRITICAL) on Thread-6] 	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)[0m
+[[31m19:55:26.267 STDERR (CRITICAL) on Thread-6] 	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:281)[0m
+[[31m19:55:26.268 STDERR (CRITICAL) on Thread-6] 	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:172)[0m
+[[31m19:55:26.268 STDERR (CRITICAL) on Thread-6] 	at simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:37)[0m
+[[31m19:55:26.268 STDERR (CRITICAL) on Thread-6] 	at simulator.SimulatorManagerLauncher$1.run(SimulatorManagerLauncher.java:187)[0m
+[[31m19:55:26.268 STDERR (CRITICAL) on Thread-6] Exception in thread "Thread-6" java.lang.NullPointerException: Cannot invoke "java.net.ServerSocket.accept()" because "this.receptionSocket" is null[0m
+[[31m19:55:26.268 STDERR (CRITICAL) on Thread-6] 	at simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:42)[0m
+[[31m19:55:26.271 STDERR (CRITICAL) on Thread-6] 	at simulator.SimulatorManagerLauncher$1.run(SimulatorManagerLauncher.java:187)[0m

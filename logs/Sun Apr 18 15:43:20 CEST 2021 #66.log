@@ -1,0 +1,461 @@
+[[34m15:43:20.584 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:104)] Version : d1a5ef2 on master - [gitignore .idea, .gradle][0m
+[[34m15:43:20.586 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-49-generic amd64[0m
+[[34m15:43:20.592 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 16, max memory : 3.87G, available processors : 12[0m
+[[34m15:43:20.592 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:117)] [0m
+[[34m15:43:20.593 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[0m
+[[34m15:43:20.593 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...[0m
+[[34m15:43:20.610 STDOUT (DEBUG) on main pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/brunlois/IdeaProjects/TechTheTiller-HighLevel/bin/../config/config.txt[0m
+[[31m15:43:20.628 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_BLUE_ACC, also tried recalageMecaBlueAcc[0m
+[[31m15:43:20.629 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[34m15:43:20.630 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :[0m
+[[34m15:43:20.630 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   master = false (default : true)[0m
+[[34m15:43:20.630 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)[0m
+[[34m15:43:20.631 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)[0m
+[[34m15:43:20.631 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)[0m
+[[34m15:43:20.631 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)[0m
+[[34m15:43:20.632 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ledCount = 1 (default : 16)[0m
+[[34m15:43:20.632 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   using7Segments = false (default : true)[0m
+[[34m15:43:20.632 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   robotRay = 142 (default : 190)[0m
+[[34m15:43:20.632 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 190 (default : 150)[0m
+[[34m15:43:20.633 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)[0m
+[[34m15:43:20.633 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   vectorComparisonThreshold = 15 (default : 5)[0m
+[[34m15:43:20.633 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)[0m
+[[34m15:43:20.633 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)[0m
+[[34m15:43:20.634 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)[0m
+[[34m15:43:20.644 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table[0m
+[[34m15:43:20.645 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.[0m
+[[34m15:43:20.655 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false[0m
+[[34m15:43:20.655 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000[0m
+[[34m15:43:20.656 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000[0m
+[[34m15:43:20.656 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 142[0m
+[[34m15:43:20.656 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 190[0m
+[[34m15:43:20.657 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150[0m
+[[34m15:43:20.657 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 15[0m
+[[34m15:43:20.658 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false[0m
+[[34m15:43:20.658 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Table prêt[0m
+[[34m15:43:20.659 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe[0m
+[[34m15:43:20.660 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.[0m
+[[34m15:43:20.660 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m15:43:20.661 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m15:43:20.661 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m15:43:20.661 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m15:43:20.662 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m15:43:20.662 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m15:43:20.886 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt[0m
+[[34m15:43:20.886 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Pathfinder[0m
+[[34m15:43:20.886 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Pathfinder après son initialisation.[0m
+[[34m15:43:20.887 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Pathfinder prêt[0m
+[[34m15:43:20.887 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper[0m
+[[34m15:43:20.887 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.[0m
+[[34m15:43:20.888 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false[0m
+[[34m15:43:20.890 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to true[0m
+[[34m15:43:20.890 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false[0m
+[[34m15:43:20.891 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt[0m
+[[34m15:43:20.891 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PathFollower[0m
+[[34m15:43:20.892 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PathFollower après son initialisation.[0m
+[[34m15:43:20.892 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionLoopDelay to 20[0m
+[[34m15:43:20.892 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionDistanceCheck to 200[0m
+[[34m15:43:20.892 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionRadiusCheck to 200[0m
+[[34m15:43:20.892 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionObstructedTimeout to 2000[0m
+[[34m15:43:20.893 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean locomotion.PathFollower.simulation to true[0m
+[[34m15:43:20.894 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PathFollower prêt[0m
+[[34m15:43:20.894 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Locomotion[0m
+[[34m15:43:20.894 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Locomotion après son initialisation.[0m
+[[34m15:43:20.895 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.Locomotion.vectorComparisonThreshold to 15[0m
+[[34m15:43:20.895 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.Locomotion.locomotionObstructedTimeout to 2000[0m
+[[34m15:43:20.895 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Locomotion prêt[0m
+[[34m15:43:20.895 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass HookFactory[0m
+[[34m15:43:20.895 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass HookFactory après son initialisation.[0m
+[[34m15:43:20.896 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module HookFactory prêt[0m
+[[34m15:43:20.896 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager[0m
+[[34m15:43:20.896 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.[0m
+[[34m15:43:20.896 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt[0m
+[[34m15:43:20.896 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SimulatorDebug[0m
+[[34m15:43:20.896 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SimulatorDebug après son initialisation.[0m
+[[34m15:43:20.897 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean utils.communication.SimulatorDebug.active to true[0m
+[[34m15:43:20.897 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SimulatorDebug prêt[0m
+[[34m15:43:20.897 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PanneauModule[0m
+[[34m15:43:20.897 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PanneauModule après son initialisation.[0m
+[[34m15:43:20.898 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.PanneauModule.scoreUpdatePeriod to 100[0m
+[[34m15:43:20.898 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.PanneauModule.couleur to jaune[0m
+[[34m15:43:20.898 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledProgramPort to 19500[0m
+[[34m15:43:20.898 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledCount to 1[0m
+[[34m15:43:20.898 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.PanneauModule.using7Segments to false[0m
+[[34m15:43:20.899 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PanneauModule prêt[0m
+[[34m15:43:20.899 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Slave[0m
+[[34m15:43:20.901 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SynchronizationWithBuddy[0m
+[[34m15:43:20.901 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SynchronizationWithBuddy après son initialisation.[0m
+[[34m15:43:20.901 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.symetry to false[0m
+[[34m15:43:20.901 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.simulation to true[0m
+[[34m15:43:20.901 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.master to false[0m
+[[34m15:43:20.901 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SynchronizationWithBuddy prêt[0m
+[[34m15:43:20.902 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Listener[0m
+[[34m15:43:20.902 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Listener après son initialisation.[0m
+[[34m15:43:20.902 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.master to false[0m
+[[34m15:43:20.902 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.simulation to true[0m
+[[34m15:43:20.902 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingLidar to false[0m
+[[34m15:43:20.902 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingCylinderDetection to false[0m
+[[34m15:43:20.902 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseImage to false[0m
+[[34m15:43:20.902 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.visualisation to false[0m
+[[34m15:43:20.903 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseConnection to false[0m
+[[34m15:43:20.903 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.connectToBuddy to false[0m
+[[34m15:43:20.903 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.Listener.timeBetweenPosUpdates to 200[0m
+[[34m15:43:20.905 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Listener prêt[0m
+[[34m15:43:20.905 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:186)] Listener lancé : connection aux devices...[0m
+[[34m15:43:20.905 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MatchTimer[0m
+[[34m15:43:20.905 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:189)] Simulation initializing connections...[0m
+[[34m15:43:20.905 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MatchTimer après son initialisation.[0m
+[[34m15:43:20.905 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MatchTimer prêt[0m
+[[34m15:43:20.905 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass DataController[0m
+[[34m15:43:20.906 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass DataController après son initialisation.[0m
+[[34m15:43:20.906 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:191)] Simulated Teensy Master connected[0m
+[[34m15:43:20.906 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:194)] Debug connection init...[0m
+[[34m15:43:20.906 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m15:43:20.906 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.master to false[0m
+[[34m15:43:20.906 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:196)] Debug connection ready![0m
+[[34m15:43:20.906 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.symetry to false[0m
+[[34m15:43:20.906 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m15:43:20.911 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module DataController prêt[0m
+[[34m15:43:20.911 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:164)] Controller lancé : en attente du listener...[0m
+[[34m15:43:20.911 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Slave après son initialisation.[0m
+[[34m15:43:20.912 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long robot.Robot.locomotionLoopDelay to 20[0m
+[[34m15:43:20.912 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.simulation to true[0m
+[[34m15:43:20.912 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.master to false[0m
+[[34m15:43:20.912 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.symetry to false[0m
+[[34m15:43:20.913 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.usingPanel to false[0m
+[[34m15:43:20.913 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Slave prêt[0m
+[[31m15:43:20.913 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[34m15:43:20.913 STRATEGY (DEBUG) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:198)] Couleur: jaune[0m
+[[34m15:43:20.913 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ScriptManagerSlave[0m
+[[34m15:43:20.915 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ScriptLoisSlave[0m
+[[34m15:43:20.915 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ActuatorsModule[0m
+[[33m15:43:20.917 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m15:43:20.917 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m15:43:20.923 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ActuatorsModule après son initialisation.[0m
+[[34m15:43:20.923 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ActuatorsModule prêt[0m
+[[34m15:43:20.924 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ScriptLoisSlave après son initialisation.[0m
+[[34m15:43:20.924 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int scripts.ScriptLoisSlave.robotRay to 142[0m
+[[34m15:43:20.924 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long scripts.Script.locomotionObstructedTimeout to 2000[0m
+[[34m15:43:20.924 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean scripts.Script.symetry to false[0m
+[[34m15:43:20.925 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ScriptLoisSlave prêt[0m
+[[34m15:43:20.925 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ScriptManagerSlave après son initialisation.[0m
+[[34m15:43:20.925 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ScriptManagerSlave prêt[0m
+[[34m15:43:21.017 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m15:43:21.018 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m15:43:21.018 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m15:43:21.018 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m15:43:21.118 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m15:43:21.118 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m15:43:21.119 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m15:43:21.119 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m15:43:21.182 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass LidarController[0m
+[[34m15:43:21.183 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass LidarController après son initialisation.[0m
+[[34m15:43:21.183 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.symetry to false[0m
+[[34m15:43:21.183 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.robotRay to 142[0m
+[[34m15:43:21.183 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.ennemyRay to 150[0m
+[[34m15:43:21.184 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.LidarController.lidarProcessPath to ../bin/LiDAR_UST_10LX[0m
+[[34m15:43:21.184 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.usingLidar to false[0m
+[[34m15:43:21.184 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module LidarController prêt[0m
+[[34m15:43:21.185 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass CylinderDetectionController[0m
+[[34m15:43:21.186 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass CylinderDetectionController après son initialisation.[0m
+[[34m15:43:21.186 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.usingCylinderDetection to false[0m
+[[34m15:43:21.186 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.symetry to false[0m
+[[34m15:43:21.186 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module CylinderDetectionController prêt[0m
+[[34m15:43:21.187 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass AIModule[0m
+[[34m15:43:21.189 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass AIModule après son initialisation.[0m
+[[34m15:43:21.189 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m15:43:21.190 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m15:43:21.190 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m15:43:21.190 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m15:43:21.190 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m15:43:21.190 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m15:43:21.190 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module AIModule prêt[0m
+[[34m15:43:21.191 STDOUT (DEBUG) on main simulator.SimulatorManagerLauncher.launch(SimulatorManagerLauncher.java:166)] Lanceur de simulateur démarré[0m
+[[34m15:43:21.192 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:190)] Listener LL-Master lancé sur le port 10001[0m
+[[34m15:43:21.192 STDOUT (DEBUG) on Thread-7 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:36)] Ouverture d'une socket sur le port 10001[0m
+[[34m15:43:21.219 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m15:43:21.219 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m15:43:21.219 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m15:43:21.219 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 10001[0m
+[[34m15:43:21.220 STDOUT (DEBUG) on Thread-7 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:43)] Socket connectée sur le port 10001[0m
+[[34m15:43:21.220 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 10001[0m
+[[34m15:43:21.223 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:303)] (10001) Listener connecté[0m
+[[34m15:43:21.224 STDOUT (DEBUG) on Thread-6 simulator.SimulatedRobot.launch(SimulatedRobot.java:139)] (10001) Robot simulé démarré[0m
+[[34m15:43:21.224 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:313)] (10001) Robot simulé instancié[0m
+[[34m15:43:21.224 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:317)] Instanciation de l'interface graphique[0m
+[[34m15:43:21.224 STDOUT (DEBUG) on Thread-6 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:36)] Ouverture d'une socket sur le port 19999[0m
+[[34m15:43:21.320 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m15:43:21.320 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 19999[0m
+[[34m15:43:21.321 STDOUT (DEBUG) on Thread-6 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:43)] Socket connectée sur le port 19999[0m
+[[34m15:43:21.321 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 19999[0m
+[[34m15:43:21.507 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:257)] Listener opérationnel[0m
+[[34m15:43:21.512 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:172)] Controller opérationnel[0m
+[[34m15:43:23.089 STDOUT (DEBUG) on Thread-6 simulator.GraphicalInterface.launch(GraphicalInterface.java:200)] Interface graphique démarrée[0m
+[[34m15:43:23.090 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:337)] Interface graphique instanciée[0m
+[[34m15:43:23.091 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManager.launch(SimulatorManager.java:139)] Manager de simulation démarré[0m
+[[34m15:43:23.091 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:351)] Manager de simulation instancié[0m
+[[34m15:43:26.191 COMMUNICATION (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:61)] Connection established, starting match[0m
+[[34m15:43:26.192 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MatchSlave[0m
+[[34m15:43:26.192 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MatchSlave après son initialisation.[0m
+[[34m15:43:26.192 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long scripts.Script.locomotionObstructedTimeout to 2000[0m
+[[34m15:43:26.193 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean scripts.Script.symetry to false[0m
+[[34m15:43:26.193 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MatchSlave prêt[0m
+[[34m15:43:26.194 ORDERS (DEBUG) on main orders.OrderWrapper.setPositionAndOrientation(OrderWrapper.java:180)] SensorState.ACTUATOR_ACTUATING = true[0m
+[[34m15:43:26.195 ORDERS (DEBUG) on main orders.OrderWrapper.setPositionAndOrientation(OrderWrapper.java:168)] Sent to LL: !cxyo 1200 650 1.57080[0m
+[[34m15:43:26.197 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : !cxyo 1200 650 1.57080[0m
+[[34m15:43:26.198 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: confirmOrder cxyo 1200 650 1.57080[0m
+[[34m15:43:26.198 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:285)] Received confirmation for order (cxyo)[0m
+[[34m15:43:26.198 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:286)] SensorState.ACTUATOR_ACTUATING = false[0m
+[[34m15:43:26.201 COMMUNICATION (DEBUG) on main data.controlers.DataController.waitForTwoPositionUpdates(DataController.java:548)] Waiting for two position updates[0m
+[[33m15:43:26.216 STRATEGY (WARNING) on main scripts.Script.timedExecute(Script.java:174)] Starting script ScriptLoisSlave v0 at 1618753406.213[0m
+[[34m15:43:26.216 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:26.216 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:26.216 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t -2.74889[0m
+[[34m15:43:26.219 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t -2.74889[0m
+[[34m15:43:26.725 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:26.725 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:26.725 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:26.727 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(1200,650), o=-2.74889[0m
+[[34m15:43:26.730 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:26.731 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:26.731 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 1000[0m
+[[34m15:43:26.731 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 1000 false[0m
+[[34m15:43:26.732 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 1000 false[0m
+[[33m15:43:26.732 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:-924, D:-383[0m
+[[33m15:43:26.732 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(1200,650), B:(276,267), C:(-924,-383)[0m
+[[34m15:43:27.754 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:27.754 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:27.754 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:27.754 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(276,267), o=-2.74889[0m
+[[34m15:43:27.811 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:27.813 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:27.813 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:27.813 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:27.813 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:27.813 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:27.813 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:27.814 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t -3.14159[0m
+[[34m15:43:27.816 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:27.816 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:27.822 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t -3.14159[0m
+[[34m15:43:27.932 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:27.932 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:27.932 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:27.932 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(276,267), o=-3.14159[0m
+[[34m15:43:27.936 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:27.936 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:27.936 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 700[0m
+[[34m15:43:27.938 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 700 false[0m
+[[34m15:43:27.939 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 700 false[0m
+[[33m15:43:27.939 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:-1000, D:0[0m
+[[33m15:43:27.939 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(276,267), B:(-424,267), C:(-1000,0)[0m
+[[34m15:43:28.655 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:28.655 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:28.655 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:28.655 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,267), o=-3.14159[0m
+[[34m15:43:28.710 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:28.711 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:28.711 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:28.711 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:28.711 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:28.711 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t -1.57080[0m
+[[34m15:43:28.712 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:28.712 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:28.716 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:28.716 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:28.719 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t -1.57080[0m
+[[34m15:43:29.129 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:29.129 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:29.129 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:29.129 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,267), o=-1.5708[0m
+[[34m15:43:29.133 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:29.133 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:29.133 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 130[0m
+[[34m15:43:29.133 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 130 false[0m
+[[34m15:43:29.136 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 130 false[0m
+[[33m15:43:29.136 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:0, D:-1000[0m
+[[33m15:43:29.136 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(-424,267), B:(-424,137), C:(0,-1000)[0m
+[[34m15:43:29.267 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:29.268 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:29.268 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:29.268 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=-1.5708[0m
+[[34m15:43:29.321 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:29.323 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:29.323 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:29.323 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:29.323 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:29.323 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:29.323 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:29.323 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 0.00000[0m
+[[34m15:43:29.329 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:29.329 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:29.332 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 0.00000[0m
+[[34m15:43:30.537 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:30.537 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:30.537 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:30.537 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[34m15:43:30.542 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:30.542 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:30.542 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 700[0m
+[[34m15:43:30.543 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 700 false[0m
+[[34m15:43:30.546 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 700 false[0m
+[[33m15:43:30.546 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:1000, D:0[0m
+[[33m15:43:30.546 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(-424,137), B:(276,137), C:(1000,0)[0m
+[[34m15:43:31.270 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:31.271 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:31.271 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:31.271 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(276,137), o=0.0[0m
+[[34m15:43:31.323 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:31.323 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:31.323 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:31.323 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:31.323 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:31.323 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:31.323 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:31.323 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 2.09440[0m
+[[34m15:43:31.325 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:31.325 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:31.332 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 2.09440[0m
+[[34m15:43:31.869 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:31.870 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:31.870 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:31.870 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(276,137), o=2.0944[0m
+[[34m15:43:31.871 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:31.871 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:31.871 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 1000[0m
+[[34m15:43:31.874 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 1000 false[0m
+[[34m15:43:31.876 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 1000 false[0m
+[[33m15:43:31.876 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:-500, D:866[0m
+[[33m15:43:31.876 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(276,137), B:(-224,1003), C:(-500,866)[0m
+[[34m15:43:32.934 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:32.935 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:32.935 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:32.935 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-224,1003), o=2.0944[0m
+[[34m15:43:32.989 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:32.991 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:32.991 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:32.992 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:32.992 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:32.992 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:32.993 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:32.993 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 1.57080[0m
+[[34m15:43:32.996 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:32.996 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:33.002 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 1.57080[0m
+[[34m15:43:33.142 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:33.143 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:33.143 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:33.143 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-224,1003), o=1.5708[0m
+[[34m15:43:33.146 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:33.146 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:33.146 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 600[0m
+[[34m15:43:33.148 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 600 false[0m
+[[34m15:43:33.149 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 600 false[0m
+[[33m15:43:33.149 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:0, D:1000[0m
+[[33m15:43:33.149 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(-224,1003), B:(-224,1603), C:(0,1000)[0m
+[[34m15:43:33.760 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:33.760 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:33.760 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:33.760 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-224,1603), o=1.5708[0m
+[[34m15:43:33.819 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:33.821 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:33.821 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:33.823 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:33.823 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:33.824 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:33.824 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:33.824 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 1.30900[0m
+[[34m15:43:33.827 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:33.827 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:33.829 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 1.30900[0m
+[[34m15:43:33.898 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:33.898 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:33.898 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:33.898 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-224,1603), o=1.309[0m
+[[34m15:43:33.900 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:33.900 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:33.900 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 300[0m
+[[34m15:43:33.901 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 300 false[0m
+[[34m15:43:33.902 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 300 false[0m
+[[33m15:43:33.902 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:259, D:966[0m
+[[33m15:43:33.902 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(-224,1603), B:(-146,1893), C:(259,966)[0m
+[[34m15:43:34.200 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:34.200 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:34.200 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:34.200 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-146,1893), o=1.309[0m
+[[34m15:43:34.256 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:34.256 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:34.256 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:34.256 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:34.256 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:34.257 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:34.257 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:34.257 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 0.00000[0m
+[[34m15:43:34.261 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:34.261 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:34.263 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 0.00000[0m
+[[34m15:43:34.598 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:34.598 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:34.598 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:34.598 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-146,1893), o=0.0[0m
+[[34m15:43:34.602 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:34.602 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:34.602 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 600[0m
+[[34m15:43:34.602 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 600 false[0m
+[[34m15:43:34.604 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 600 false[0m
+[[33m15:43:34.604 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:1000, D:0[0m
+[[33m15:43:34.604 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(-146,1893), B:(454,1893), C:(1000,0)[0m
+[[34m15:43:35.223 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:35.224 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:35.224 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:35.224 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(454,1893), o=0.0[0m
+[[34m15:43:35.283 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:35.284 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:35.284 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m15:43:35.284 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:35.284 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:35.284 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m15:43:35.284 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m15:43:35.285 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 1.57080[0m
+[[34m15:43:35.290 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:35.290 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:35.292 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 1.57080[0m
+[[34m15:43:35.690 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:35.691 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:35.691 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:35.691 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(454,1893), o=1.5708[0m
+[[34m15:43:35.693 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m15:43:35.693 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m15:43:35.693 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 800[0m
+[[34m15:43:35.693 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 800 false[0m
+[[34m15:43:35.695 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 800 false[0m
+[[33m15:43:35.695 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:0, D:1000[0m
+[[33m15:43:35.695 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(454,1893), B:(454,2693), C:(0,1000)[0m
+[[34m15:43:36.509 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m15:43:36.509 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m15:43:36.509 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m15:43:36.509 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(454,2693), o=1.5708[0m
+[[34m15:43:36.563 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m15:43:36.564 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m15:43:36.564 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m15:43:36.564 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m15:43:36.564 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[33m15:43:36.564 STRATEGY (WARNING) on main scripts.Script.timedExecute(Script.java:177)] Ending script ScriptLoisSlave v0 at 1618753416.565[0m
+[[33m15:43:36.564 STRATEGY (WARNING) on main scripts.Script.timedExecute(Script.java:179)] Script ScriptLoisSlave v0 took 010.352[0m
+[[34m15:43:36.564 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:36.571 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m15:43:36.571 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m15:43:37.564 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:38.565 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:39.565 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:40.565 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:41.565 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:42.565 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:43.565 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:44.566 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:45.566 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:46.566 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:47.566 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:48.566 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m
+[[34m15:43:49.566 STDOUT (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:70)] Finished![0m

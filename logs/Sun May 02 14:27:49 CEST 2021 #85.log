@@ -1,0 +1,617 @@
+[[34m14:27:49.606 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:104)] Version : d1a5ef2 on master - [gitignore .idea, .gradle][0m
+[[34m14:27:49.608 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-50-generic amd64[0m
+[[34m14:27:49.615 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 16, max memory : 3.87G, available processors : 12[0m
+[[34m14:27:49.615 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:117)] [0m
+[[34m14:27:49.615 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[0m
+[[34m14:27:49.615 STDOUT (DEBUG) on main utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...[0m
+[[34m14:27:49.632 STDOUT (DEBUG) on main pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/brunlois/IdeaProjects/TechTheTiller-HighLevel/bin/../config/config.txt[0m
+[[31m14:27:49.648 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_BLUE_ACC, also tried recalageMecaBlueAcc[0m
+[[31m14:27:49.649 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[34m14:27:49.650 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :[0m
+[[34m14:27:49.650 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   master = false (default : true)[0m
+[[34m14:27:49.650 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)[0m
+[[34m14:27:49.651 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)[0m
+[[34m14:27:49.651 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)[0m
+[[34m14:27:49.651 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)[0m
+[[34m14:27:49.651 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ledCount = 1 (default : 16)[0m
+[[34m14:27:49.652 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   using7Segments = false (default : true)[0m
+[[34m14:27:49.652 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   robotRay = 142 (default : 190)[0m
+[[34m14:27:49.652 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 190 (default : 150)[0m
+[[34m14:27:49.653 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)[0m
+[[34m14:27:49.653 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   vectorComparisonThreshold = 15 (default : 5)[0m
+[[34m14:27:49.653 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)[0m
+[[34m14:27:49.653 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)[0m
+[[34m14:27:49.654 STDOUT (DEBUG) on main pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)[0m
+[[34m14:27:49.662 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table[0m
+[[34m14:27:49.662 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.[0m
+[[34m14:27:49.670 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false[0m
+[[34m14:27:49.671 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000[0m
+[[34m14:27:49.671 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000[0m
+[[34m14:27:49.671 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 142[0m
+[[34m14:27:49.672 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 190[0m
+[[34m14:27:49.672 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150[0m
+[[34m14:27:49.673 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 15[0m
+[[34m14:27:49.673 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false[0m
+[[34m14:27:49.673 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Table prêt[0m
+[[34m14:27:49.674 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe[0m
+[[34m14:27:49.675 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.[0m
+[[34m14:27:49.675 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m14:27:49.676 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m14:27:49.676 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m14:27:49.676 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m14:27:49.677 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m14:27:49.677 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m14:27:49.955 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt[0m
+[[34m14:27:49.955 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Pathfinder[0m
+[[34m14:27:49.956 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Pathfinder après son initialisation.[0m
+[[34m14:27:49.956 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Pathfinder prêt[0m
+[[34m14:27:49.957 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper[0m
+[[34m14:27:49.957 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.[0m
+[[34m14:27:49.957 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false[0m
+[[34m14:27:49.959 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to true[0m
+[[34m14:27:49.959 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false[0m
+[[34m14:27:49.961 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt[0m
+[[34m14:27:49.961 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PathFollower[0m
+[[34m14:27:49.962 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PathFollower après son initialisation.[0m
+[[34m14:27:49.962 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionLoopDelay to 20[0m
+[[34m14:27:49.962 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionDistanceCheck to 200[0m
+[[34m14:27:49.962 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.PathFollower.locomotionRadiusCheck to 200[0m
+[[34m14:27:49.963 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.PathFollower.locomotionObstructedTimeout to 2000[0m
+[[34m14:27:49.963 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean locomotion.PathFollower.simulation to true[0m
+[[34m14:27:49.964 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PathFollower prêt[0m
+[[34m14:27:49.964 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Locomotion[0m
+[[34m14:27:49.965 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Locomotion après son initialisation.[0m
+[[34m14:27:49.965 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int locomotion.Locomotion.vectorComparisonThreshold to 15[0m
+[[34m14:27:49.965 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long locomotion.Locomotion.locomotionObstructedTimeout to 2000[0m
+[[34m14:27:49.965 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Locomotion prêt[0m
+[[34m14:27:49.966 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass HookFactory[0m
+[[34m14:27:49.966 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass HookFactory après son initialisation.[0m
+[[34m14:27:49.966 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module HookFactory prêt[0m
+[[34m14:27:49.966 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager[0m
+[[34m14:27:49.967 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.[0m
+[[34m14:27:49.967 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt[0m
+[[34m14:27:49.967 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SimulatorDebug[0m
+[[34m14:27:49.967 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SimulatorDebug après son initialisation.[0m
+[[34m14:27:49.967 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean utils.communication.SimulatorDebug.active to true[0m
+[[34m14:27:49.967 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SimulatorDebug prêt[0m
+[[34m14:27:49.967 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass PanneauModule[0m
+[[34m14:27:49.967 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass PanneauModule après son initialisation.[0m
+[[34m14:27:49.968 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.PanneauModule.scoreUpdatePeriod to 100[0m
+[[34m14:27:49.969 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.PanneauModule.couleur to jaune[0m
+[[34m14:27:49.969 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledProgramPort to 19500[0m
+[[34m14:27:49.969 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.PanneauModule.ledCount to 1[0m
+[[34m14:27:49.969 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.PanneauModule.using7Segments to false[0m
+[[34m14:27:49.969 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module PanneauModule prêt[0m
+[[34m14:27:49.970 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Slave[0m
+[[34m14:27:49.972 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass SynchronizationWithBuddy[0m
+[[34m14:27:49.972 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass SynchronizationWithBuddy après son initialisation.[0m
+[[34m14:27:49.972 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.symetry to false[0m
+[[34m14:27:49.972 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.simulation to true[0m
+[[34m14:27:49.973 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean data.synchronization.SynchronizationCommon.master to false[0m
+[[34m14:27:49.973 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module SynchronizationWithBuddy prêt[0m
+[[34m14:27:49.973 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Listener[0m
+[[34m14:27:49.973 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Listener après son initialisation.[0m
+[[34m14:27:49.974 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.master to false[0m
+[[34m14:27:49.974 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.simulation to true[0m
+[[34m14:27:49.975 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingLidar to false[0m
+[[34m14:27:49.975 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingCylinderDetection to false[0m
+[[34m14:27:49.975 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseImage to false[0m
+[[34m14:27:49.976 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.visualisation to false[0m
+[[34m14:27:49.976 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.usingBaliseConnection to false[0m
+[[34m14:27:49.977 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.Listener.connectToBuddy to false[0m
+[[34m14:27:49.977 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long data.controlers.Listener.timeBetweenPosUpdates to 200[0m
+[[34m14:27:49.979 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Listener prêt[0m
+[[34m14:27:49.979 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:186)] Listener lancé : connection aux devices...[0m
+[[34m14:27:49.979 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:189)] Simulation initializing connections...[0m
+[[34m14:27:49.979 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MatchTimer[0m
+[[34m14:27:49.980 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MatchTimer après son initialisation.[0m
+[[34m14:27:49.980 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MatchTimer prêt[0m
+[[34m14:27:49.980 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass DataController[0m
+[[34m14:27:49.980 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:191)] Simulated Teensy Master connected[0m
+[[34m14:27:49.981 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:194)] Debug connection init...[0m
+[[34m14:27:49.981 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m14:27:49.981 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass DataController après son initialisation.[0m
+[[34m14:27:49.981 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:196)] Debug connection ready![0m
+[[34m14:27:49.981 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m14:27:49.981 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.master to false[0m
+[[34m14:27:49.981 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.DataController.symetry to false[0m
+[[34m14:27:49.986 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module DataController prêt[0m
+[[34m14:27:49.986 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:164)] Controller lancé : en attente du listener...[0m
+[[34m14:27:49.987 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Slave après son initialisation.[0m
+[[34m14:27:49.987 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long robot.Robot.locomotionLoopDelay to 20[0m
+[[34m14:27:49.987 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.simulation to true[0m
+[[34m14:27:49.987 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.master to false[0m
+[[34m14:27:49.987 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.symetry to false[0m
+[[34m14:27:49.988 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean robot.Robot.usingPanel to false[0m
+[[34m14:27:49.988 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module Slave prêt[0m
+[[31m14:27:49.988 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[34m14:27:49.988 STRATEGY (DEBUG) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:198)] Couleur: jaune[0m
+[[34m14:27:49.988 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ScriptManagerSlave[0m
+[[34m14:27:49.989 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ScriptLoisSlave[0m
+[[34m14:27:49.990 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ActuatorsModule[0m
+[[33m14:27:49.990 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[33m14:27:49.990 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m14:27:49.996 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ActuatorsModule après son initialisation.[0m
+[[34m14:27:49.996 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ActuatorsModule prêt[0m
+[[34m14:27:49.996 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ScriptLoisSlave après son initialisation.[0m
+[[34m14:27:49.997 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int scripts.ScriptLoisSlave.robotRay to 142[0m
+[[34m14:27:49.997 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long scripts.Script.locomotionObstructedTimeout to 2000[0m
+[[34m14:27:49.997 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean scripts.Script.symetry to false[0m
+[[34m14:27:49.997 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ScriptLoisSlave prêt[0m
+[[34m14:27:49.997 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ScriptManagerSlave après son initialisation.[0m
+[[34m14:27:49.998 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module ScriptManagerSlave prêt[0m
+[[34m14:27:50.090 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[34m14:27:50.091 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[33m14:27:50.091 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m14:27:50.091 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m14:27:50.191 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m14:27:50.191 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m14:27:50.192 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[33m14:27:50.192 COMMUNICATION (WARNING) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 10001[0m
+[[34m14:27:50.266 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass LidarController[0m
+[[34m14:27:50.266 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass LidarController après son initialisation.[0m
+[[34m14:27:50.267 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.symetry to false[0m
+[[34m14:27:50.267 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.robotRay to 142[0m
+[[34m14:27:50.267 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.controlers.LidarController.ennemyRay to 150[0m
+[[34m14:27:50.268 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private java.lang.String data.controlers.LidarController.lidarProcessPath to ../bin/LiDAR_UST_10LX[0m
+[[34m14:27:50.268 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.LidarController.usingLidar to false[0m
+[[34m14:27:50.268 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module LidarController prêt[0m
+[[34m14:27:50.269 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass CylinderDetectionController[0m
+[[34m14:27:50.270 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass CylinderDetectionController après son initialisation.[0m
+[[34m14:27:50.270 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.usingCylinderDetection to false[0m
+[[34m14:27:50.271 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.controlers.CylinderDetectionController.symetry to false[0m
+[[34m14:27:50.271 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module CylinderDetectionController prêt[0m
+[[34m14:27:50.272 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass AIModule[0m
+[[34m14:27:50.275 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass AIModule après son initialisation.[0m
+[[34m14:27:50.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14[0m
+[[34m14:27:50.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2[0m
+[[34m14:27:50.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30[0m
+[[34m14:27:50.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20[0m
+[[34m14:27:50.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25[0m
+[[34m14:27:50.276 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25[0m
+[[34m14:27:50.277 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module AIModule prêt[0m
+[[34m14:27:50.277 STDOUT (DEBUG) on main simulator.SimulatorManagerLauncher.launch(SimulatorManagerLauncher.java:166)] Lanceur de simulateur démarré[0m
+[[34m14:27:50.278 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:190)] Listener LL-Master lancé sur le port 10001[0m
+[[34m14:27:50.279 STDOUT (DEBUG) on Thread-7 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:36)] Ouverture d'une socket sur le port 10001[0m
+[[34m14:27:50.292 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m14:27:50.292 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 10001[0m
+[[33m14:27:50.292 COMMUNICATION (WARNING) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:57)] Failed trying to connect to localhost on port 19999[0m
+[[34m14:27:50.292 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 10001[0m
+[[34m14:27:50.293 STDOUT (DEBUG) on Thread-7 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:43)] Socket connectée sur le port 10001[0m
+[[34m14:27:50.293 COMMUNICATION (DEBUG) on SocketClient(localhost:10001) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 10001[0m
+[[34m14:27:50.293 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:303)] (10001) Listener connecté[0m
+[[34m14:27:50.294 STDOUT (DEBUG) on Thread-6 simulator.SimulatedRobot.launch(SimulatedRobot.java:139)] (10001) Robot simulé démarré[0m
+[[34m14:27:50.294 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:313)] (10001) Robot simulé instancié[0m
+[[34m14:27:50.295 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:317)] Instanciation de l'interface graphique[0m
+[[34m14:27:50.295 STDOUT (DEBUG) on Thread-6 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:36)] Ouverture d'une socket sur le port 19999[0m
+[[34m14:27:50.393 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 19999[0m
+[[34m14:27:50.394 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 19999[0m
+[[34m14:27:50.394 STDOUT (DEBUG) on Thread-6 simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:43)] Socket connectée sur le port 19999[0m
+[[34m14:27:50.395 COMMUNICATION (DEBUG) on SocketClient(localhost:19999) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 19999[0m
+[[34m14:27:50.581 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.Listener.asyncInit(Listener.java:257)] Listener opérationnel[0m
+[[34m14:27:50.587 DATA_HANDLER (DEBUG) on DataController data.controlers.DataController.run(DataController.java:172)] Controller opérationnel[0m
+[[34m14:27:52.225 STDOUT (DEBUG) on Thread-6 simulator.GraphicalInterface.launch(GraphicalInterface.java:200)] Interface graphique démarrée[0m
+[[34m14:27:52.225 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:337)] Interface graphique instanciée[0m
+[[34m14:27:52.226 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManager.launch(SimulatorManager.java:139)] Manager de simulation démarré[0m
+[[34m14:27:52.227 STDOUT (DEBUG) on Thread-6 simulator.SimulatorManagerLauncher.launchSimulatorManager(SimulatorManagerLauncher.java:351)] Manager de simulation instancié[0m
+[[34m14:27:55.278 COMMUNICATION (DEBUG) on main main.RobotEntryPoint.entryPoint(RobotEntryPoint.java:61)] Connection established, starting match[0m
+[[34m14:27:55.278 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass MatchSlave[0m
+[[34m14:27:55.278 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass MatchSlave après son initialisation.[0m
+[[34m14:27:55.279 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set private long scripts.Script.locomotionObstructedTimeout to 2000[0m
+[[34m14:27:55.279 STDOUT (DEBUG) on main pfg.config.Config.loadInto(Config.java:274)] Set protected boolean scripts.Script.symetry to false[0m
+[[34m14:27:55.279 DATA_HANDLER (DEBUG) on main utils.HLInstance.module(HLInstance.java:297)] Module MatchSlave prêt[0m
+[[34m14:27:55.280 ORDERS (DEBUG) on main orders.OrderWrapper.setPositionAndOrientation(OrderWrapper.java:180)] SensorState.ACTUATOR_ACTUATING = true[0m
+[[34m14:27:55.281 ORDERS (DEBUG) on main orders.OrderWrapper.setPositionAndOrientation(OrderWrapper.java:168)] Sent to LL: !cxyo 1200 650 1.57080[0m
+[[34m14:27:55.283 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : !cxyo 1200 650 1.57080[0m
+[[34m14:27:55.284 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: confirmOrder cxyo 1200 650 1.57080[0m
+[[34m14:27:55.284 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:285)] Received confirmation for order (cxyo)[0m
+[[34m14:27:55.284 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:286)] SensorState.ACTUATOR_ACTUATING = false[0m
+[[34m14:27:55.287 COMMUNICATION (DEBUG) on main data.controlers.DataController.waitForTwoPositionUpdates(DataController.java:548)] Waiting for two position updates[0m
+[[33m14:27:55.300 STRATEGY (WARNING) on main scripts.Script.timedExecute(Script.java:174)] Starting script ScriptLoisSlave v0 at 1619958475.299[0m
+[[34m14:27:55.300 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m14:27:55.300 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m14:27:55.301 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t -2.74889[0m
+[[34m14:27:55.303 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t -2.74889[0m
+[[34m14:27:55.817 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:55.818 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:55.818 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:27:55.819 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(1200,650), o=-2.74889[0m
+[[34m14:27:55.820 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m14:27:55.821 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m14:27:55.822 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 1000[0m
+[[34m14:27:55.822 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 1000 false[0m
+[[34m14:27:55.825 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 1000 false[0m
+[[33m14:27:55.825 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:-924, D:-383[0m
+[[33m14:27:55.825 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(1200,650), B:(276,267), C:(-924,-383)[0m
+[[34m14:27:56.854 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:56.855 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:56.855 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:27:56.855 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(276,267), o=-2.74889[0m
+[[34m14:27:56.906 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m14:27:56.907 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m14:27:56.907 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m14:27:56.907 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m14:27:56.907 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m14:27:56.907 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t -3.14159[0m
+[[34m14:27:56.908 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m14:27:56.909 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m14:27:56.911 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m14:27:56.912 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m14:27:56.914 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t -3.14159[0m
+[[34m14:27:57.014 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:57.014 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:57.015 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:27:57.015 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(276,267), o=-3.14159[0m
+[[34m14:27:57.019 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m14:27:57.019 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m14:27:57.019 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 700[0m
+[[34m14:27:57.020 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 700 false[0m
+[[34m14:27:57.021 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 700 false[0m
+[[33m14:27:57.021 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:-1000, D:0[0m
+[[33m14:27:57.021 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(276,267), B:(-424,267), C:(-1000,0)[0m
+[[34m14:27:57.740 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:57.741 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:57.741 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:27:57.741 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,267), o=-3.14159[0m
+[[34m14:27:57.795 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m14:27:57.796 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m14:27:57.796 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m14:27:57.796 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m14:27:57.796 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m14:27:57.796 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m14:27:57.796 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m14:27:57.796 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t -1.57080[0m
+[[34m14:27:57.803 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m14:27:57.803 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m14:27:57.805 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t -1.57080[0m
+[[34m14:27:58.214 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:58.214 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:58.214 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:27:58.214 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,267), o=-1.5708[0m
+[[34m14:27:58.218 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m14:27:58.218 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m14:27:58.219 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 130[0m
+[[34m14:27:58.219 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 130 false[0m
+[[34m14:27:58.220 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 130 false[0m
+[[33m14:27:58.221 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:0, D:-1000[0m
+[[33m14:27:58.221 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(-424,267), B:(-424,137), C:(0,-1000)[0m
+[[34m14:27:58.355 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:58.356 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:58.356 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:27:58.356 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=-1.5708[0m
+[[34m14:27:58.408 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m14:27:58.409 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m14:27:58.409 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m14:27:58.409 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m14:27:58.409 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m14:27:58.409 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m14:27:58.409 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m14:27:58.411 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m14:27:58.411 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m14:27:58.412 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 0.00000[0m
+[[34m14:27:58.418 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 0.00000[0m
+[[34m14:27:59.637 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:59.638 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:59.638 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:27:59.638 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[34m14:27:59.641 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[33m14:27:59.641 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-435,125), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:27:59.642 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:27:59.642 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:27:59.644 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:27:59.644 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:27:59.644 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:27:59.644 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:01.645 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:01.696 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:01.696 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:01.696 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:01.699 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:01.703 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:01.703 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:01.703 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:03.697 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:03.747 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:03.747 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:03.747 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:03.749 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:03.751 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:03.751 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:03.751 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:05.748 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:05.798 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:05.799 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:05.800 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:05.802 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:05.802 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:05.803 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:05.803 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:07.800 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:07.851 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:07.851 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:07.851 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:07.851 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:07.855 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:07.856 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:07.856 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:09.851 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:09.902 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:09.902 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:09.902 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:09.903 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:09.903 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:09.904 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:09.904 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:11.903 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:11.953 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:11.953 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:11.953 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:11.955 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:11.959 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:11.960 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:11.960 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:13.954 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:14.004 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:14.004 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:14.004 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:14.006 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:14.011 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:14.011 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:14.011 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:16.005 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:16.055 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:16.055 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:16.056 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:16.057 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:16.061 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:16.061 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:16.061 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:18.056 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:18.106 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:18.106 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:18.108 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:18.108 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:18.113 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:18.113 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:18.113 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:20.108 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:20.159 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:20.159 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:20.159 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:20.162 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:20.166 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:20.166 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:20.166 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:22.160 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:22.210 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:22.210 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:22.211 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:22.213 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:22.218 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:22.254 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:22.254 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:24.211 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:24.262 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:24.262 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:24.262 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:24.264 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:24.264 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:24.264 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:24.264 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:26.263 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:26.313 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:26.313 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:26.313 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:26.316 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:26.321 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:26.321 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:26.321 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:28.314 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:28.364 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:28.364 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:28.365 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:28.366 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:28.368 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:28.369 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:28.369 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:30.365 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:30.416 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:30.416 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:30.418 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:30.419 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:30.421 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:30.421 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:30.422 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:32.418 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:32.469 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:32.469 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:32.469 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:32.471 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:32.475 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:32.475 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:32.475 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:34.470 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:34.520 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:34.520 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:34.520 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:34.522 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:34.527 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:34.527 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:34.527 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:36.521 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:36.571 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:36.571 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:36.574 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:36.577 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:36.581 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:36.582 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:36.582 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:38.575 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:38.625 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:38.625 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:38.625 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:38.626 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:38.631 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:38.631 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:38.631 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:40.626 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:40.676 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:40.676 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:40.678 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:40.679 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:40.680 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:40.680 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:40.680 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:42.679 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:42.729 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:42.729 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:42.729 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:42.733 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:42.737 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:42.738 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:42.738 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:44.730 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:44.780 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:44.780 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:44.781 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:44.783 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:44.785 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:44.786 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:44.786 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:46.781 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:46.832 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:46.832 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:46.833 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:46.836 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:46.840 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:46.874 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:46.874 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:48.834 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:48.884 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:48.884 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:48.884 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:48.887 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:48.891 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:48.892 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:48.892 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:50.885 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:50.935 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:50.935 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:50.936 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:50.938 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:50.938 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:50.938 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:50.938 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:52.936 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:52.986 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:52.987 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:52.987 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:52.988 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:52.988 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:52.988 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:52.988 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:54.987 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:55.038 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:55.038 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:55.039 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:55.041 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:55.041 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:55.041 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:55.041 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:57.039 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:57.089 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:57.089 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:57.090 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:57.092 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:57.094 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:57.094 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:57.095 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:28:59.091 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:28:59.141 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:28:59.141 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:28:59.141 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:28:59.142 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:28:59.147 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:28:59.147 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:28:59.147 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:29:01.142 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:29:01.192 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:29:01.192 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:29:01.192 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:29:01.194 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:29:01.195 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:01.195 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:01.195 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:29:03.193 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:29:03.243 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:29:03.244 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:29:03.244 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:29:03.246 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:29:03.248 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:03.248 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:03.248 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:29:05.245 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:29:05.295 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:29:05.295 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:29:05.296 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:29:05.297 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:29:05.301 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:05.302 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:05.302 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:29:07.296 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:29:07.347 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:29:07.347 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:29:07.347 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:29:07.349 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:29:07.351 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:07.352 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:07.352 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:29:09.348 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:29:09.398 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:29:09.398 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:29:09.399 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:29:09.400 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:29:09.405 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:09.405 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:09.405 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[31m14:29:11.400 LOCOMOTION (CRITICAL) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:198)] Failed to reach position because of someone in front of me! Enemy intersects [(-424,137):(-224,137)]: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158 [TRAJECTORY_OBSTRUCTED] Aim is (376,137)[0m
+[[33m14:29:11.450 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:267)] Enemy in front of me: Obstacle mobile circulaire Circle [center: (-254,189), ray : 292.0, angleStart : -3.14159, angleEnd : 3.14158[0m
+[[33m14:29:11.450 LOCOMOTION (WARNING) on main locomotion.PathFollower.handleEnemyForward(PathFollower.java:268)] Attente de 2000 ms tant que ça se libère pas...[0m
+[[34m14:29:11.452 ORDERS (DEBUG) on main orders.OrderWrapper.immobilise(OrderWrapper.java:122)] Sent to LL: stop[0m
+[[34m14:29:11.452 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : stop[0m
+[[34m14:29:11.455 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:11.455 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:11.455 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(-424,137), o=0.0[0m
+[[34m14:29:11.603 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m14:29:11.603 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 800[0m
+[[34m14:29:11.609 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 800 false[0m
+[[34m14:29:11.611 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 800 false[0m
+[[33m14:29:11.611 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:1000, D:0[0m
+[[33m14:29:11.611 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(-424,137), B:(376,137), C:(1000,0)[0m
+[[34m14:29:12.431 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:12.431 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:12.431 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:29:12.431 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(376,137), o=0.0[0m
+[[34m14:29:12.486 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxtr 500.00000[0m
+[[34m14:29:12.486 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:217)] Sent to LL: maxro 6.28319[0m
+[[34m14:29:12.486 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:224)] End of move lengthwise[0m
+[[34m14:29:12.487 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:301)] SensorState.DISABLE_LIDAR = true[0m
+[[34m14:29:12.487 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:303)] SensorState.MOVING = true[0m
+[[34m14:29:12.487 ORDERS (DEBUG) on main locomotion.Locomotion.turnTowards(Locomotion.java:139)] Sent to LL: t 2.51327[0m
+[[34m14:29:12.488 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxtr 500.00000[0m
+[[34m14:29:12.488 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxtr" est inconnu[0m
+[[34m14:29:12.493 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : maxro 6.28319[0m
+[[34m14:29:12.493 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:335)] SIMULATEUR-LL : l'ordre "maxro" est inconnu[0m
+[[34m14:29:12.495 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : t 2.51327[0m
+[[34m14:29:13.134 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatedRobot.trySendStoppedMovingMessage(SimulatedRobot.java:193)] stoppedMoving[0m
+[[34m14:29:13.134 COMMUNICATION (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:251)] Got event: stoppedMoving[0m
+[[34m14:29:13.134 ORDERS (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:263)] SensorState.MOVING = false[0m
+[[34m14:29:13.134 STDOUT (DEBUG) on pool-1-thread-1 data.controlers.DataController.handleEvent(DataController.java:264)] Position at StoppedMoving: (x,y)=(376,137), o=2.51327[0m
+[[34m14:29:13.137 ORDERS (DEBUG) on main locomotion.PathFollower.turnTowards(PathFollower.java:317)] SensorState.DISABLE_LIDAR = false[0m
+[[34m14:29:13.137 ORDERS (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:165)] SensorState.MOVING = true[0m
+[[34m14:29:13.138 LOCOMOTION (DEBUG) on main locomotion.PathFollower.moveLengthwise(PathFollower.java:166)] Move lengthwise 950[0m
+[[34m14:29:13.138 ORDERS (DEBUG) on main locomotion.Locomotion.moveLengthwise(Locomotion.java:131)] Sent to LL: d 950 false[0m
+[[34m14:29:13.141 STDOUT (DEBUG) on SimulatorManagerThread simulator.SimulatorManager.handleMessageLL(SimulatorManager.java:239)] SIMULATEUR-LL : message reçu : d 950 false[0m
+[[33m14:29:13.141 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:382)] C:-809, D:588[0m
+[[33m14:29:13.141 COMMUNICATION (WARNING) on SimulatorManagerThread simulator.SimulatedRobot.moveLengthwise(SimulatedRobot.java:384)] A:(376,137), B:(-393,696), C:(-809,588)[0m

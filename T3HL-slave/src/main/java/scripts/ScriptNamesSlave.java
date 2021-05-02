@@ -5,7 +5,7 @@ import utils.container.ContainerException;
 
 public enum ScriptNamesSlave implements ScriptNames {
  //TODO: rajouter les noms de nouveaux scripts (voir sur l'ancien code HL)
-    ;
+    LOLO(ScriptLoisSlave.class,"LoisSlave");
 
     private Class<? extends Script> scriptClass;
     private String scriptName;

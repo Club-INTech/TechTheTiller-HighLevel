@@ -1,0 +1,16 @@
+[[31m19:55:34.361 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_BLUE_ACC, also tried recalageMecaBlueAcc[0m
+[[31m19:55:34.362 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
+[[31m19:55:35.942 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
+[[31m19:55:38.359 STDERR (CRITICAL) on Thread-7] java.net.BindException: Address already in use[0m
+[[31m19:55:38.359 STDERR (CRITICAL) on Thread-7] 	at java.base/sun.nio.ch.Net.bind0(Native Method)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at java.base/sun.nio.ch.Net.bind(Net.java:552)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at java.base/sun.nio.ch.Net.bind(Net.java:541)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:281)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:172)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:37)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at simulator.SimulatorManagerLauncher$1.run(SimulatorManagerLauncher.java:187)[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] Exception in thread "Thread-7" java.lang.NullPointerException: Cannot invoke "java.net.ServerSocket.accept()" because "this.receptionSocket" is null[0m
+[[31m19:55:38.360 STDERR (CRITICAL) on Thread-7] 	at simulator.SimulatedConnectionManager.<init>(SimulatedConnectionManager.java:42)[0m
+[[31m19:55:38.361 STDERR (CRITICAL) on Thread-7] 	at simulator.SimulatorManagerLauncher$1.run(SimulatorManagerLauncher.java:187)[0m
