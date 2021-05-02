@@ -50,7 +50,7 @@ public class ScriptLoisSlave extends Script {
             //Suck(3,1)
             //Suck(4,1)
             moveLengthwise(1000,false);
-            turnTowards(Math.PI/2);
+            turnTowards(Math.PI/2);git
             moveLengthwise(130,false);
             turnTowards(Math.PI);
             moveLengthwise(900,false);
