@@ -12,6 +12,22 @@ import utils.math.Vec2;
 import utils.math.VectCartesian;
 
 public class ScriptLoisSlave extends Script {
+    String posstart="Yellow";
+    int posxinit;
+    int posyinit;
+
+
+    public Vec2 entryPosition(int version) {
+        if (posstart=="Yellow") {
+            posxinit=-1200;
+            posyinit=820;
+
+        }
+        if (posstart== "Blue"){
+            posxinit=1200;
+            posyinit=820;
+        }
+        return new Vec2(posxinit,posyinit); }
 
     @Configurable
     private int robotRay;
@@ -29,6 +45,7 @@ public class ScriptLoisSlave extends Script {
 
 
         try {
+            if (posstart=="Blue") {
             //Portes ouvertes à 135 degrés
   /*          wrapper.perform(ActuatorsOrders.Valve7Off);*/
             //Recupere gobelet devant
@@ -50,7 +67,7 @@ public class ScriptLoisSlave extends Script {
             //Suck(3,1)
             //Suck(4,1)
             moveLengthwise(1000,false);
-            turnTowards(Math.PI/2);git
+            turnTowards(Math.PI/2);
             moveLengthwise(130,false);
             turnTowards(Math.PI);
             moveLengthwise(900,false);
@@ -67,6 +84,47 @@ public class ScriptLoisSlave extends Script {
             //Suck(2,0)
             //Suck(3,0)
             //Suck(4,0)
+                }
+            else {
+                if (posstart == "Yellow") {
+                    //Recupere gobelet devant
+                    turnTowards(0);
+                    moveLengthwise(900,false);
+                    //Suck(1,1)
+
+                    //Attaque eceuil adversaire
+                    turnTowards(-0.60);
+                    moveLengthwise(1100,false);
+                    turnTowards(Math.PI/2);
+                    moveLengthwise(-300,true);
+                    //Marteaudescend
+                    //Marteauremonte
+
+                    //Balayage zone de haut fond
+                    turnTowards(Math.PI);
+                    //Suck(2,1)
+                    //Suck(3,1)
+                    //Suck(4,1)
+                    moveLengthwise(1000,false);
+                    turnTowards(Math.PI/2);
+                    moveLengthwise(130,false);
+                    turnTowards(0);
+                    moveLengthwise(900,false);
+
+                    //Sortie zone haut fond
+                    turnTowards(Math.PI/2+0.65);
+                    moveLengthwise(1150,false);
+
+                    //EntreePort
+                    moveLengthwise(200,false);
+                    turnTowards(Math.PI/2);
+                    moveLengthwise(500,false);
+                    //Suck(1,0)
+                    //Suck(2,0)
+                    //Suck(3,0)
+                    //Suck(4,0)
+                }
+            }
 
 /*
             table.removeAnyIntersectedMobileObstacle(XYO.getRobotInstance().getPosition(),robotRay);
@@ -120,10 +178,7 @@ public class ScriptLoisSlave extends Script {
             e.printStackTrace();
         }
     }
-
-    @Override
     //Position en entrée (0,0)=(1500,0) , axe x inversé, zone nord bleue
-    public Vec2 entryPosition(int version) { return new Vec2(1200,785); }
 
     @Override
     public void finalize(Exception e) {
