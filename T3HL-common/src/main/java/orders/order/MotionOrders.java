@@ -26,11 +26,15 @@ import static utils.communication.Formatting.*;
 /**
  * Tous les ordres envoyés au LL concernant les mouvements du robot
  *
- * @author yousra, jglrxavpok
+ * @author yousra, jglrxavpok,Ohm-T
  */
 public class MotionOrders {
     /**Avancer*/
     public static final OrderWithArgument MoveLengthwise = OrderBuilder.createWithArgs("d", INTEGER, BOOLEAN);
+    /**Aspirer*/
+    public static final OrderWithArgument Suck=OrderBuilder.createWithArgs("sk",INTEGER,INTEGER);
+    /**Marteaux*/
+    public static final OrderWithArgument Hammers=OrderBuilder.createWithArgs("hmrs",INTEGER);
     /** Tourner */
     public static final OrderWithArgument Turn = OrderBuilder.createWithArgs("t", FLOAT5);
     /** Aller jusqu'à un point */
@@ -44,7 +48,6 @@ public class MotionOrders {
     public static final Order DisableRotationControl = OrderBuilder.createSimple("cr0");
     /** Activer l'asserv en rotation */
     public static final Order EnableRotationControl = OrderBuilder.createSimple("cr1");
-    public static OrderWithArgument Suck;
 
     private MotionOrders() {}
 }

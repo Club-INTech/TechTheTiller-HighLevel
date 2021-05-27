@@ -207,6 +207,17 @@ public class PathFollower extends ModuleThread {
         Log.LOCOMOTION.debug("End of move lengthwise");
     }
 
+
+    public void suck(int posventouse,int succion,Runnable... parallelActions){
+        this.orderWrapper.suck(posventouse,succion,parallelActions);
+    }
+
+
+    public void hammers(int level, Runnable... parallelActions) {
+        this.orderWrapper.hammers(level,parallelActions);
+    }
+
+
     /**
      * Vérifies si un ennemi est devant là où on veut aller. S'il est plus loin que la position qu'on veut atteindre, on continue. Le robot ralentit alors si 'shouldSlowDown' est à 'true'
      * @param distance la distance qu'on veut parcourir

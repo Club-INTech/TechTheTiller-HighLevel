@@ -91,6 +91,27 @@ public class OrderWrapper implements Module {
     }
 
     /**
+     * On envoit au bas niveau comme ordre d'activer la ventouse en position i=posventouse
+     * @param posventouse la ième ventouse
+     * @param succion l'état de succion de la ventouse
+     */
+
+    public void suck(int posventouse, int succion, Runnable... parallelActions) {
+        sendString(MotionOrders.Suck.with(posventouse,succion));
+        runAll(parallelActions);
+    }
+
+    /**
+     * On envoit au bas niveau comme ordre d'activer la ventouse en position i=posventouse
+     *
+     * @param level état des marteaux (montés/descendus)
+     */
+    public void hammers(int level, Runnable... parallelActions) {
+        sendString(MotionOrders.Hammers.with(level));
+        runAll(parallelActions);
+    }
+
+    /**
      * On envoit au bas niveau comme ordre de tourner
      * @param angle  angle avec lequel on veut tourner
      */
@@ -413,8 +434,4 @@ public class OrderWrapper implements Module {
         }
     }
 
-    public void suck(int posventouse, int succion, Runnable[] parallelActions) {
-        sendString(MotionOrders.Suck.with(posventouse,succion));
-        runAll(parallelActions);
-    }
 }

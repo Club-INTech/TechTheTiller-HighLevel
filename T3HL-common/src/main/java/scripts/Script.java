@@ -278,8 +278,24 @@ public abstract class Script implements Module {
         robot.moveLengthwise(distance, expectedWallImpact, runnables);
     }
 
-    public void suck(int posventouse, int succion, Runnable... runnables) throws UnableToMoveException {
+    /**
+     * Permet au robot d'activer/arreter la ième ventouse
+     * @param posventouse
+     *             le numéro de la ventouse (compris entre 1 et 4)
+     * @param succion
+     *             1 si l'on souhaite activer succion, 0 pour l'arrêter
+     */
+    public void suck(int posventouse, int succion, Runnable... runnables) {
         robot.suck(posventouse, succion, runnables);
+    }
+
+    /**
+     * Permet au robot de descendre/monter tous les marteaux en même temps
+     * @param level
+     *             1 si les marteaux sont levés et 0 s'ils sont descendus
+     */
+     public void hammers(int level, Runnable... runnables) {
+        robot.hammers(level,runnables);
     }
 
 

@@ -281,8 +281,23 @@ public abstract class Robot implements Module {
      * @throws UnableToMoveException
      *              en cas de problèmes de blocage/adversaire
      */
-    public void moveLengthwise(int distance, boolean expectedWallImpact, Runnable... runnables) throws UnableToMoveException {
+    public void moveLengthwise(int distance, boolean expectedWallImpact, Runnable... runnables)throws UnableToMoveException  {
         this.locomotion.moveLengthwise(distance, expectedWallImpact, runnables);
+    }
+
+    /**
+     * Permet au robot d'activer/arreter la ième ventouse
+     * @param posventouse
+     * le numéro de la ventouse (compris entre 1 et 4)
+     * @param succion
+     * 1 si l'on souhaite activer succion
+     */
+    public void suck(int posventouse, int succion, Runnable... runnables) {
+        this.orderWrapper.suck(posventouse,succion,runnables);
+    }
+
+    public void hammers(int level, Runnable...runnables) {
+        this.orderWrapper.hammers(level,runnables);
     }
 
     /**
@@ -612,11 +627,6 @@ public abstract class Robot implements Module {
     public XYO getXyo() {
         return this.xyo;
     }
-
-    public void suck(int posventouse, int succion, Runnable... runnables) throws UnableToMoveException {
-        this.orderWrapper.suck(posventouse,succion,runnables);
-    }
-
 
 }
 

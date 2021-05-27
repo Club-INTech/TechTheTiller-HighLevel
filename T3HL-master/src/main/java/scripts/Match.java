@@ -53,14 +53,14 @@ public class Match extends Script {
 //          pour LL ecrire fonction pour descendre et fermer tous marteau en meme temps ou l'écrire en JAVA à voir
 
                 turnTowards(5 * (Math.PI) / 4);
-            /*suck(1,True)
-              suck(3,True)*/
+            /*suck(1,1)
+              suck(3,1)*/
                 moveLengthwise(400, false);
                 turnTowards(Math.PI);
-                /*suck(4,True)*/
+                /*suck(4,1)*/
                 moveLengthwise(200, false);
                 turnTowards(-Math.PI / 2);
-                /*suck(2,True)*/
+                suck(2,1);
                 moveLengthwise(300, false);
                 // demi tour
                 turnTowards(Math.PI / 2);
@@ -75,25 +75,25 @@ public class Match extends Script {
                 turnTowards(Math.PI / 2);
                 moveLengthwise(665, false);
 //            dépot ventouses port rouge
-            /*suck(1,False)
-              suck(1,False)*/
+            /*suck(1,0)
+              suck(1,0)*/
 
                 moveLengthwise(-150, false);
                 turnTowards(-Math.PI / 2);
                 moveLengthwise(-150, false);
 //            dépot rouge EN
-                /*lower_hammer()*/
+                /*hammers()*/
 
                 moveLengthwise(600, false);
 //            wait(100);
 //            dépot vert EN
-                /*lower_hammer()*/
+                /*hammers()*/
 
                 moveLengthwise(150, false);
                 turnTowards(Math.PI / 2);
                 moveLengthwise(150, false);
 //            dépot ventouses vert
-                /*lower_hammer()*/
+                /*hammers()*/
 
 //            phare
                 moveLengthwise(-530, false);
@@ -103,9 +103,9 @@ public class Match extends Script {
                 turnTowards(Math.PI / 2);
                 moveLengthwise(500, false);
                 turnTowards(Math.PI / 4);
-             /*suck(2,True)
-              suck(3,True)
-              suck(4,True)*/
+             /*suck(2,1)
+              suck(3,1)
+              suck(4,1)*/
 
                 moveLengthwise(450, false);
                 turnTowards(Math.PI / 2);
@@ -126,14 +126,14 @@ public class Match extends Script {
                 if (posstart == "Yellow") {
 
                     turnTowards(-Math.PI / 4);
-            /*suck(1,True)
-              suck(3,True)*/
+            /*suck(1,1)
+              suck(3,1)*/
                     moveLengthwise(400, false);
                     turnTowards(0);
-                    /*suck(4,True)*/
+                    /*suck(4,1)*/
                     moveLengthwise(200, false);
                     turnTowards(-Math.PI / 2);
-                    /*suck(2,True)*/
+                    /*suck(2,1)*/
                     moveLengthwise(300, false);
                     // demi tour
                     turnTowards(Math.PI / 2);
@@ -148,25 +148,25 @@ public class Match extends Script {
                     turnTowards(Math.PI / 2);
                     moveLengthwise(665, false);
 //            dépot ventouses port rouge
-            /*suck(1,False)
-              suck(1,False)*/
+            /*suck(1,0)
+              suck(1,0)*/
 
                     moveLengthwise(-150, false);
                     turnTowards(-Math.PI / 2);
                     moveLengthwise(-150, false);
 //            dépot rouge EN
-                    /*lower_hammer()*/
+                    /*hammers()*/
 
                     moveLengthwise(600, false);
 //            wait(100);
 //            dépot vert EN
-                    /*lower_hammer()*/
+                    /*hammers()*/
 
                     moveLengthwise(150, false);
                     turnTowards(Math.PI / 2);
                     moveLengthwise(150, false);
 //            dépot ventouses vert
-                    /*lower_hammer()*/
+                    /*hammers()*/
 
 //            phare
                     moveLengthwise(-530, false);
@@ -176,9 +176,9 @@ public class Match extends Script {
                     turnTowards(Math.PI / 2);
                     moveLengthwise(500, false);
                     turnTowards(3*Math.PI / 4);
-             /*suck(2,True)
-              suck(3,True)
-              suck(4,True)*/
+             /*suck(2,1)
+              suck(3,1)
+              suck(4,1)*/
 
                     moveLengthwise(450, false);
                     turnTowards(Math.PI / 2);

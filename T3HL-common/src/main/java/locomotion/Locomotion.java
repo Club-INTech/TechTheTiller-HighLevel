@@ -114,16 +114,6 @@ public class Locomotion implements Module {
 
     /**
      * Méthode permettant au robot d'avancer : bloquant
-     * @param distance  distance de translation
-     */
-    public void moveLengthwise(int distance) throws UnableToMoveException, TimeoutError {
-        moveLengthwise(distance, false);
-
-    }
-
-
-    /**
-     * Méthode permettant au robot d'avancer : bloquant
      * @param distance
      *              distance de translation
      * @param expectedWallImpact
@@ -132,6 +122,28 @@ public class Locomotion implements Module {
     public void moveLengthwise(int distance, boolean expectedWallImpact, Runnable... runnables) throws UnableToMoveException, TimeoutError {
         pathFollower.moveLengthwise(distance, expectedWallImpact, runnables);
     }
+
+
+    /**
+     * Permet au robot d'activer/arreter la ième ventouse
+     * @param posventouse
+     * le numéro de la ventouse (compris entre 1 et 4)
+     * @param succion
+     * 1 si l'on souhaite activer succion
+     */
+    public void suck(int posventouse, int succion, Runnable... runnables) {
+        pathFollower.suck(posventouse,succion,runnables);
+    }
+
+    /**
+     * Permet au robot d'activer/arreter la ième ventouse
+     * @param level
+     *            1 pour les marteaux en haut, 0 en bas
+     */
+    public void hammers(int level, Runnable... runnables) {
+        pathFollower.hammers(level,runnables);
+    }
+
 
     /**
      * Méthode permettant au robot de tourner
