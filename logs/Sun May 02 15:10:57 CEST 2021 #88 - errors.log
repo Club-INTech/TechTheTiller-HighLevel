@@ -1,3 +1,0 @@
-[[31m15:10:57.360 STDERR (CRITICAL) on main] Unknown key : RECALAGE_MECA_BLUE_ACC, also tried recalageMecaBlueAcc[0m
-[[31m15:10:57.362 STDERR (CRITICAL) on main] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu[0m
-[[31m15:10:57.666 STRATEGY (CRITICAL) on main main.RobotEntryPoint.initServices(RobotEntryPoint.java:195)] PAS DE PANNEAU[0m
