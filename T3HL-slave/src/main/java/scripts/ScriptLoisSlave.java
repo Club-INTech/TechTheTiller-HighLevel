@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 import java.io.*;
 
 public class ScriptLoisSlave extends Script {
-    String posstart="Blue";
+    String posstart="Yellow";
     String aruco="North";
     int posxinit;
     int posyinit;
@@ -137,9 +137,11 @@ public class ScriptLoisSlave extends Script {
                 moveLengthwise(600, false);
                 //Lecture QRcode
                 turnTowards(-Math.PI/2);
-                executeBashCommand("/brunlois/bin/python /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py > arucoresults.txt"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
-                aruco=readtextfile("arucoresults.txt");
+                executeBashCommand("/brunlois/bin/python /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
+                Thread.sleep(4000);
+                aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
                 System.out.println("Aruco data" + aruco);
+
                 //envoie donnee ARUCO
                 //Fin sortie zone haut fond
                 turnTowards(-0.65 + Math.PI / 2);
@@ -203,8 +205,9 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(600, false);
                     //Lecture QRcode
                     turnTowards(-Math.PI / 2);
-                    executeBashCommand("/brunlois/bin/python /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py > arucoresults.txt"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
-                    aruco=readtextfile("arucoresults.txt");
+                    executeBashCommand("/brunlois/bin/python /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
+                    Thread.sleep(4000);
+                    aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
                     System.out.println("Aruco data" + aruco);
                     turnTowards(Math.PI / 2 + 0.65);
                     //ENVOIE DONNEE ARUCO
