@@ -15,8 +15,9 @@ import java.io.InputStreamReader;
 import java.io.*;
 
 public class ScriptLoisSlave extends Script {
-    String posstart="Yellow";
+    String posstart="Blue";
     String aruco="North";
+    int dt = 500;
     int posxinit;
     int posyinit;
 
@@ -99,6 +100,7 @@ public class ScriptLoisSlave extends Script {
     @Override
     public void execute(int version) {
         try {
+            System.out.println("_____POSSSTART_____:" + posstart);
             if (posstart == "Blue") {
                 //Portes ouvertes à 135 degrés
                 //wrapper.perform(ActuatorsOrders.Valve7Off);
@@ -137,11 +139,8 @@ public class ScriptLoisSlave extends Script {
                 moveLengthwise(600, false);
                 //Lecture QRcode
                 turnTowards(-Math.PI/2);
-                executeBashCommand("/brunlois/bin/python /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
-                Thread.sleep(4000);
+                executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
                 aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
-                System.out.println("Aruco data" + aruco);
-
                 //envoie donnee ARUCO
                 //Fin sortie zone haut fond
                 turnTowards(-0.65 + Math.PI / 2);
@@ -156,14 +155,14 @@ public class ScriptLoisSlave extends Script {
                 //Suck(3,0)
                 //Suck(4,0)
                 //FIN MATCH
-                if (aruco == "North") {
+                if (aruco.equals("North")) {
                     moveLengthwise(-500, false);
                     turnTowards(-Math.PI / 2);
                     moveLengthwise(1000, false);
                     turnTowards(0);
                     moveLengthwise(1000, false);
                 }
-                if (aruco == "South") {
+                if (aruco.equals("South")) {
                     moveLengthwise(-500, false);
                     turnTowards(0);
                     moveLengthwise(1000, false);
@@ -205,10 +204,8 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(600, false);
                     //Lecture QRcode
                     turnTowards(-Math.PI / 2);
-                    executeBashCommand("/brunlois/bin/python /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
-                    Thread.sleep(4000);
+                    executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
                     aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
-                    System.out.println("Aruco data" + aruco);
                     turnTowards(Math.PI / 2 + 0.65);
                     //ENVOIE DONNEE ARUCO
                     //Fin sortie zone de haut fond
@@ -221,14 +218,14 @@ public class ScriptLoisSlave extends Script {
                     //Suck(2,0)
                     //Suck(3,0)
                     //Suck(4,0)
-                    if (aruco == "North") {
+                    if (aruco.equals("North")) {
                         moveLengthwise(-500, false);
                         turnTowards(-Math.PI / 2);
                         moveLengthwise(1000, false);
                         turnTowards(Math.PI);
                         moveLengthwise(1000, false);
                     }
-                    if (aruco == "South") {
+                    if (aruco.equals("South")) {
                         moveLengthwise(-500, false);
                         turnTowards(Math.PI);
                         moveLengthwise(1000, false);
