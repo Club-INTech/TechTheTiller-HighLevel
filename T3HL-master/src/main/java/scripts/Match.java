@@ -5,8 +5,9 @@ import locomotion.UnableToMoveException;
 import pfg.config.Configurable;
 import utils.ConfigData;
 import utils.HLInstance;
-import utils.container.ContainerException;
 import utils.math.Vec2;
+import static connection.JavaPython.executeBashCommand;
+import static connection.JavaPython.readtextfile;
 
 public class Match extends Script {
     private final ScriptManagerMaster scriptManagerMaster;
@@ -42,6 +43,10 @@ public class Match extends Script {
         return new Vec2(posxinit,posyinit);
     }
 
+    @Override
+    public void finalize(Exception e) {
+
+    }
 
 
     @Override
@@ -60,13 +65,18 @@ public class Match extends Script {
                 /*suck(4,1)*/
                 moveLengthwise(200, false);
                 turnTowards(-Math.PI / 2);
-                suck(2,1);
+                suck(2, 1);
                 moveLengthwise(300, false);
                 // demi tour
                 turnTowards(Math.PI / 2);
                 moveLengthwise(-100, false);
 
 //              1er écueil nord (EN)
+
+                executeBashCommand("/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/Center.py");
+                Thread.sleep(4000);
+                String ecueil = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/ecueil.txt");
+                System.out.println("Ecueil : " + ecueil);
 
 
                 moveLengthwise(400, false);
@@ -81,6 +91,21 @@ public class Match extends Script {
                 moveLengthwise(-150, false);
                 turnTowards(-Math.PI / 2);
                 moveLengthwise(-150, false);
+
+
+
+//                Test pour la zone de Haut Fond
+//                Placer le robot devant les gobelets à analyser après les avoir recupéré dans la zone de haut fond
+
+                executeBashCommand("/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/HautFond.py");
+                Thread.sleep(4000);
+                String hautfond = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt");
+                System.out.println("HF : " + hautfond);
+                hfTri(hautfond);
+
+
+
+
 //            dépot rouge EN
                 /*hammers()*/
 
@@ -175,7 +200,7 @@ public class Match extends Script {
                     moveLengthwise(650, false);
                     turnTowards(Math.PI / 2);
                     moveLengthwise(500, false);
-                    turnTowards(3*Math.PI / 4);
+                    turnTowards(3 * Math.PI / 4);
              /*suck(2,1)
               suck(3,1)
               suck(4,1)*/
@@ -199,14 +224,132 @@ public class Match extends Script {
             }
 
 
-        } catch (UnableToMoveException e) {
+        } catch (UnableToMoveException | InterruptedException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    @Override
-    public void finalize(Exception e) {
+
+    //    Fonction permettant de considérer 3 cas
+    //    après récuperation des gobelets dans l'écueil Nord ami
+    public void ecueilTri_master(String ecueilmaster){
+
+        if (posstart.equals("Yellow")){
+            switch(ecueilmaster){
+                case "VVRRR":
+
+                case "VRVRR":
+
+                case "VRRVR":
+
+            }
+        }else{
+            switch (ecueilmaster){
+                case "VVVRR":
+
+                case "VVRVR":
+
+                case "VRVVR":
+
+            }
+        }
+    }
+
+
+    //    Fonction permettant de considérer les 3 cas après récuperation
+    //    des gobelets dans l'écueil adverse avant la zone de haut fond
+    public void ecueilTri_slave(String ecueilslave){
+
+        if (posstart.equals("Yellow")){
+            switch(ecueilslave){
+                case "VVRRR":
+
+                case "VRVRR":
+
+                case "VRRVR":
+
+            }
+        }else{
+            switch (ecueilslave){
+                case "VVVRR":
+
+                case "VVRVR":
+
+                case "VRVVR":
+
+            }
+        }
+    }
+
+
+//    Fonction permettant de considérer tous les cas possibles après récuperation des gobelets dans la zone de haut fond
+
+    public void hfTri(String pyt_hf) {
+
+        switch (pyt_hf){
+
+//          Cas récup 3 gobelets
+            case "RRR":
+            case "RRV":
+            case "RVR":
+            case "VRR":
+            case "RVV":
+            case "VVR":
+            case "VRV":
+            case "VVV":
+
+
+//          Cas récup 4 gobelets
+            case "RRRV":
+            case "RRVR":
+            case "RVRR":
+            case "VRRR":
+
+
+            case "RRVV":
+            case "RVRV":
+            case "RVVR":
+            case "VRVR":
+            case "VVRR":
+            case "VRRV":
+
+
+            case "VVVR":
+            case "VVRV":
+            case "VRVV":
+            case "RVVV":
+
+
+//           Cas récup 1 gobelet
+            case "R":
+                try {
+                    moveLengthwise(400, false);
+                    turnTowards(0);
+                } catch (UnableToMoveException e) {
+                    e.printStackTrace();
+                }
+
+                break;
+
+            case "V":
+
+//          Cas récup 2 gobelets
+            case "RR":
+            case "RV":
+            case "VR":
+            case "VV":
+
+
+//          Cas récup 0 gobelets
+
+
+
+        }
 
     }
+
 }
+
