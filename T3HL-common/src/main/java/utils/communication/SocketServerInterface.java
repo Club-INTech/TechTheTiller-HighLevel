@@ -20,7 +20,7 @@ package utils.communication;
 
 import utils.Log;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.*;
 import java.util.Optional;
 
@@ -34,6 +34,7 @@ public class SocketServerInterface extends SocketInterface {
 
     private ServerSocket serverSocket = null;
     private int receivedCount;
+    public String file;
 
     /**
      * Construit une interface de connexion point-à-point attendant la connexion
@@ -43,6 +44,7 @@ public class SocketServerInterface extends SocketInterface {
     public SocketServerInterface(String ipAddress, int port, boolean mandatory) {
         super(ipAddress, port, mandatory);
     }
+
 
     @Override
     public void init() {
@@ -106,6 +108,7 @@ public class SocketServerInterface extends SocketInterface {
         }
         return result;
     }
+
 
     @Override
     public synchronized void close() throws CommunicationException {
