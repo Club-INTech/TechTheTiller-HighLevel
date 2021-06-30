@@ -13,7 +13,7 @@ import utils.math.VectCartesian;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.*;
-
+import utils.communication.SocketServerInterface;
 public class ScriptLoisSlave extends Script {
     String posstart="Blue";
     String aruco="North";
@@ -142,6 +142,7 @@ public class ScriptLoisSlave extends Script {
                 executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
                 aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
                 //envoie donnee ARUCO
+                utils.communication.CommunicationInterface.send(aruco);
                 //Fin sortie zone haut fond
                 turnTowards(-0.65 + Math.PI / 2);
                 moveLengthwise(550, false);
@@ -206,8 +207,10 @@ public class ScriptLoisSlave extends Script {
                     turnTowards(-Math.PI / 2);
                     executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
                     aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
+                    //envoie donnee ARUCO
+                    utils.communication.CommunicationInterface.send(aruco);
+                    //retour au jeu
                     turnTowards(Math.PI / 2 + 0.65);
-                    //ENVOIE DONNEE ARUCO
                     //Fin sortie zone de haut fond
                     moveLengthwise(550, false);
                     //EntreePort
