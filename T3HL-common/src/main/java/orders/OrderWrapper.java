@@ -101,6 +101,12 @@ public class OrderWrapper implements Module {
         runAll(parallelActions);
     }
 
+    public void suckall(int succion, Runnable... parallelActions){
+        sendString(MotionOrders.Suckall.with(succion));
+        runAll(parallelActions);
+    }
+
+
     /**
      * On envoit au bas niveau comme ordre d'activer la ventouse en position i=posventouse
      *
@@ -108,6 +114,11 @@ public class OrderWrapper implements Module {
      */
     public void hammers(int level, Runnable... parallelActions) {
         sendString(MotionOrders.Hammers.with(level));
+        runAll(parallelActions);
+    }
+
+    public void hammer(int level1, int level2, int level3, int level4, int level5, Runnable... parallelActions) {
+        sendString(MotionOrders.Hammer.with(level1, level2, level3, level4, level5));
         runAll(parallelActions);
     }
 

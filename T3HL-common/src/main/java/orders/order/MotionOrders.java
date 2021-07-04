@@ -33,8 +33,10 @@ public class MotionOrders {
     public static final OrderWithArgument MoveLengthwise = OrderBuilder.createWithArgs("d", INTEGER, BOOLEAN);
     /**Aspirer*/
     public static final OrderWithArgument Suck=OrderBuilder.createWithArgs("sk",INTEGER,INTEGER);
+    public static final OrderWithArgument Suckall=OrderBuilder.createWithArgs("ska",INTEGER);
     /**Marteaux*/
     public static final OrderWithArgument Hammers=OrderBuilder.createWithArgs("hmrs",INTEGER);
+    public static final OrderWithArgument Hammer=OrderBuilder.createWithArgs("hm",INTEGER,INTEGER,INTEGER,INTEGER,INTEGER);
     /** Tourner */
     public static final OrderWithArgument Turn = OrderBuilder.createWithArgs("t", FLOAT5);
     /** Aller jusqu'à un point */
@@ -49,5 +51,5 @@ public class MotionOrders {
     /** Activer l'asserv en rotation */
     public static final Order EnableRotationControl = OrderBuilder.createSimple("cr1");
 
-    private MotionOrders() {}
+
 }

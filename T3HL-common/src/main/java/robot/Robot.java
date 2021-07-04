@@ -113,10 +113,8 @@ public abstract class Robot implements Module {
     private boolean usingPanel;
 
     /**
-     * @param locomotion
-     *              service de mouvement du robot
-     * @param orderWrapper
-     *              service d'envoie d'ordre vers le LL
+     * @param locomotion   service de mouvement du robot
+     * @param orderWrapper service d'envoie d'ordre vers le LL
      */
     protected Robot(HLInstance hl, Locomotion locomotion, OrderWrapper orderWrapper, HookFactory hookFactory, SimulatorDebug simulatorDebug, PanneauModule panneauService) {
         this.hl = hl;
@@ -150,9 +148,9 @@ public abstract class Robot implements Module {
 
     /**
      * Ordonnes un 'goto' vers le LL. ATTENTION! Cette méthode ne prend PAS en compte le pathfinding! Si ça va dans le mur c'est votre faute
+     *
      * @param point le point vers lequel aller
-     * @throws UnableToMoveException
-     *              en cas de problème de blocage/adversaire
+     * @throws UnableToMoveException en cas de problème de blocage/adversaire
      */
     public void gotoPoint(Vec2 point) throws UnableToMoveException {
         this.locomotion.gotoPoint(point);
@@ -160,6 +158,7 @@ public abstract class Robot implements Module {
 
     /**
      * Cf {@link #followPathTo(Vec2, int)} (valeur de maxRetries à -1)
+     *
      * @see #followPathTo(Vec2, int)
      */
     public void followPathTo(Vec2 point) throws UnableToMoveException {
@@ -173,12 +172,10 @@ public abstract class Robot implements Module {
      *     <li>Bleu: Nouvelle tentative de followpath (indice pair)</li>
      *     <li>Vert: Nouvelle tentative de followpath (indice impair)</li>
      * </ul>
-     * @param point
-     *              le point visé
-     * @param maxRetries
-     *              le nombre de réessais à faire, 0 throw un UnableToMoveException dès le premier échec, -1 signifie de tester à l'infini
-     * @throws UnableToMoveException
-     *              en cas de problème de blocage/adversaire
+     *
+     * @param point      le point visé
+     * @param maxRetries le nombre de réessais à faire, 0 throw un UnableToMoveException dès le premier échec, -1 signifie de tester à l'infini
+     * @throws UnableToMoveException en cas de problème de blocage/adversaire
      */
     public void followPathTo(Vec2 point, int maxRetries) throws UnableToMoveException, TimeoutError {
         try {
@@ -251,6 +248,7 @@ public abstract class Robot implements Module {
 
     /**
      * Permet au robot de se tourner vers un point
+     *
      * @param point point vers lequel se tourner
      */
     public void turnToPoint(Vec2 point) throws UnableToMoveException {
@@ -259,10 +257,9 @@ public abstract class Robot implements Module {
 
     /**
      * Permet au robot de faire un GoTo en utilisant les ordres de base
-     * @param point
-     *              point vers lequel le robot se rend
-     * @param expectingWallImpact
-     *              true si l'on s'attend à un blocage mécanique (lorsque l'on veut se caler contre le mur par exemple)
+     *
+     * @param point               point vers lequel le robot se rend
+     * @param expectingWallImpact true si l'on s'attend à un blocage mécanique (lorsque l'on veut se caler contre le mur par exemple)
      * @throws UnableToMoveException
      */
     public void softGoTo(Vec2 point, boolean expectingWallImpact) throws UnableToMoveException {
@@ -271,41 +268,45 @@ public abstract class Robot implements Module {
     }
 
 
-
     /**
      * Permet au robot d'avancer/recluer en ligne droite
-     * @param distance
-     *              la distance à parcourir, négative si l'on veut aller en arrière
-     * @param expectedWallImpact
-     *              true si l'on s'attend à un blocage mécanique (lorsque l'on veut se caler contre le mur par exemple)
-     * @throws UnableToMoveException
-     *              en cas de problèmes de blocage/adversaire
+     *
+     * @param distance           la distance à parcourir, négative si l'on veut aller en arrière
+     * @param expectedWallImpact true si l'on s'attend à un blocage mécanique (lorsque l'on veut se caler contre le mur par exemple)
+     * @throws UnableToMoveException en cas de problèmes de blocage/adversaire
      */
-    public void moveLengthwise(int distance, boolean expectedWallImpact, Runnable... runnables)throws UnableToMoveException  {
+    public void moveLengthwise(int distance, boolean expectedWallImpact, Runnable... runnables) throws UnableToMoveException {
         this.locomotion.moveLengthwise(distance, expectedWallImpact, runnables);
     }
 
     /**
      * Permet au robot d'activer/arreter la ième ventouse
-     * @param posventouse
-     * le numéro de la ventouse (compris entre 1 et 4)
-     * @param succion
-     * 1 si l'on souhaite activer succion
+     *
+     * @param posventouse le numéro de la ventouse (compris entre 1 et 4)
+     * @param succion     1 si l'on souhaite activer succion
      */
     public void suck(int posventouse, int succion, Runnable... runnables) {
-        this.orderWrapper.suck(posventouse,succion,runnables);
+        this.orderWrapper.suck(posventouse, succion, runnables);
     }
 
-    public void hammers(int level, Runnable...runnables) {
-        this.orderWrapper.hammers(level,runnables);
+    public void suckall(int succion, Runnable... runnables) {
+        this.orderWrapper.suckall(succion, runnables);
     }
+
+    public void hammers(int level, Runnable... runnables) {
+        this.orderWrapper.hammers(level, runnables);
+    }
+
+    public void hammer(int level1, int level2, int level3, int level4, int level5, Runnable[] runnables) {
+        this.orderWrapper.hammer(level1, level2, level3, level4, level5, runnables);
+    }
+
 
     /**
      * Permet au robot de tourner sur lui-même
-     * @param point
-     *              point vers lequel on veut se tourner
-     * @throws UnableToMoveException
-     *              en cas de problème de blocage/adversaire
+     *
+     * @param point point vers lequel on veut se tourner
+     * @throws UnableToMoveException en cas de problème de blocage/adversaire
      */
     public void turnTowards(Vec2 point) throws UnableToMoveException {
         this.locomotion.turnTowards(point);
@@ -313,10 +314,9 @@ public abstract class Robot implements Module {
 
     /**
      * Permet au robot de tourner sur lui-même
-     * @param angle
-     *              angle absolue vers lequel on veut se tourner
-     * @throws UnableToMoveException
-     *              en cas de problème de blocage/adversaire
+     *
+     * @param angle angle absolue vers lequel on veut se tourner
+     * @throws UnableToMoveException en cas de problème de blocage/adversaire
      */
     public void turnTowards(double angle) throws UnableToMoveException {
         this.locomotion.turnTowards(angle);
@@ -389,8 +389,8 @@ public abstract class Robot implements Module {
 
     /**
      * Change la vitesse du LL
-     * @param speed
-     *              la vitesse souhaitée
+     *
+     * @param speed la vitesse souhaitée
      */
     public void setSpeed(Speed speed) {
         this.orderWrapper.setBothSpeed(speed);
@@ -398,8 +398,8 @@ public abstract class Robot implements Module {
 
     /**
      * Change la vitesse de translation du LL
-     * @param speed
-     *              la vitesse souhaitée
+     *
+     * @param speed la vitesse souhaitée
      */
     public void setTranslationSpeed(Speed speed) {
         this.orderWrapper.setTranslationnalSpeed(speed.getTranslationSpeed());
@@ -407,8 +407,8 @@ public abstract class Robot implements Module {
 
     /**
      * Change la vitesse de rotation du LL
-     * @param speed
-     *              la vitesse souhaitée
+     *
+     * @param speed la vitesse souhaitée
      */
     public void setRotationSpeed(Speed speed) {
         this.orderWrapper.setRotationnalSpeed(speed.getRotationSpeed());
@@ -416,10 +416,9 @@ public abstract class Robot implements Module {
 
     /**
      * Change la position du LL
-     * @param pos
-     *              position souhaitée
-     * @param orientation
-     *              orientation souhaitée
+     *
+     * @param pos         position souhaitée
+     * @param orientation orientation souhaitée
      */
     public void setPositionAndOrientation(Vec2 pos, double orientation) {
         this.orderWrapper.setPositionAndOrientation(pos, orientation);
@@ -431,8 +430,8 @@ public abstract class Robot implements Module {
 
     /**
      * Configure des hooks
-     * @param hooks
-     *              les hooks à configurer
+     *
+     * @param hooks les hooks à configurer
      */
     public void configureHook(HookNames... hooks) {
         //TODO
@@ -508,7 +507,6 @@ public abstract class Robot implements Module {
     }
 
 
-
     public boolean getLighthouse() {
         return lighthouse;
     }
@@ -528,9 +526,9 @@ public abstract class Robot implements Module {
     }
 
 
-
     /**
      * Ajoute un palet dans l'ascenseur de gauche
+     *
      * @throws NullPointerException si l'ascenseur n'existe pas
      */
     public void pushPaletGauche(CouleurPalet palet) {
@@ -543,6 +541,7 @@ public abstract class Robot implements Module {
 
     /**
      * Ajoute un palet dans l'ascenseur de droite
+     *
      * @throws NullPointerException si l'ascenseur n'existe pas
      */
     public void pushPaletDroitNoSymetry(CouleurPalet palet) {
@@ -553,6 +552,7 @@ public abstract class Robot implements Module {
 
     /**
      * Ajoute un palet dans l'ascenseur de gauche
+     *
      * @throws NullPointerException si l'ascenseur n'existe pas
      */
     public void pushPaletGaucheNoSymetry(CouleurPalet palet) {
@@ -563,6 +563,7 @@ public abstract class Robot implements Module {
 
     /**
      * (Re-)Symétrise les actions qu'on passe en argument, c'est utile quand on veut faire les mêmes actions des deux côtés du robot
+     *
      * @param actions
      */
     public void invertOrders(Consumer<Robot> actions) {
@@ -627,7 +628,6 @@ public abstract class Robot implements Module {
     public XYO getXyo() {
         return this.xyo;
     }
-
 }
 
 

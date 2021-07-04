@@ -31,7 +31,7 @@ public class JavaPython {
     }
     public static String readtextfile(String path)throws Exception
     {
-        File file = new File(path);//"C:\\Users\\pankaj\\Desktop\\test.txt"
+        File file = new File(path);
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -42,4 +42,5 @@ public class JavaPython {
         }
         return result;
     }
+
 }

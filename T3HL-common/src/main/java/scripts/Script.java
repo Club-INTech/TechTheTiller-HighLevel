@@ -289,6 +289,10 @@ public abstract class Script implements Module {
         robot.suck(posventouse, succion, runnables);
     }
 
+    public void suckall(int succion, Runnable... runnables) {
+        robot.suckall(succion, runnables);
+    }
+
     /**
      * Permet au robot de descendre/monter tous les marteaux en même temps
      * @param level
@@ -296,6 +300,12 @@ public abstract class Script implements Module {
      */
      public void hammers(int level, Runnable... runnables) {
         robot.hammers(level,runnables);
+
+    }
+
+    public void hammer(int level1,int level2,int level3,int level4,int level5, Runnable... runnables) {
+        robot.hammer(level1,level2,level3,level4,level5,runnables);
+
     }
 
 

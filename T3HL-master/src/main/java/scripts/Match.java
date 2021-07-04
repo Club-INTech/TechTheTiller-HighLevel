@@ -14,6 +14,7 @@ public class Match extends Script {
     private SynchronizationWithBuddy syncBuddy;
     int posxinit;
     int posyinit;
+
     String posstart="Blue";
 
 
@@ -67,16 +68,16 @@ public class Match extends Script {
                 turnTowards(-Math.PI / 2);
                 suck(2, 1);
                 moveLengthwise(300, false);
+
+//                Analyse de l'ordre des gobelets, il faut placer la distance exacte => à tester
+
+//                readColors("/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/Center.py");
+
                 // demi tour
                 turnTowards(Math.PI / 2);
                 moveLengthwise(-100, false);
 
 //              1er écueil nord (EN)
-
-                executeBashCommand("/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/Center.py");
-                Thread.sleep(4000);
-                String ecueil = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/ecueil.txt");
-                System.out.println("Ecueil : " + ecueil);
 
 
                 moveLengthwise(400, false);
@@ -84,6 +85,7 @@ public class Match extends Script {
                 moveLengthwise(600, false);
                 turnTowards(Math.PI / 2);
                 moveLengthwise(665, false);
+
 //            dépot ventouses port rouge
             /*suck(1,0)
               suck(1,0)*/
@@ -92,25 +94,11 @@ public class Match extends Script {
                 turnTowards(-Math.PI / 2);
                 moveLengthwise(-150, false);
 
-
-
-//                Test pour la zone de Haut Fond
-//                Placer le robot devant les gobelets à analyser après les avoir recupéré dans la zone de haut fond
-
-                executeBashCommand("/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/HautFond.py");
-                Thread.sleep(4000);
-                String hautfond = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt");
-                System.out.println("HF : " + hautfond);
-                hfTri(hautfond);
-
-
-
-
 //            dépot rouge EN
-                /*hammers()*/
-
+                ecueilTri_master_Nord();
                 moveLengthwise(600, false);
-//            wait(100);
+
+
 //            dépot vert EN
                 /*hammers()*/
 
@@ -219,12 +207,20 @@ public class Match extends Script {
                     moveLengthwise(100, false);
                     turnTowards(3 * Math.PI / 2);
                     moveLengthwise(160, false);
-//            dépot ventouses rouge
+//            dépot ventouses rouge à finir + maches a air à faire
+
+
+
+//                Test pour la zone de Haut Fond
+//                Placer le robot devant les gobelets à analyser après les avoir recupéré dans la zone de haut fond
+                    readColors("/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/HautFond.py");
+
+
                 }
             }
 
 
-        } catch (UnableToMoveException | InterruptedException e) {
+        } catch (UnableToMoveException e) {
             e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
@@ -232,27 +228,69 @@ public class Match extends Script {
 
     }
 
+//    Fonction pour lire l'ordre des gobelets haut fond
+    public void readColors(String pathEx) throws Exception {
+        executeBashCommand(pathEx);
+        Thread.sleep(3000);
+    }
+
+
+//        hfTri(hautfond);
+
+    /*Lien pour HF:
+     *Exec:"/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/HautFond.py"
+     * "/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt"
+    *
+    * Liens pour ecueil :
+     * Exec: "/usr/bin/python /media/salembien/Elements/PROJET X/ColorVision/Center.py"
+     * Txt:"/media/salembien/Elements/PROJET X/ColorVision/ecueilNord.txt"
+
+    */
+
+
 
     //    Fonction permettant de considérer 3 cas
     //    après récuperation des gobelets dans l'écueil Nord ami
-    public void ecueilTri_master(String ecueilmaster){
+    public void ecueilTri_master_Nord() throws Exception {
 
+        String res = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/ecueilNord.txt");
         if (posstart.equals("Yellow")){
-            switch(ecueilmaster){
+            switch(res){
                 case "VVRRR":
 
+//                  hammer(1,1,0,0,0);
+                    moveLengthwise(600, false);
+//                  hammer(0,0,1,1,1);
+
                 case "VRVRR":
+//                  hammer(1,0,1,0,0);
+                    moveLengthwise(600, false);
+//                  hammer(0,1,0,1,1);
 
                 case "VRRVR":
+//                  hammer(1,0,0,1,0);
+                    moveLengthwise(600, false);
+//                  hammer(0,1,1,0,1);
 
             }
         }else{
-            switch (ecueilmaster){
+            switch (res){
                 case "VVVRR":
+//                  hammer(0,0,0,1,1);
+                    moveLengthwise(600, false);
+//                  hammer(1,1,1,0,0);
+
 
                 case "VVRVR":
+//                  hammer(0,0,1,0,1);
+                    moveLengthwise(600, false);
+//                  hammer(1,1,0,1,0);
 
                 case "VRVVR":
+
+//                  hammer(0,1,0,0,1);
+                    moveLengthwise(600, false);
+//                  hammer(1,0,1,1,0);
 
             }
         }
@@ -261,24 +299,100 @@ public class Match extends Script {
 
     //    Fonction permettant de considérer les 3 cas après récuperation
     //    des gobelets dans l'écueil adverse avant la zone de haut fond
-    public void ecueilTri_slave(String ecueilslave){
+    public void ecueilTri_slave() throws Exception{
+
+        String ecueilS = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt");
+        System.out.println("Ecueil Slave : "  + ecueilS);
+
 
         if (posstart.equals("Yellow")){
-            switch(ecueilslave){
+            switch(ecueilS){
                 case "VVRRR":
 
+//                voir longueur bras etendu pour depose des marteaux
+                    moveLengthwise(-300,false);
+//                  hammers(1,1,0,0,0);
+                    moveLengthwise(200,false);
+                    turnTowards(0);
+                    moveLengthwise(150,false);
+//                    hfTri();
+                    moveLengthwise(150,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(-150,false);
+//                  hammers(0,0,1,1,1);
+
+//                    Lois doit continuer son script après ca
+//                    le robot a tout deposé mais pas pousser il et reculé
+//                    de la zone rocheuse mais pas tourné
+
                 case "VRVRR":
+                    moveLengthwise(-300,false);
+//                  hammers(1,0,1,0,0);
+                    moveLengthwise(200,false);
+                    turnTowards(0);
+                    moveLengthwise(150,false);
+//                    hfTri();
+                    moveLengthwise(150,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(-150,false);
+//                  hammers(0,1,0,1,1);
 
                 case "VRRVR":
+                    moveLengthwise(-300,false);
+//                  hammers(1,0,0,1,0);
+                    moveLengthwise(200,false);
+                    turnTowards(0);
+                    moveLengthwise(150,false);
+//                    hfTri();
+                    moveLengthwise(150,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(-150,false);
+//                  hammers(0,1,1,0,1);
 
             }
         }else{
-            switch (ecueilslave){
+            switch (ecueilS){
                 case "VVVRR":
+
+                    moveLengthwise(-300,false);
+//                  hammers(0,0,0,1,1);
+                    moveLengthwise(200,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(150,false);
+//                    hfTri();
+                    moveLengthwise(150,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(-150,false);
+//                  hammers(1,1,1,0,0);
+
 
                 case "VVRVR":
 
+                    moveLengthwise(-300,false);
+//                  hammers(0,0,1,0,1);
+                    moveLengthwise(200,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(150,false);
+//                    hfTri();
+                    moveLengthwise(150,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(-150,false);
+//                  hammers(1,1,0,1,0);
+
+
                 case "VRVVR":
+
+                    moveLengthwise(-300,false);
+//                  hammers(0,1,0,0,1);
+                    moveLengthwise(200,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(150,false);
+//                    hfTri();
+                    moveLengthwise(150,false);
+                    turnTowards(Math.PI);
+                    moveLengthwise(-150,false);
+//                  hammers(1,0,1,1,0);
+
 
             }
         }
@@ -286,68 +400,295 @@ public class Match extends Script {
 
 
 //    Fonction permettant de considérer tous les cas possibles après récuperation des gobelets dans la zone de haut fond
+//    Suppose que robot positionné en x=960 y=1650 dans zone rocheuse BLEUE avec ventouse vers zone dépot
 
-    public void hfTri(String pyt_hf) {
+    public void hfTri() throws Exception {
 
-        switch (pyt_hf){
+        String pyt_hf=readtextfile("/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt");
+        if (posstart.equals("Yellow")) {
+            switch (pyt_hf){
 
 //          Cas récup 3 gobelets
-            case "RRR":
-            case "RRV":
-            case "RVR":
-            case "VRR":
-            case "RVV":
-            case "VVR":
-            case "VRV":
-            case "VVV":
+                case "RRR":
+                    moveLengthwise(300,false);
+//              suckall(0)
+
+                case "RRV":
+                case "RVR":
+                case "VRR":
+                case "RVV":
+                case "VVR":
+                case "VRV":
+                case "VVV":
 
 
 //          Cas récup 4 gobelets
-            case "RRRV":
-            case "RRVR":
-            case "RVRR":
-            case "VRRR":
+                case "RRRV":
+                    suck(4,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(2,0);
+                    suck(3,0);
+
+                case "RRVR":
+                    suck(3,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(2,0);
+                    suck(4,0);
+
+                case "RVRR":
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(4,0);
+                    suck(3,0);
+
+                case "VRRR":
+                    suck(1,0);
+                    moveLengthwise(-250,false);
+                    suck(4,0);
+                    suck(2,0);
+                    suck(3,0);
 
 
-            case "RRVV":
-            case "RVRV":
-            case "RVVR":
-            case "VRVR":
-            case "VVRR":
-            case "VRRV":
+
+                case "RRVV":
+                    suck(4,0);
+                    suck(3,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(2,0);
+
+                case "RVRV":
+                    suck(4,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(3,0);
+
+                case "RVVR":
+                    suck(2,0);
+                    suck(3,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(4,0);
+
+                case "VRVR":
+                    suck(1,0);
+                    suck(3,0);
+                    moveLengthwise(-250,false);
+                    suck(4,0);
+                    suck(2,0);
+
+                case "VVRR":
+                    suck(1,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(3,0);
+                    suck(4,0);
+
+                case "VRRV":
+                    suck(4,0);
+                    suck(1,0);
+                    moveLengthwise(-250,false);
+                    suck(3,0);
+                    suck(2,0);
 
 
-            case "VVVR":
-            case "VVRV":
-            case "VRVV":
-            case "RVVV":
+
+                case "VVVR":
+                    suck(3,0);
+                    suck(1,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(4,0);
+
+                case "VVRV":
+                    suck(4,0);
+                    suck(1,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(3,0);
+
+                case "VRVV":
+                    suck(3,0);
+                    suck(1,0);
+                    suck(4,0);
+                    moveLengthwise(-250,false);
+                    suck(2,0);
+
+                case "RVVV":
+                    suck(3,0);
+                    suck(4,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+
 
 
 //           Cas récup 1 gobelet
-            case "R":
-                try {
-                    moveLengthwise(400, false);
-                    turnTowards(0);
-                } catch (UnableToMoveException e) {
-                    e.printStackTrace();
-                }
+                case "R":
 
-                break;
+                    moveLengthwise(-250,false);
+//                  suckall(0);
 
-            case "V":
+                case "V":
+//                    suckall(0);
+                    moveLengthwise(-250,false);
 
 //          Cas récup 2 gobelets
-            case "RR":
-            case "RV":
-            case "VR":
-            case "VV":
+                case "RR":
+                case "RV":
+                case "VR":
+                case "VV":
+
+
+//          Cas récup 0 gobelets
+
+
+            }
+
+        }
+
+
+//        Blue à faire !!!
+
+        if (posstart.equals("Blue")) {
+            switch (pyt_hf){
+
+//          Cas récup 3 gobelets
+                case "RRR":
+                    moveLengthwise(300,false);
+//              suckall(0)
+
+                case "RRV":
+                case "RVR":
+                case "VRR":
+                case "RVV":
+                case "VVR":
+                case "VRV":
+                case "VVV":
+
+
+//          Cas récup 4 gobelets
+                case "RRRV":
+                    suck(1,0);
+                    suck(3,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(4,0);
+
+                case "RRVR":
+                    suck(1,0);
+                    suck(4,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(3,0);
+
+                case "RVRR":
+                    suck(1,0);
+                    suck(3,0);
+                    suck(4,0);
+                    moveLengthwise(-250,false);
+                    suck(2,0);
+
+                case "VRRR":
+                    suck(2,0);
+                    suck(3,0);
+                    suck(4,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+
+
+                case "RRVV":
+                    suck(1,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(3,0);
+                    suck(4,0);
+                case "RVRV":
+                    suck(1,0);
+                    suck(3,0);
+                    moveLengthwise(-250,false);
+                    suck(2,0);
+                    suck(4,0);
+                case "RVVR":
+                    suck(1,0);
+                    suck(4,0);
+                    moveLengthwise(-250,false);
+                    suck(3,0);
+                    suck(2,0);
+                case "VRVR":
+                    suck(4,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(3,0);
+                    suck(1,0);
+                case "VVRR":
+                    suck(3,0);
+                    suck(4,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(2,0);
+                case "VRRV":
+                    suck(3,0);
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(1,0);
+                    suck(4,0);
+
+
+                case "VVVR":
+                    suck(4,0);
+                    moveLengthwise(-250,false);
+                    suck(2,0);
+                    suck(3,0);
+                    suck(1,0);
+                case "VVRV":
+                    suck(3,0);
+                    moveLengthwise(-250,false);
+                    suck(2,0);
+                    suck(4,0);
+                    suck(1,0);
+                case "VRVV":
+                    suck(2,0);
+                    moveLengthwise(-250,false);
+                    suck(4,0);
+                    suck(3,0);
+                    suck(1,0);
+                case "RVVV":
+                    suck(1,0);
+                    moveLengthwise(-250,false);
+                    suck(2,0);
+                    suck(3,0);
+                    suck(4,0);
+
+
+//           Cas récup 1 gobelet
+                case "R":
+//                  suckall(0);
+                    moveLengthwise(-250,false);
+
+                case "V":
+                    moveLengthwise(-250,false);
+//                  suckall(0);
+
+//          Cas récup 2 gobelets
+                case "RR":
+                case "RV":
+                case "VR":
+                case "VV":
 
 
 //          Cas récup 0 gobelets
 
 
 
+            }
+
         }
+
 
     }
 
