@@ -31,18 +31,15 @@ public class MatchSlave extends Script {
     @Override
     public void execute(int version) {
         // Code lançant les différents scripts du secondaire
+        scriptManagerSlave.getScript(ScriptNamesSlave.LOLO).timedExecute();
+
     }
     // TODO : à vous de jouer le 1As!
 
     @Override
     public Vec2 entryPosition(int version) {
         //TODO: remplacer par la position d'entrée d'un script
-        return new Vec2() {
-            @Override
-            public int dot(Vec2 vecteur) {
-                return super.dot(vecteur);
-            }
-        };
+        return scriptManagerSlave.getScript(ScriptNamesSlave.LOLO).entryPosition(0) ;
     }
 
     @Override

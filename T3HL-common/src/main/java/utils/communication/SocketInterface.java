@@ -92,7 +92,7 @@ public abstract class SocketInterface implements CommunicationInterface {
     @Override
     public abstract void init() throws CommunicationException;
 
-    @Override
+
     public synchronized boolean send(String message) throws CommunicationException {
         try {
             if (this.initiated) {
