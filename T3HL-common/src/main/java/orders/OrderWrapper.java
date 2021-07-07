@@ -39,6 +39,8 @@ import utils.container.Module;
 import utils.math.Calculs;
 import utils.math.Vec2;
 
+import java.util.Optional;
+
 /**
  * Classe qui permet d'envoyer tous les ordres
  *
@@ -131,6 +133,17 @@ public class OrderWrapper implements Module {
             angle=(Math.PI - angle)%(2*Math.PI);
         }
         this.sendString(MotionOrders.Turn.with(angle));
+        Optional<String> line = Optional.of("");
+        int waitingDelay = 0;
+        do {
+            try {
+                line = llConnection.read();
+                Thread.sleep(500);
+                waitingDelay += 500;
+            } catch (CommunicationException | InterruptedException e) {
+                return; // not sure
+            }
+        } while(!line.equals(Optional.of("@BRotation finished")) && waitingDelay <=8000);
         runAll(parallelActions);
     }
 
