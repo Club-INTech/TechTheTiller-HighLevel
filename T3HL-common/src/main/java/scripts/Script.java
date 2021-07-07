@@ -307,6 +307,9 @@ public abstract class Script implements Module {
         robot.hammer(level1,level2,level3,level4,level5,runnables);
 
     }
+    public void flag(int level,Runnable... runnables){
+         robot.flag(level,runnables);
+    }
 
 
     /**

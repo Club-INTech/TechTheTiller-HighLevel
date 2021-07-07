@@ -125,6 +125,16 @@ public class OrderWrapper implements Module {
     }
 
     /**
+     * On envoit au bas niveau comme ordre de lever ou baisser le bras
+     *
+     * @param level état du bras
+     */
+    public void flag(int level, Runnable... parallelActions) {
+        sendString(MotionOrders.Flag.with(level));
+        runAll(parallelActions);
+    }
+
+    /**
      * On envoit au bas niveau comme ordre de tourner
      * @param angle  angle avec lequel on veut tourner
      */
@@ -457,5 +467,6 @@ public class OrderWrapper implements Module {
             sendString(order.toLL());
         }
     }
+
 
 }
