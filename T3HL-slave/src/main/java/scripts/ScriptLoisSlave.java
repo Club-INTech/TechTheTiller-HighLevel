@@ -7,6 +7,7 @@ import orders.OrderWrapper;
 import orders.order.ActuatorsOrders;
 import pfg.config.Configurable;
 import utils.HLInstance;
+import utils.communication.SocketClientInterface;
 import utils.math.InternalVectCartesian;
 import utils.math.Vec2;
 import utils.math.VectCartesian;
@@ -132,7 +133,7 @@ public class ScriptLoisSlave extends Script {
                 moveLengthwise(550, false);
                 turnTowards(Math.PI / 2);
                 // robot.recalageMeca(true,-300);
-                moveLengthwise(-300, true);
+                moveLengthwise(-50, true);
                 turnTowards(0);
                 moveLengthwise(550, false);
 
@@ -149,18 +150,29 @@ public class ScriptLoisSlave extends Script {
                 executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
                 aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
                 //envoie donnee ARUCO
-                utils.communication.CommunicationInterface.send(aruco);
+                SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000,false);
+                sender.send(aruco);
                 //Fin sortie zone haut fond
                 moveLengthwise(210,false);
                 //hammers
                 moveLengthwise(-210,false);
                 readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/HautFond.py");
-                turnTowards(-0.65 + Math.PI / 2);
-                moveLengthwise(550, false);
+                turnTowards(-0.70 + Math.PI / 2);
+                moveLengthwise(650, false);
 
                 //EntreePort
-                moveLengthwise(200, false);
-                turnTowards(Math.PI / 2);
+                moveLengthwise(370, false);
+                turnTowards(Math.PI);
+                try { ecueilTri_slave(); } catch (Exception e){
+                    moveLengthwise(300,false);
+                    turnTowards(Math.PI/2);
+                    //Suckall(0)
+                    moveLengthwise(500,false);
+                    moveLengthwise(-500,false);
+                    turnTowards(-Math.PI/2);
+                    //Hammerall(0)
+                    turnTowards(Math.PI/2);
+                }
                 moveLengthwise(500, false);
                 //Suck(1,0)
                 //Suck(2,0)
@@ -170,7 +182,7 @@ public class ScriptLoisSlave extends Script {
                 if (aruco.equals("North")) {
                     moveLengthwise(-500, false);
                     turnTowards(-Math.PI / 2);
-                    moveLengthwise(1000, false);
+                    moveLengthwise(1200, false);
                     turnTowards(0);
                     moveLengthwise(1000, false);
                 }
@@ -192,7 +204,7 @@ public class ScriptLoisSlave extends Script {
                     turnTowards(-Math.PI / 2);
                     readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/Centre2.py");
                     turnTowards(Math.PI / 2);
-                    moveLengthwise(-300, true);
+                    moveLengthwise(-50, true);
                     //Marteaudescend
                     //Marteauremonte
 
@@ -221,17 +233,28 @@ public class ScriptLoisSlave extends Script {
                     executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
                     aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
                     //envoie donnee ARUCO
-                    utils.communication.CommunicationInterface.send(aruco);
+                    SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000,false);
+                    sender.send(aruco);
                     //retour au jeu
                     moveLengthwise(210,false);
                     //hammers
                     moveLengthwise(-210,false);
                     readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/HautFond.py");
-                    turnTowards(Math.PI / 2 + 0.65);
-                    //Fin sortie zone de haut fon
-                    moveLengthwise(550, false);
+                    turnTowards(Math.PI / 2 + 0.70);
+                    moveLengthwise(650, false);
                     //EntreePort
-                    moveLengthwise(200, false);
+                    moveLengthwise(370, false);
+                    turnTowards(0);
+                    try { ecueilTri_slave(); } catch (Exception e){
+                        moveLengthwise(300,false);
+                        turnTowards(Math.PI/2);
+                        //Suckall(0)
+                        moveLengthwise(500,false);
+                        moveLengthwise(-500,false);
+                        turnTowards(-Math.PI/2);
+                        //Hammerall(0)
+                        turnTowards(Math.PI/2);
+                    }
                     turnTowards(Math.PI / 2);
                     moveLengthwise(500, false);
                     //Suck(1,0)
@@ -241,7 +264,7 @@ public class ScriptLoisSlave extends Script {
                     if (aruco.equals("North")) {
                         moveLengthwise(-500, false);
                         turnTowards(-Math.PI / 2);
-                        moveLengthwise(1000, false);
+                        moveLengthwise(1200, false);
                         turnTowards(Math.PI);
                         moveLengthwise(1000, false);
                     }
@@ -265,7 +288,7 @@ public class ScriptLoisSlave extends Script {
     //    des gobelets dans l'écueil adverse avant la zone de haut fond
     public void ecueilTri_slave() throws Exception{
 
-        String ecueilS = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt");
+        String ecueilS = readtextfile("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/hautfond.txt");
         System.out.println("Ecueil Slave : "  + ecueilS);
 
 
@@ -387,7 +410,7 @@ public class ScriptLoisSlave extends Script {
 
 
 //          Cas récup 4 gobelets
-                case "RRRV":
+                case "---V":
                     suck(4,0);
                     moveLengthwise(-250,false);
                     suck(1,0);
@@ -408,7 +431,7 @@ public class ScriptLoisSlave extends Script {
                     suck(4,0);
                     suck(3,0);
 
-                case "VRRR":
+                case "V---":
                     suck(1,0);
                     moveLengthwise(-250,false);
                     suck(4,0);
@@ -461,7 +484,7 @@ public class ScriptLoisSlave extends Script {
 
 
 
-                case "VVVR":
+                case "---R":
                     suck(3,0);
                     suck(1,0);
                     suck(2,0);
@@ -482,7 +505,7 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(-250,false);
                     suck(2,0);
 
-                case "RVVV":
+                case "R---":
                     suck(3,0);
                     suck(4,0);
                     suck(2,0);
