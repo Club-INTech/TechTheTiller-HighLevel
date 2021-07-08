@@ -25,7 +25,8 @@ public class ScriptLoisSlave extends Script {
     int posyinit;
     String proto = "no";
     String homoflag = "no";
-    String homomov = "yes";
+    String homomov = "no";
+    String test = "yes";
 
     public Vec2 entryPosition(int version) {
         if (posstart=="Yellow") {
@@ -114,7 +115,7 @@ public class ScriptLoisSlave extends Script {
     @Override
     public void execute(int version) {
         try {
-            test(false,false,false);
+            if (test.equals("yes")) {test(false,false,false);}
             if (proto.equals("yes")){ protomatch();}
             if (homoflag.equals("yes")){homologationflag();}
             if (homomov.equals("yes")){homologationmov();}
