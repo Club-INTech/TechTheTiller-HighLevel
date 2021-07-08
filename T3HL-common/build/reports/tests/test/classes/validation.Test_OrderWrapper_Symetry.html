@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class validation.Test_OrderWrapper_Symetry</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class validation.Test_OrderWrapper_Symetry</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/validation.html">validation</a> &gt; Test_OrderWrapper_Symetry</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">3</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.610s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">25%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="configureHookTestWithSymetry"></a>
+<h3 class="failures">configureHookTestWithSymetry</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Required argument count (6) is not the actual argument count (7)
+	at lowlevel.order.OrderWithArgument.with(OrderWithArgument.java:29)
+	at validation.Test_OrderWrapper_Symetry.configureHookTestWithSymetry(Test_OrderWrapper_Symetry.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="moveToPointSymetry"></a>
+<h3 class="failures">moveToPointSymetry</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: expected:&lt;goto [-]158 587&gt; but was:&lt;goto []158 587&gt;
+	at org.junit.Assert.assertEquals(Assert.java:125)
+	at org.junit.Assert.assertEquals(Assert.java:147)
+	at validation.Test_OrderWrapper_Symetry.moveToPointSymetry(Test_OrderWrapper_Symetry.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="setPositionAndOrientationTestWithSymetry"></a>
+<h3 class="failures">setPositionAndOrientationTestWithSymetry</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: expected:&lt;cxyo [-2 3 2.0944]0&gt; but was:&lt;cxyo [2 3 1.0472]0&gt;
+	at org.junit.Assert.assertEquals(Assert.java:125)
+	at org.junit.Assert.assertEquals(Assert.java:147)
+	at validation.Test_OrderWrapper_Symetry.setPositionAndOrientationTestWithSymetry(Test_OrderWrapper_Symetry.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">configureHookTestWithSymetry</td>
+<td class="failures">0.147s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">moveToPointSymetry</td>
+<td class="failures">0.165s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">setPositionAndOrientationTestWithSymetry</td>
+<td class="failures">0.148s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">turnTestWithSymetry</td>
+<td class="success">0.150s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[?[34m14:23:15.852 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m14:23:15.853 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
+[?[34m14:23:15.853 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m14:23:15.853 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m14:23:15.853 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m14:23:15.853 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m14:23:15.853 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m14:23:15.854 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m14:23:15.854 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m14:23:15.854 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m14:23:15.854 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m14:23:15.854 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m14:23:15.854 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m14:23:15.854 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m14:23:15.855 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m14:23:15.856 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m14:23:15.856 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m14:23:15.856 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m14:23:15.856 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m14:23:15.856 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+Initialisation du compteur...
+[?[34m14:23:15.857 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:15 CEST 2021 #245 - everything.log'?[0m
+[?[34m14:23:15.857 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245 - everything.log?[0m
+[?[34m14:23:15.857 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245 - everything.log'?[0m
+[?[34m14:23:15.857 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:15 CEST 2021 #245.log'?[0m
+[?[34m14:23:15.858 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245.log?[0m
+[?[34m14:23:15.858 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245.log'?[0m
+[?[34m14:23:15.858 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:15 CEST 2021 #245 - errors.log'?[0m
+[?[34m14:23:15.858 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245 - errors.log?[0m
+[?[34m14:23:15.858 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:15 CEST 2021 #245 - errors.log'?[0m
+[?[34m14:23:15.861 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:104)] Version : 7ce4239 on dev_lolo - [Update ScriptLoisSlave.java]?[0m
+[?[34m14:23:15.861 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:112)] System : Linux 5.8.0-53-generic amd64?[0m
+[?[34m14:23:15.862 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 0.5G, available processors : 8?[0m
+[?[34m14:23:15.862 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:117)] ?[0m
+[?[34m14:23:15.862 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+?[0m
+[?[34m14:23:15.862 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m14:23:15.862 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m14:23:15.863 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m14:23:15.863 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m14:23:15.863 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m14:23:15.864 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m14:23:15.864 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper?[0m
+[?[34m14:23:15.864 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.?[0m
+[?[34m14:23:15.865 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false?[0m
+[?[34m14:23:15.865 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to false?[0m
+[?[34m14:23:15.865 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false?[0m
+[?[34m14:23:15.865 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt?[0m
+[?[34m14:23:15.865 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager?[0m
+[?[34m14:23:15.865 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.?[0m
+[?[34m14:23:15.865 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt?[0m
+[?[34m14:23:15.865 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:55)] Creating socket waiting connection on port 13550?[0m
+[?[34m14:23:15.866 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:58)] Receive buffer size on null is 65536?[0m
+[?[34m14:23:15.866 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:15.916 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 13550?[0m
+[?[34m14:23:15.916 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 13550?[0m
+[?[34m14:23:15.916 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:75)] Connection accepted on port 13550?[0m
+[?[34m14:23:15.916 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 13550?[0m
+[?[34m14:23:15.916 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:77)] Connection initialized on port 13550?[0m
+[?[34m14:23:15.917 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:79)] Initialized connection with a 'ping'?[0m
+[?[34m14:23:15.917 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:15.966 ORDERS (DEBUG) on Test worker jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)] Sent to LL: t 2.09440?[0m
+[?[34m14:23:15.976 COMMUNICATION (DEBUG) on Test worker utils.communication.SocketServerInterface.read(SocketServerInterface.java:105)] &gt;&gt; READ: t 2.09440?[0m
+[?[34m14:23:16.002 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.002 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.002 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+[?[34m14:23:16.003 COMMUNICATION (DEBUG) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
+[?[34m14:23:16.003 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m14:23:16.004 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m14:23:16.005 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m14:23:16.006 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m14:23:16.006 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+Initialisation du compteur...
+[?[34m14:23:16.006 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #246 - everything.log'?[0m
+[?[34m14:23:16.006 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246 - everything.log?[0m
+[?[34m14:23:16.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246 - everything.log'?[0m
+[?[34m14:23:16.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #246.log'?[0m
+[?[34m14:23:16.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246.log?[0m
+[?[34m14:23:16.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246.log'?[0m
+[?[34m14:23:16.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #246 - errors.log'?[0m
+[?[34m14:23:16.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246 - errors.log?[0m
+[?[34m14:23:16.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #246 - errors.log'?[0m
+[?[34m14:23:16.010 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:104)] Version : 7ce4239 on dev_lolo - [Update ScriptLoisSlave.java]?[0m
+[?[34m14:23:16.010 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:112)] System : Linux 5.8.0-53-generic amd64?[0m
+[?[34m14:23:16.010 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 0.5G, available processors : 8?[0m
+[?[34m14:23:16.011 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:117)] ?[0m
+[?[34m14:23:16.011 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+?[0m
+[?[34m14:23:16.011 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m14:23:16.011 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m14:23:16.012 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m14:23:16.012 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m14:23:16.013 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m14:23:16.014 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper?[0m
+[?[34m14:23:16.014 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.?[0m
+[?[34m14:23:16.014 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false?[0m
+[?[34m14:23:16.014 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to false?[0m
+[?[34m14:23:16.014 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false?[0m
+[?[34m14:23:16.014 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt?[0m
+[?[34m14:23:16.014 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager?[0m
+[?[34m14:23:16.015 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.?[0m
+[?[34m14:23:16.015 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt?[0m
+[?[34m14:23:16.015 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:55)] Creating socket waiting connection on port 13550?[0m
+[?[34m14:23:16.015 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:58)] Receive buffer size on null is 65536?[0m
+[?[34m14:23:16.015 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.065 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 13550?[0m
+[?[34m14:23:16.066 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 13550?[0m
+[?[34m14:23:16.066 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:75)] Connection accepted on port 13550?[0m
+[?[34m14:23:16.066 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 13550?[0m
+[?[34m14:23:16.066 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:77)] Connection initialized on port 13550?[0m
+[?[34m14:23:16.066 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:79)] Initialized connection with a 'ping'?[0m
+[?[34m14:23:16.066 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.116 ORDERS (DEBUG) on Test worker jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)] Sent to LL: cxyo 2 3 1.04720?[0m
+[?[34m14:23:16.126 COMMUNICATION (DEBUG) on Test worker utils.communication.SocketServerInterface.read(SocketServerInterface.java:105)] &gt;&gt; READ: cxyo 2 3 1.04720?[0m
+[?[34m14:23:16.150 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.150 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)]                  I /_____   |      /|/|?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+[?[34m14:23:16.151 COMMUNICATION (DEBUG) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
+[?[34m14:23:16.151 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m14:23:16.152 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m14:23:16.153 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+Initialisation du compteur...
+[?[34m14:23:16.154 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #247 - everything.log'?[0m
+[?[34m14:23:16.154 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247 - everything.log?[0m
+[?[34m14:23:16.154 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247 - everything.log'?[0m
+[?[34m14:23:16.154 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #247.log'?[0m
+[?[34m14:23:16.154 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247.log?[0m
+[?[34m14:23:16.155 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247.log'?[0m
+[?[34m14:23:16.155 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #247 - errors.log'?[0m
+[?[34m14:23:16.155 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247 - errors.log?[0m
+[?[34m14:23:16.155 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #247 - errors.log'?[0m
+[?[34m14:23:16.158 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:104)] Version : 7ce4239 on dev_lolo - [Update ScriptLoisSlave.java]?[0m
+[?[34m14:23:16.158 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:112)] System : Linux 5.8.0-53-generic amd64?[0m
+[?[34m14:23:16.158 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 0.5G, available processors : 8?[0m
+[?[34m14:23:16.158 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:117)] ?[0m
+[?[34m14:23:16.159 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+?[0m
+[?[34m14:23:16.159 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m14:23:16.159 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m14:23:16.161 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m14:23:16.162 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m14:23:16.162 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m14:23:16.162 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper?[0m
+[?[34m14:23:16.162 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.?[0m
+[?[34m14:23:16.162 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false?[0m
+[?[34m14:23:16.162 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to false?[0m
+[?[34m14:23:16.162 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false?[0m
+[?[34m14:23:16.162 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt?[0m
+[?[34m14:23:16.163 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager?[0m
+[?[34m14:23:16.163 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.?[0m
+[?[34m14:23:16.163 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt?[0m
+[?[34m14:23:16.163 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:55)] Creating socket waiting connection on port 13550?[0m
+[?[34m14:23:16.163 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:58)] Receive buffer size on null is 65536?[0m
+[?[34m14:23:16.163 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.213 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 13550?[0m
+[?[34m14:23:16.214 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 13550?[0m
+[?[34m14:23:16.214 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 13550?[0m
+[?[34m14:23:16.214 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:75)] Connection accepted on port 13550?[0m
+[?[34m14:23:16.214 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:77)] Connection initialized on port 13550?[0m
+[?[34m14:23:16.214 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:79)] Initialized connection with a 'ping'?[0m
+[?[34m14:23:16.214 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.264 ORDERS (DEBUG) on Test worker jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)] Sent to LL: nh 0 2 3 2 2.09440 2.00000 valve RIGHT on?[0m
+[?[34m14:23:16.274 COMMUNICATION (DEBUG) on Test worker utils.communication.SocketServerInterface.read(SocketServerInterface.java:105)] &gt;&gt; READ: nh 0 2 3 2 2.09440 2.00000 valve RIGHT on?[0m
+[?[34m14:23:16.298 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.298 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.298 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+[?[34m14:23:16.299 COMMUNICATION (DEBUG) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.299 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m14:23:16.300 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m14:23:16.301 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m14:23:16.302 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m14:23:16.303 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m14:23:16.303 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m14:23:16.303 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+Initialisation du compteur...
+[?[34m14:23:16.303 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #248 - everything.log'?[0m
+[?[34m14:23:16.303 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248 - everything.log?[0m
+[?[34m14:23:16.304 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248 - everything.log'?[0m
+[?[34m14:23:16.304 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #248.log'?[0m
+[?[34m14:23:16.304 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248.log?[0m
+[?[34m14:23:16.304 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248.log'?[0m
+[?[34m14:23:16.304 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #248 - errors.log'?[0m
+[?[34m14:23:16.305 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248 - errors.log?[0m
+[?[34m14:23:16.305 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #248 - errors.log'?[0m
+[?[34m14:23:16.307 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:104)] Version : 7ce4239 on dev_lolo - [Update ScriptLoisSlave.java]?[0m
+[?[34m14:23:16.308 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:112)] System : Linux 5.8.0-53-generic amd64?[0m
+[?[34m14:23:16.308 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 0.5G, available processors : 8?[0m
+[?[34m14:23:16.308 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:117)] ?[0m
+[?[34m14:23:16.308 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+?[0m
+[?[34m14:23:16.308 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m14:23:16.309 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m14:23:16.311 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m14:23:16.311 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m14:23:16.311 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m14:23:16.311 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m14:23:16.311 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m14:23:16.311 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)?[0m
+[?[34m14:23:16.312 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m14:23:16.312 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m14:23:16.312 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m14:23:16.312 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m14:23:16.312 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m14:23:16.312 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass OrderWrapper?[0m
+[?[34m14:23:16.313 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass OrderWrapper après son initialisation.?[0m
+[?[34m14:23:16.313 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.symetry to false?[0m
+[?[34m14:23:16.313 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.simulation to false?[0m
+[?[34m14:23:16.313 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean orders.OrderWrapper.usingBaliseImage to false?[0m
+[?[34m14:23:16.313 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module OrderWrapper prêt?[0m
+[?[34m14:23:16.313 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass ConnectionManager?[0m
+[?[34m14:23:16.314 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass ConnectionManager après son initialisation.?[0m
+[?[34m14:23:16.314 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module ConnectionManager prêt?[0m
+[?[34m14:23:16.315 COMMUNICATION (DEBUG) on Thread-33 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:55)] Creating socket waiting connection on port 13550?[0m
+[?[34m14:23:16.315 COMMUNICATION (DEBUG) on Thread-33 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:58)] Receive buffer size on null is 65536?[0m
+[?[34m14:23:16.315 COMMUNICATION (DEBUG) on Thread-33 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.365 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:51)] Trying to connect to localhost on port 13550?[0m
+[?[34m14:23:16.366 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:53)] Socket created to localhost on port 13550?[0m
+[?[34m14:23:16.366 COMMUNICATION (DEBUG) on Thread-33 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:75)] Connection accepted on port 13550?[0m
+[?[34m14:23:16.366 COMMUNICATION (DEBUG) on SocketClient(localhost:13550) utils.communication.SocketClientInterface.lambda$init$0(SocketClientInterface.java:70)] SUCCESS to connect to localhost on port 13550?[0m
+[?[34m14:23:16.366 COMMUNICATION (DEBUG) on Thread-33 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:77)] Connection initialized on port 13550?[0m
+[?[34m14:23:16.366 COMMUNICATION (DEBUG) on Thread-33 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:79)] Initialized connection with a 'ping'?[0m
+[?[34m14:23:16.366 COMMUNICATION (DEBUG) on Thread-33 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:69)] Waiting connection on port 13550?[0m
+[?[34m14:23:16.415 ORDERS (DEBUG) on Test worker jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)] Sent to LL: goto 158 587?[0m
+[?[34m14:23:16.436 COMMUNICATION (DEBUG) on Test worker utils.communication.SocketServerInterface.read(SocketServerInterface.java:105)] &gt;&gt; READ: goto 158 587?[0m
+[?[34m14:23:16.464 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.464 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[32mFermeture du service de log?[0m
+[?[34m14:23:16.464 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
+[?[34m14:23:16.464 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m14:23:16.464 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m14:23:16.465 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m14:23:16.465 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m14:23:16.465 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m14:23:16.465 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[?[31m14:23:15.852 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:15.863 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m14:23:15.863 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m14:23:15.863 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m14:23:15.863 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m14:23:16.002 STDERR (CRITICAL) on Thread-27] java.net.SocketException: Socket closed?[0m
+[?[31m14:23:16.002 STDERR (CRITICAL) on Thread-27] 	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:689)?[0m
+[?[31m14:23:16.002 STDERR (CRITICAL) on Thread-27] 	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:762)?[0m
+[?[31m14:23:16.002 STDERR (CRITICAL) on Thread-27] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:684)?[0m
+[?[31m14:23:16.002 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] 	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:650)?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:583)?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:540)?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:70)?[0m
+[?[31m14:23:16.003 COMMUNICATION (CRITICAL) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:86)] Socket error: Socket closed?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] java.net.SocketException: Socket is closed?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Test worker] java.net.SocketException: Socket is closed?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:536)?[0m
+[?[31m14:23:16.003 STDERR (CRITICAL) on Thread-27] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:70)?[0m
+[?[31m14:23:16.003 COMMUNICATION (CRITICAL) on Thread-27 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:86)] Socket error: Socket is closed?[0m
+[?[31m14:23:16.012 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m14:23:16.012 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m14:23:16.012 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m14:23:16.012 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m14:23:16.150 STDERR (CRITICAL) on Thread-29] java.net.SocketException: Socket closed?[0m
+[?[31m14:23:16.150 STDERR (CRITICAL) on Thread-29] 	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:689)?[0m
+[?[31m14:23:16.150 STDERR (CRITICAL) on Thread-29] 	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:762)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:684)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:650)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:583)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:540)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Test worker] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:540)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:70)?[0m
+[?[31m14:23:16.151 COMMUNICATION (CRITICAL) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:86)] Socket error: Socket closed?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] java.net.SocketException: Socket is closed?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:536)?[0m
+[?[31m14:23:16.151 STDERR (CRITICAL) on Thread-29] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:70)?[0m
+[?[31m14:23:16.151 COMMUNICATION (CRITICAL) on Thread-29 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:86)] Socket error: Socket is closed?[0m
+[?[31m14:23:16.160 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m14:23:16.160 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m14:23:16.160 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m14:23:16.161 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m14:23:16.298 STDERR (CRITICAL) on Thread-31] java.net.SocketException: Socket closed?[0m
+[?[31m14:23:16.298 STDERR (CRITICAL) on Thread-31] 	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:689)?[0m
+[?[31m14:23:16.298 STDERR (CRITICAL) on Thread-31] 	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:762)?[0m
+[?[31m14:23:16.298 STDERR (CRITICAL) on Thread-31] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:684)?[0m
+[?[31m14:23:16.298 STDERR (CRITICAL) on Thread-31] 	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:650)?[0m
+[?[31m14:23:16.298 STDERR (CRITICAL) on Thread-31] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)?[0m
+[?[31m14:23:16.299 STDERR (CRITICAL) on Test worker] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)?[0m
+[?[31m14:23:16.299 STDERR (CRITICAL) on Thread-31] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:583)?[0m
+[?[31m14:23:16.299 STDERR (CRITICAL) on Thread-31] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:540)?[0m
+[?[31m14:23:16.299 STDERR (CRITICAL) on Thread-31] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:70)?[0m
+[?[31m14:23:16.299 COMMUNICATION (CRITICAL) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:86)] Socket error: Socket closed?[0m
+[?[31m14:23:16.299 STDERR (CRITICAL) on Thread-31] java.net.SocketException: Socket is closed?[0m
+[?[31m14:23:16.299 STDERR (CRITICAL) on Thread-31] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:536)?[0m
+[?[31m14:23:16.300 STDERR (CRITICAL) on Test worker] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:70?[0m
+[?[31m14:23:16.300 STDERR (CRITICAL) on Thread-31] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:70)?[0m
+[?[31m14:23:16.300 COMMUNICATION (CRITICAL) on Thread-31 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:86)] Socket error: Socket is closed?[0m
+[?[31m14:23:16.310 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m14:23:16.310 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m14:23:16.310 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m14:23:16.311 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m14:23:16.464 STDERR (CRITICAL) on Thread-33] java.net.SocketException: Socket closed?[0m
+[?[31m14:23:16.464 STDERR (CRITICAL) on Thread-33] 	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:689)?[0m
+[?[31m14:23:16.464 STDERR (CRITICAL) on Thread-33] 	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:762)?[0m
+[?[31m14:23:16.464 STDERR (CRITICAL) on Thread-33] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:684)?[0m
+[?[31m14:23:16.464 STDERR (CRITICAL) on Test worker] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:684)?[0m
+[?[31m14:23:16.465 STDERR (CRITICAL) on Thread-33] 	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:650)?[0m
+[?[31m14:23:16.465 STDERR (CRITICAL) on Thread-33] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)?[0m
+[?[31m14:23:16.465 STDERR (CRITICAL) on Test worker] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at Jun 9, 2021, 2:23:19 PM</p>
+</div>
+</div>
+</body>
+</html>

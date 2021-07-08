@@ -37,6 +37,8 @@ public class MotionOrders {
     /**Marteaux*/
     public static final OrderWithArgument Hammers=OrderBuilder.createWithArgs("hmrs",INTEGER);
     public static final OrderWithArgument Hammer=OrderBuilder.createWithArgs("hm",INTEGER,INTEGER,INTEGER,INTEGER,INTEGER);
+    /** Lever bras */
+    public static final OrderWithArgument Flag=OrderBuilder.createWithArgs("fl",INTEGER);;
     /** Tourner */
     public static final OrderWithArgument Turn = OrderBuilder.createWithArgs("t", FLOAT5);
     /** Aller jusqu'à un point */
@@ -50,6 +52,7 @@ public class MotionOrders {
     public static final Order DisableRotationControl = OrderBuilder.createSimple("cr0");
     /** Activer l'asserv en rotation */
     public static final Order EnableRotationControl = OrderBuilder.createSimple("cr1");
+
 
 
 }

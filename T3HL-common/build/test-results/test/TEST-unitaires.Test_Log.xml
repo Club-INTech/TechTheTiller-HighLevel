@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unitaires.Test_Log" tests="3" skipped="3" failures="0" errors="0" timestamp="2021-06-09T12:23:17" hostname="tsimafei-ZenBook-14-UX410UFR" time="0.002">
+  <properties/>
+  <testcase name="testLogDebug" classname="unitaires.Test_Log" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testLogChannel" classname="unitaires.Test_Log" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testLogCritical" classname="unitaires.Test_Log" time="0.001">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[[?[34m14:23:17.532 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m14:23:17.532 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m14:23:17.533 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m14:23:17.533 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m14:23:17.533 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m14:23:17.533 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m14:23:17.534 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+]]></system-out>
+  <system-err><![CDATA[[?[31m14:23:17.532 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:17.532 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:17.533 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:17.533 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:17.533 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:17.533 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m14:23:17.534 STDERR (CRITICAL) on Test worker] ?[0m
+]]></system-err>
+</testsuite>

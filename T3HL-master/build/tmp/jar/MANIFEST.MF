@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: INTech Main Robot
+Implementation-Version: 2019.0.0
+Main-Class: LaunchRobotMaster
+

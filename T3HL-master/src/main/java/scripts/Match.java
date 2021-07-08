@@ -299,9 +299,10 @@ public class Match extends Script {
 
     //    Fonction permettant de considérer les 3 cas après récuperation
     //    des gobelets dans l'écueil adverse avant la zone de haut fond
+
     public void ecueilTri_slave() throws Exception{
 
-        String ecueilS = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt");
+        String ecueilS = readtextfile("/media/salembien/Elements/PROJET X/ColorVision/eceuil.txt");
         System.out.println("Ecueil Slave : "  + ecueilS);
 
 
@@ -399,289 +400,274 @@ public class Match extends Script {
     }
 
 
+
+
+
+
 //    Fonction permettant de considérer tous les cas possibles après récuperation des gobelets dans la zone de haut fond
-//    Suppose que robot positionné en x=960 y=1650 dans zone rocheuse BLEUE avec ventouse vers zone dépot
+//    Suppose que robot positionné (en x=960 y=1655 pour zone bleue) dans zone rocheuse avec ventouse vers la zone de dépot
 
     public void hfTri() throws Exception {
+
+
+        moveLengthwise(300,false);
 
         String pyt_hf=readtextfile("/media/salembien/Elements/PROJET X/ColorVision/hautfond.txt");
         if (posstart.equals("Yellow")) {
             switch (pyt_hf){
 
-//          Cas récup 3 gobelets
+//          Cas récup 3 gobelets ou 4 gobelets avec nr=1 ou nv=1 ou cas avec 2 gobelets et nv=nr=1
                 case "RRR":
-                    moveLengthwise(300,false);
+                    moveLengthwise(-300,false);
 //              suckall(0)
 
-                case "RRV":
-                case "RVR":
-                case "VRR":
-                case "RVV":
-                case "VVR":
-                case "VRV":
+                case "---V":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "--V-":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "-V--":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "V---":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "---R":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "--R-":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "-R--":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "R---":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
                 case "VVV":
+//                    suckall(0);
+                    moveLengthwise(300,false);
 
 
-//          Cas récup 4 gobelets
-                case "RRRV":
-                    suck(4,0);
-                    moveLengthwise(-250,false);
-                    suck(1,0);
-                    suck(2,0);
-                    suck(3,0);
 
-                case "RRVR":
-                    suck(3,0);
-                    moveLengthwise(-250,false);
-                    suck(1,0);
-                    suck(2,0);
-                    suck(4,0);
-
-                case "RVRR":
-                    suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(1,0);
-                    suck(4,0);
-                    suck(3,0);
-
-                case "VRRR":
-                    suck(1,0);
-                    moveLengthwise(-250,false);
-                    suck(4,0);
-                    suck(2,0);
-                    suck(3,0);
-
+//          Cas récup 4 gobelets avec nr=nv=2
 
 
                 case "RRVV":
                     suck(4,0);
                     suck(3,0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
                     suck(1,0);
                     suck(2,0);
 
                 case "RVRV":
                     suck(4,0);
                     suck(2,0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
                     suck(1,0);
                     suck(3,0);
 
                 case "RVVR":
                     suck(2,0);
                     suck(3,0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
                     suck(1,0);
                     suck(4,0);
 
                 case "VRVR":
                     suck(1,0);
                     suck(3,0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
                     suck(4,0);
                     suck(2,0);
 
                 case "VVRR":
                     suck(1,0);
                     suck(2,0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
                     suck(3,0);
                     suck(4,0);
 
                 case "VRRV":
                     suck(4,0);
                     suck(1,0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
                     suck(3,0);
                     suck(2,0);
 
 
-
-                case "VVVR":
-                    suck(3,0);
-                    suck(1,0);
-                    suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(4,0);
-
-                case "VVRV":
-                    suck(4,0);
-                    suck(1,0);
-                    suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(3,0);
-
-                case "VRVV":
-                    suck(3,0);
-                    suck(1,0);
-                    suck(4,0);
-                    moveLengthwise(-250,false);
-                    suck(2,0);
-
-                case "RVVV":
-                    suck(3,0);
-                    suck(4,0);
-                    suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(1,0);
 
 
 
 //           Cas récup 1 gobelet
                 case "R":
-
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
 //                  suckall(0);
 
                 case "V":
 //                    suckall(0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
 
 //          Cas récup 2 gobelets
                 case "RR":
-                case "RV":
-                case "VR":
+                    moveLengthwise(-300,false);
+//                  suckall(0);
+
                 case "VV":
+//                    suckall(0);
+                    moveLengthwise(-300,false);
 
 
 //          Cas récup 0 gobelets
+                default:
+                    moveLengthwise(-300,false);
 
 
             }
 
         }
 
-
-//        Blue à faire !!!
+        
 
         if (posstart.equals("Blue")) {
             switch (pyt_hf){
 
-//          Cas récup 3 gobelets
+//          Cas récup 3 gobelets ou 4 gobelets avec nr=1 ou nv=1 ou cas avec 2 gobelets et nv=nr=1
                 case "RRR":
-                    moveLengthwise(300,false);
 //              suckall(0)
+                    moveLengthwise(-300,false);
 
-                case "RRV":
-                case "RVR":
-                case "VRR":
-                case "RVV":
-                case "VVR":
-                case "VRV":
+
+                case "---V":
+                    suck(1,0);
+                    suck(2,0);
+                    suck(3,0);
+                    moveLengthwise(-300,false);
+                    suck(4,0);
+                case "--V-":
+                    suck(1,0);
+                    suck(2,0);
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suck(3,0);
+                case "-V--":
+                    suck(1,0);
+                    suck(4,0);
+                    suck(3,0);
+                    moveLengthwise(-300,false);
+                    suck(2,0);
+                case "V---":
+                    suck(4,0);
+                    suck(2,0);
+                    suck(3,0);
+                    moveLengthwise(-300,false);
+                    suck(1,0);
+                case "---R":
+                    suck(1,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "--R-":
+                    suck(2,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "-R--":
+                    suck(3,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
+                case "R---":
+                    suck(4,0);
+                    moveLengthwise(-300,false);
+                    suckall(0);
                 case "VVV":
+                    moveLengthwise(300,false);
+//                    suckall(0);
 
 
-//          Cas récup 4 gobelets
-                case "RRRV":
-                    suck(1,0);
-                    suck(3,0);
-                    suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(4,0);
 
-                case "RRVR":
-                    suck(1,0);
-                    suck(4,0);
-                    suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(3,0);
-
-                case "RVRR":
-                    suck(1,0);
-                    suck(3,0);
-                    suck(4,0);
-                    moveLengthwise(-250,false);
-                    suck(2,0);
-
-                case "VRRR":
-                    suck(2,0);
-                    suck(3,0);
-                    suck(4,0);
-                    moveLengthwise(-250,false);
-                    suck(1,0);
+//          Cas récup 4 gobelets avec nr=nv=2
 
 
                 case "RRVV":
                     suck(1,0);
                     suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(3,0);
+                    moveLengthwise(-300,false);
                     suck(4,0);
+                    suck(3,0);
+
                 case "RVRV":
                     suck(1,0);
                     suck(3,0);
-                    moveLengthwise(-250,false);
-                    suck(2,0);
+                    moveLengthwise(-300,false);
+
                     suck(4,0);
+                    suck(2,0);
                 case "RVVR":
                     suck(1,0);
                     suck(4,0);
-                    moveLengthwise(-250,false);
-                    suck(3,0);
+                    moveLengthwise(-300,false);
+
                     suck(2,0);
+                    suck(3,0);
                 case "VRVR":
                     suck(4,0);
                     suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(3,0);
+                    moveLengthwise(-300,false);
+
                     suck(1,0);
+                    suck(3,0);
                 case "VVRR":
                     suck(3,0);
                     suck(4,0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
+
                     suck(1,0);
                     suck(2,0);
                 case "VRRV":
                     suck(3,0);
                     suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(1,0);
+                    moveLengthwise(-300,false);
+
                     suck(4,0);
+                    suck(1,0);
 
 
-                case "VVVR":
-                    suck(4,0);
-                    moveLengthwise(-250,false);
-                    suck(2,0);
-                    suck(3,0);
-                    suck(1,0);
-                case "VVRV":
-                    suck(3,0);
-                    moveLengthwise(-250,false);
-                    suck(2,0);
-                    suck(4,0);
-                    suck(1,0);
-                case "VRVV":
-                    suck(2,0);
-                    moveLengthwise(-250,false);
-                    suck(4,0);
-                    suck(3,0);
-                    suck(1,0);
-                case "RVVV":
-                    suck(1,0);
-                    moveLengthwise(-250,false);
-                    suck(2,0);
-                    suck(3,0);
-                    suck(4,0);
 
 
 //           Cas récup 1 gobelet
                 case "R":
 //                  suckall(0);
-                    moveLengthwise(-250,false);
+                    moveLengthwise(-300,false);
+
 
                 case "V":
-                    moveLengthwise(-250,false);
-//                  suckall(0);
+                    moveLengthwise(-300,false);
+//                    suckall(0);
 
 //          Cas récup 2 gobelets
                 case "RR":
-                case "RV":
-                case "VR":
+//                  suckall(0);
+                    moveLengthwise(-300,false);
+
+
                 case "VV":
+                    moveLengthwise(-300,false);
+//                    suckall(0);
+
 
 
 //          Cas récup 0 gobelets
+                default:
+                    moveLengthwise(-300,false);
+
 
 
 

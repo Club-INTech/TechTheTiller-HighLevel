@@ -39,6 +39,8 @@ import utils.container.Module;
 import utils.math.Calculs;
 import utils.math.Vec2;
 
+import java.util.Optional;
+
 /**
  * Classe qui permet d'envoyer tous les ordres
  *
@@ -123,6 +125,16 @@ public class OrderWrapper implements Module {
     }
 
     /**
+     * On envoit au bas niveau comme ordre de lever ou baisser le bras
+     *
+     * @param level état du bras
+     */
+    public void flag(int level, Runnable... parallelActions) {
+        sendString(MotionOrders.Flag.with(level));
+        runAll(parallelActions);
+    }
+
+    /**
      * On envoit au bas niveau comme ordre de tourner
      * @param angle  angle avec lequel on veut tourner
      */
@@ -131,6 +143,17 @@ public class OrderWrapper implements Module {
             angle=(Math.PI - angle)%(2*Math.PI);
         }
         this.sendString(MotionOrders.Turn.with(angle));
+        Optional<String> line = Optional.of("");
+        int waitingDelay = 0;
+        do {
+            try {
+                line = llConnection.read();
+                Thread.sleep(500);
+                waitingDelay += 500;
+            } catch (CommunicationException | InterruptedException e) {
+                return; // not sure
+            }
+        } while(!line.equals(Optional.of("@BRotation finished")) && waitingDelay <=8000);
         runAll(parallelActions);
     }
 
@@ -444,5 +467,6 @@ public class OrderWrapper implements Module {
             sendString(order.toLL());
         }
     }
+
 
 }
