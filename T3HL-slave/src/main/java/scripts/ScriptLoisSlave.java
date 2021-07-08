@@ -21,8 +21,8 @@ public class ScriptLoisSlave extends Script {
     int dt = 500;
     int posxinit;
     int posyinit;
-    String proto = "yes";
-
+    String proto = "no";
+    String homo = "yes";
 
     public Vec2 entryPosition(int version) {
         if (posstart=="Yellow") {
@@ -108,6 +108,7 @@ public class ScriptLoisSlave extends Script {
     public void execute(int version) {
         try {
             if (proto.equals("yes")){ protomatch();}
+            if (homo.equals("yes")){homologation();}
             else {
                 System.out.println("_____POSSSTART_____:" + posstart);
                 Thread one = new Thread() {
@@ -799,6 +800,22 @@ public class ScriptLoisSlave extends Script {
     }
     //Position en entrée (0,0)=(1500,0) , axe x inversé, zone nord bleue
 
+    public void homologation () throws UnableToMoveException {
+        moveLengthwise(400,false);
+
+        Thread one = new Thread() {
+            public void run() {
+                try {
+                    sleep(9500);
+                    flag(1);
+                } catch (InterruptedException v) {
+                }
+            }
+        };
+        one.start();
+
+
+    }
     @Override
     public void finalize(Exception e) {
 
