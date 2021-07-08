@@ -80,4 +80,6 @@ subprojects {
 // Code nécessaire pour faire fonctionner 'genIntellijRuns'
 project.evaluationDependsOnChildren()
 
+
+
 apply from: 'runConfigs.gradle'

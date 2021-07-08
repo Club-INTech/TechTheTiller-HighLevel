@@ -115,7 +115,7 @@ public class ScriptLoisSlave extends Script {
     @Override
     public void execute(int version) {
         try {
-            if (test.equals("yes")) {test(false,false,false);}
+            if (test.equals("yes")) {test(false,false,true);}
             if (proto.equals("yes")){ protomatch();}
             if (homoflag.equals("yes")){homologationflag();}
             if (homomov.equals("yes")){homologationmov();}
@@ -878,7 +878,7 @@ public class ScriptLoisSlave extends Script {
     public void test (boolean hammer, boolean suck, boolean movement) throws UnableToMoveException, InterruptedException {
         if (hammer) {testhammmer();}
         if(suck) {testsuck();}
-        if (movement) {moveLengthwise(50,false);turnTowards(Math.PI);moveLengthwise(-50,false);turnTowards(-Math.PI);}
+        if (movement) {moveLengthwise(100,false);turnTowards(Math.PI);moveLengthwise(-100,false);turnTowards(-Math.PI);}
     }
     @Override
     public void finalize(Exception e) {

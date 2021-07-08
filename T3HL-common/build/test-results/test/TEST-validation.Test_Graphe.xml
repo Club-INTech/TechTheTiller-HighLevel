@@ -1,319 +1,362 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="validation.Test_Graphe" tests="5" skipped="2" failures="0" errors="0" timestamp="2021-06-09T12:23:16" hostname="tsimafei-ZenBook-14-UX410UFR" time="0.534">
+<testsuite name="validation.Test_Graphe" tests="5" skipped="2" failures="0" errors="0" timestamp="2021-07-08T16:55:53" hostname="ubuntu" time="6.173">
   <properties/>
-  <testcase name="testRemoveProvisoryNode1" classname="validation.Test_Graphe" time="0.0">
+  <testcase name="testAddProvisoryNode2" classname="validation.Test_Graphe" time="2.469"/>
+  <testcase name="testRemoveProvisoryNode1" classname="validation.Test_Graphe" time="0.004">
     <skipped/>
   </testcase>
-  <testcase name="testRemoveProvisoryNode2" classname="validation.Test_Graphe" time="0.0">
+  <testcase name="testRemoveProvisoryNode2" classname="validation.Test_Graphe" time="0.002">
     <skipped/>
   </testcase>
-  <testcase name="testInstanciation" classname="validation.Test_Graphe" time="0.203"/>
-  <testcase name="testAddProvisoryNode1" classname="validation.Test_Graphe" time="0.161"/>
-  <testcase name="testAddProvisoryNode2" classname="validation.Test_Graphe" time="0.167"/>
-  <system-out><![CDATA[[?[34m14:23:16.978 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:16.978 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:16.978 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:16.978 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
-[?[34m14:23:16.979 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
-[?[34m14:23:16.980 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
-[?[34m14:23:16.981 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
-[?[34m14:23:16.981 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
-[?[34m14:23:16.981 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+  <testcase name="testInstanciation" classname="validation.Test_Graphe" time="2.544"/>
+  <testcase name="testAddProvisoryNode1" classname="validation.Test_Graphe" time="1.136"/>
+  <system-out><![CDATA[[?[34m16:55:53.390 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:55:53.393 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
+[?[34m16:55:53.394 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m16:55:53.395 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m16:55:53.396 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m16:55:53.397 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m16:55:53.398 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m16:55:53.399 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m16:55:53.399 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m16:55:53.400 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m16:55:53.401 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m16:55:53.402 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m16:55:53.402 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m16:55:53.403 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m16:55:53.404 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m16:55:53.404 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m16:55:53.405 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m16:55:53.406 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m16:55:53.407 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m16:55:53.408 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m16:55:53.674 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m16:55:53.675 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m16:55:53.676 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m16:55:53.676 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m16:55:53.677 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m16:55:53.971 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m16:55:53.979 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ______________________________________________________________________________________________________________________________________________
+?[32mFermeture du service de log?[0m
+[?[34m16:55:53.979 COMMUNICATION (DEBUG) on Thread-34 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:71)] Waiting connection on port 13550?[0m
+[?[34m16:55:53.980 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m16:55:53.980 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
 Initialisation du compteur...
-[?[34m14:23:16.981 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #253 - everything.log'?[0m
-[?[34m14:23:16.981 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253 - everything.log?[0m
-[?[34m14:23:16.981 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253 - everything.log'?[0m
-[?[34m14:23:16.981 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #253.log'?[0m
-[?[34m14:23:16.982 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253.log?[0m
-[?[34m14:23:16.982 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253.log'?[0m
-[?[34m14:23:16.982 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:16 CEST 2021 #253 - errors.log'?[0m
-[?[34m14:23:16.982 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253 - errors.log?[0m
-[?[34m14:23:16.982 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:16 CEST 2021 #253 - errors.log'?[0m
-[?[34m14:23:16.985 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:104)] Version : 7ce4239 on dev_lolo - [Update ScriptLoisSlave.java]?[0m
-[?[34m14:23:16.986 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-53-generic amd64?[0m
-[?[34m14:23:16.986 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 0.5G, available processors : 8?[0m
-[?[34m14:23:16.986 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:117)] ?[0m
-[?[34m14:23:16.986 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[?[34m16:55:53.981 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+    	       _____?[0m
+[?[34m16:55:53.988 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m16:55:53.991 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)]               /     \
+Création du fichier de log './../logs/Thu Jul 08 16:55:53 UTC 2021 #63 - everything.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:53 UTC 2021 #63 - everything.log'?[0m
+[?[34m16:55:53.992 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m16:55:53.993 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m16:55:53.994 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m16:55:53.994 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+[?[34m16:55:53.995 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m16:55:53.995 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m16:55:53.996 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+[?[34m16:55:53.996 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
+[?[34m16:55:54.000 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:53 UTC 2021 #63 - everything.log?[0m
+[?[34m16:55:54.001 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:53 UTC 2021 #63 - everything.log'?[0m
+[?[34m16:55:54.002 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:54 UTC 2021 #63.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:54 UTC 2021 #63.log'?[0m
+[?[34m16:55:54.004 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:54 UTC 2021 #63.log?[0m
+[?[34m16:55:54.005 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:54 UTC 2021 #63.log'?[0m
+[?[34m16:55:54.006 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:54 UTC 2021 #63 - errors.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:54 UTC 2021 #63 - errors.log'?[0m
+[?[34m16:55:54.007 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:54 UTC 2021 #63 - errors.log?[0m
+[?[34m16:55:54.008 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:54 UTC 2021 #63 - errors.log'?[0m
+[?[34m16:55:54.029 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:104)] Version : 07e922f on master - [tests]?[0m
+[?[34m16:55:54.032 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.4.0-1038-raspi aarch64?[0m
+[?[34m16:55:54.034 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:114)] Java : Private Build 14.0.2, max memory : 0.5G, available processors : 4?[0m
+[?[34m16:55:54.036 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:117)] ?[0m
+[?[34m16:55:54.038 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
 ?[0m
-[?[34m14:23:16.986 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...?[0m
-[?[34m14:23:16.986 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
-[?[34m14:23:16.988 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
-[?[34m14:23:16.989 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
-[?[34m14:23:16.989 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table?[0m
-[?[34m14:23:16.989 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.?[0m
-[?[34m14:23:16.989 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false?[0m
-[?[34m14:23:16.989 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000?[0m
-[?[34m14:23:16.989 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000?[0m
-[?[34m14:23:16.989 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190?[0m
-[?[34m14:23:16.990 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70?[0m
-[?[34m14:23:16.990 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150?[0m
-[?[34m14:23:16.990 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5?[0m
-[?[34m14:23:16.990 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false?[0m
-[?[34m14:23:16.990 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Table prêt?[0m
-[?[34m14:23:16.991 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe?[0m
-[?[34m14:23:16.991 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.?[0m
-[?[34m14:23:16.991 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14?[0m
-[?[34m14:23:16.991 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2?[0m
-[?[34m14:23:16.991 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30?[0m
-[?[34m14:23:16.991 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20?[0m
-[?[34m14:23:16.991 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25?[0m
-[?[34m14:23:16.991 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25?[0m
-[?[34m14:23:17.116 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[32mFermeture du service de log?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
-[?[34m14:23:17.182 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
-[?[34m14:23:17.183 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
-[?[34m14:23:17.184 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
-[?[34m14:23:17.185 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
-[?[34m14:23:17.185 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
-[?[34m14:23:17.185 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
-[?[34m14:23:17.185 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
-[?[34m14:23:17.185 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+[?[34m16:55:54.039 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m16:55:54.045 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/ubuntu/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m16:55:54.065 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m16:55:54.066 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m16:55:54.068 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m16:55:54.069 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m16:55:54.070 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m16:55:54.072 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m16:55:54.073 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m16:55:54.074 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m16:55:54.075 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m16:55:54.082 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m16:55:54.088 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table?[0m
+[?[34m16:55:54.092 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.?[0m
+[?[34m16:55:54.094 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false?[0m
+[?[34m16:55:54.095 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000?[0m
+[?[34m16:55:54.096 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000?[0m
+[?[34m16:55:54.097 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190?[0m
+[?[34m16:55:54.098 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70?[0m
+[?[34m16:55:54.099 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150?[0m
+[?[34m16:55:54.100 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5?[0m
+[?[34m16:55:54.101 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false?[0m
+[?[34m16:55:54.102 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Table prêt?[0m
+[?[34m16:55:54.103 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe?[0m
+[?[34m16:55:54.103 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.?[0m
+[?[34m16:55:54.104 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14?[0m
+[?[34m16:55:54.105 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2?[0m
+[?[34m16:55:54.106 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30?[0m
+[?[34m16:55:54.107 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20?[0m
+[?[34m16:55:54.108 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25?[0m
+[?[34m16:55:54.109 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25?[0m
+[?[34m16:55:55.448 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt?[0m
+[?[34m16:55:55.859 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:55.859 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m16:55:55.861 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
+[?[34m16:55:55.861 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)]     	       _____?[0m
+[?[34m16:55:55.864 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m16:55:55.865 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m16:55:55.865 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m16:55:55.866 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m16:55:55.866 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+[?[34m16:55:55.867 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m16:55:55.868 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m16:55:55.869 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+[?[34m16:55:55.870 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
+[?[34m16:55:55.873 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)]               vvvvvvv  /|__/|?[0m
+[?[34m16:55:55.876 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:55:55.878 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:55.880 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:55:55.890 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
+[?[34m16:55:55.891 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m16:55:55.892 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m16:55:55.892 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m16:55:55.904 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m16:55:55.905 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m16:55:55.905 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m16:55:55.906 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m16:55:55.907 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m16:55:55.910 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m16:55:55.911 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m16:55:55.912 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m16:55:55.913 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m16:55:55.913 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m16:55:55.914 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m16:55:55.915 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m16:55:55.915 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m16:55:55.916 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m16:55:55.917 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m16:55:55.925 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m16:55:55.925 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m16:55:55.926 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m16:55:55.927 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m16:55:55.931 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m16:55:55.932 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m16:55:55.933 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m16:55:55.934 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
 Initialisation du compteur...
-[?[34m14:23:17.185 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #254 - everything.log'?[0m
-[?[34m14:23:17.185 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254 - everything.log?[0m
-[?[34m14:23:17.186 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254 - everything.log'?[0m
-[?[34m14:23:17.186 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #254.log'?[0m
-[?[34m14:23:17.186 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254.log?[0m
-[?[34m14:23:17.186 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254.log'?[0m
-[?[34m14:23:17.186 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #254 - errors.log'?[0m
-[?[34m14:23:17.186 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254 - errors.log?[0m
-[?[34m14:23:17.186 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #254 - errors.log'?[0m
-[?[34m14:23:17.189 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:104)] Version : 7ce4239 on dev_lolo - [Update ScriptLoisSlave.java]?[0m
-[?[34m14:23:17.189 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-53-generic amd64?[0m
-[?[34m14:23:17.189 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 0.5G, available processors : 8?[0m
-[?[34m14:23:17.189 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:117)] ?[0m
-[?[34m14:23:17.190 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[?[34m16:55:55.937 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64 - everything.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:55 UTC 2021 #64 - everything.log'?[0m
+[?[34m16:55:55.938 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64 - everything.log?[0m
+[?[34m16:55:55.939 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64 - everything.log'?[0m
+[?[34m16:55:55.940 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:55 UTC 2021 #64.log'?[0m
+[?[34m16:55:55.943 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64.log?[0m
+[?[34m16:55:55.944 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64.log'?[0m
+[?[34m16:55:55.946 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64 - errors.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:55 UTC 2021 #64 - errors.log'?[0m
+[?[34m16:55:55.949 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64 - errors.log?[0m
+[?[34m16:55:55.950 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:55 UTC 2021 #64 - errors.log'?[0m
+[?[34m16:55:55.973 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:104)] Version : 07e922f on master - [tests]?[0m
+[?[34m16:55:55.974 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.4.0-1038-raspi aarch64?[0m
+[?[34m16:55:55.975 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:114)] Java : Private Build 14.0.2, max memory : 0.5G, available processors : 4?[0m
+[?[34m16:55:55.976 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:117)] ?[0m
+[?[34m16:55:55.977 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
 ?[0m
-[?[34m14:23:17.190 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...?[0m
-[?[34m14:23:17.190 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
-[?[34m14:23:17.191 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
-[?[34m14:23:17.191 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
-[?[34m14:23:17.191 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
-[?[34m14:23:17.191 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
-[?[34m14:23:17.191 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
-[?[34m14:23:17.191 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)?[0m
-[?[34m14:23:17.191 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
-[?[34m14:23:17.192 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
-[?[34m14:23:17.192 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
-[?[34m14:23:17.192 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
-[?[34m14:23:17.192 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
-[?[34m14:23:17.192 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table?[0m
-[?[34m14:23:17.192 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.?[0m
-[?[34m14:23:17.192 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false?[0m
-[?[34m14:23:17.192 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000?[0m
-[?[34m14:23:17.192 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000?[0m
-[?[34m14:23:17.193 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190?[0m
-[?[34m14:23:17.193 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70?[0m
-[?[34m14:23:17.193 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150?[0m
-[?[34m14:23:17.193 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5?[0m
-[?[34m14:23:17.193 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false?[0m
-[?[34m14:23:17.193 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Table prêt?[0m
-[?[34m14:23:17.193 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe?[0m
-[?[34m14:23:17.193 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.?[0m
-[?[34m14:23:17.193 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14?[0m
-[?[34m14:23:17.193 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2?[0m
-[?[34m14:23:17.194 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30?[0m
-[?[34m14:23:17.194 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20?[0m
-[?[34m14:23:17.194 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25?[0m
-[?[34m14:23:17.194 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25?[0m
-[?[34m14:23:17.303 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt?[0m
-[?[34m14:23:17.344 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
-[?[34m14:23:17.344 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[32mFermeture du service de log?[0m
-[?[34m14:23:17.344 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)]                  I /_____   |      /|/|?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------
+[?[34m16:55:55.977 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m16:55:55.981 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/ubuntu/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m16:55:55.989 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m16:55:55.990 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m16:55:55.991 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m16:55:55.991 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m16:55:55.992 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m16:55:55.993 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m16:55:55.994 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m16:55:55.998 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m16:55:55.999 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m16:55:56.000 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m16:55:56.002 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table?[0m
+[?[34m16:55:56.004 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.?[0m
+[?[34m16:55:56.005 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false?[0m
+[?[34m16:55:56.006 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000?[0m
+[?[34m16:55:56.011 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000?[0m
+[?[34m16:55:56.012 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190?[0m
+[?[34m16:55:56.014 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70?[0m
+[?[34m16:55:56.015 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150?[0m
+[?[34m16:55:56.016 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5?[0m
+[?[34m16:55:56.018 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false?[0m
+[?[34m16:55:56.019 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Table prêt?[0m
+[?[34m16:55:56.074 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe?[0m
+[?[34m16:55:56.076 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.?[0m
+[?[34m16:55:56.078 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14?[0m
+[?[34m16:55:56.079 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2?[0m
+[?[34m16:55:56.081 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30?[0m
+[?[34m16:55:56.082 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20?[0m
+[?[34m16:55:56.083 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25?[0m
+[?[34m16:55:56.084 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25?[0m
+[?[34m16:55:57.905 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt?[0m
+[?[34m16:55:58.424 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:58.427 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:55:58.428 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m16:55:58.428 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
+[?[34m16:55:58.430 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____
 ?[33m                   /*``.           `-:--.`?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
-[?[34m14:23:17.345 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
-[?[34m14:23:17.346 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
-[?[34m14:23:17.347 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
-[?[34m14:23:17.348 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
-[?[34m14:23:17.348 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
-[?[34m14:23:17.348 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+[?[34m16:55:58.431 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m16:55:58.431 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m16:55:58.432 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m16:55:58.433 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m16:55:58.433 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m16:55:58.434 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m16:55:58.435 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m16:55:58.435 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+[?[34m16:55:58.436 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m16:55:58.436 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m16:55:58.437 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+[?[34m16:55:58.437 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
+[?[34m16:55:58.439 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m16:55:58.445 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m16:55:58.446 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m16:55:58.457 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m16:55:58.458 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m16:55:58.458 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m16:55:58.459 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m16:55:58.460 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m16:55:58.461 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m16:55:58.461 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m16:55:58.462 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m16:55:58.463 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m16:55:58.464 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m16:55:58.466 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m16:55:58.467 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m16:55:58.468 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m16:55:58.469 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m16:55:58.471 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m16:55:58.472 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m16:55:58.472 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m16:55:58.473 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m16:55:58.473 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m16:55:58.474 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
 Initialisation du compteur...
-[?[34m14:23:17.348 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #255 - everything.log'?[0m
-[?[34m14:23:17.348 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255 - everything.log?[0m
-[?[34m14:23:17.349 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255 - everything.log'?[0m
-[?[34m14:23:17.349 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #255.log'?[0m
-[?[34m14:23:17.349 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255.log?[0m
-[?[34m14:23:17.349 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255.log'?[0m
-[?[34m14:23:17.349 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #255 - errors.log'?[0m
-[?[34m14:23:17.349 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255 - errors.log?[0m
-[?[34m14:23:17.350 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #255 - errors.log'?[0m
-[?[34m14:23:17.352 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:104)] Version : 7ce4239 on dev_lolo - [Update ScriptLoisSlave.java]?[0m
-[?[34m14:23:17.353 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.8.0-53-generic amd64?[0m
-[?[34m14:23:17.353 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:114)] Java : Oracle Corporation 14.0.2, max memory : 0.5G, available processors : 8?[0m
-[?[34m14:23:17.353 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:117)] ?[0m
-[?[34m14:23:17.353 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+[?[34m16:55:58.476 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65 - everything.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:58 UTC 2021 #65 - everything.log'?[0m
+[?[34m16:55:58.477 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65 - everything.log?[0m
+[?[34m16:55:58.478 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65 - everything.log'?[0m
+[?[34m16:55:58.479 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:58 UTC 2021 #65.log'?[0m
+[?[34m16:55:58.480 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65.log?[0m
+[?[34m16:55:58.481 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65.log'?[0m
+[?[34m16:55:58.482 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65 - errors.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:58 UTC 2021 #65 - errors.log'?[0m
+[?[34m16:55:58.483 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65 - errors.log?[0m
+[?[34m16:55:58.484 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:58 UTC 2021 #65 - errors.log'?[0m
+[?[34m16:55:58.508 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:104)] Version : 07e922f on master - [tests]?[0m
+[?[34m16:55:58.509 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:112)] System : Linux 5.4.0-1038-raspi aarch64?[0m
+[?[34m16:55:58.510 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:114)] Java : Private Build 14.0.2, max memory : 0.5G, available processors : 4?[0m
+[?[34m16:55:58.511 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:117)] ?[0m
+[?[34m16:55:58.511 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
 ?[0m
-[?[34m14:23:17.353 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...?[0m
-[?[34m14:23:17.353 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/tsimafei/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   modeMonthlery = true (default : false)?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
-[?[34m14:23:17.355 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
-[?[34m14:23:17.356 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
-[?[34m14:23:17.356 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
-[?[34m14:23:17.356 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table?[0m
-[?[34m14:23:17.356 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.?[0m
-[?[34m14:23:17.356 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false?[0m
-[?[34m14:23:17.356 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000?[0m
-[?[34m14:23:17.357 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000?[0m
-[?[34m14:23:17.357 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190?[0m
-[?[34m14:23:17.357 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70?[0m
-[?[34m14:23:17.357 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150?[0m
-[?[34m14:23:17.357 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5?[0m
-[?[34m14:23:17.357 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false?[0m
-[?[34m14:23:17.357 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Table prêt?[0m
-[?[34m14:23:17.358 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe?[0m
-[?[34m14:23:17.358 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.?[0m
-[?[34m14:23:17.358 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14?[0m
-[?[34m14:23:17.358 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2?[0m
-[?[34m14:23:17.358 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30?[0m
-[?[34m14:23:17.358 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20?[0m
-[?[34m14:23:17.358 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25?[0m
-[?[34m14:23:17.359 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25?[0m
-[?[34m14:23:17.469 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt?[0m
-[?[34m14:23:17.511 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
-[?[34m14:23:17.511 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[32mFermeture du service de log?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)]               vvvvvvv  /|__/|?[0m
-[?[34m14:23:17.512 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m16:55:58.512 STDOUT (DEBUG) on Test worker utils.HLInstance.<init>(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m16:55:58.516 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/ubuntu/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m16:55:58.525 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m16:55:58.526 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m16:55:58.526 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m16:55:58.527 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m16:55:58.528 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m16:55:58.529 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m16:55:58.530 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m16:55:58.530 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m16:55:58.531 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m16:55:58.532 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m16:55:58.533 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Table?[0m
+[?[34m16:55:58.534 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Table après son initialisation.?[0m
+[?[34m16:55:58.535 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.symetry to false?[0m
+[?[34m16:55:58.536 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.length to 3000?[0m
+[?[34m16:55:58.537 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.height to 2000?[0m
+[?[34m16:55:58.538 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.robotRay to 190?[0m
+[?[34m16:55:58.539 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.buddyRay to 70?[0m
+[?[34m16:55:58.540 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.ennemyRay to 150?[0m
+[?[34m16:55:58.541 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Table.compareThreshold to 5?[0m
+[?[34m16:55:58.542 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private boolean data.Table.openTheGate to false?[0m
+[?[34m16:55:58.543 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Table prêt?[0m
+[?[34m16:55:58.543 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:271)] Initialisation du moduleClass Graphe?[0m
+[?[34m16:55:58.544 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:285)] Mise à jour de la config du moduleClass Graphe après son initialisation.?[0m
+[?[34m16:55:58.551 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeCircleNbr to 14?[0m
+[?[34m16:55:58.552 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private double data.Graphe.spaceCircleParameter to 1.2?[0m
+[?[34m16:55:58.553 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeXNbr to 30?[0m
+[?[34m16:55:58.554 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.nodeYNbr to 20?[0m
+[?[34m16:55:58.555 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningX to 25?[0m
+[?[34m16:55:58.556 STDOUT (DEBUG) on Test worker pfg.config.Config.loadInto(Config.java:274)] Set private int data.Graphe.partitioningY to 25?[0m
+[?[34m16:55:59.102 DATA_HANDLER (DEBUG) on Test worker utils.HLInstance.module(HLInstance.java:297)] Module Graphe prêt?[0m
+[?[34m16:55:59.562 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:59.577 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m16:55:59.577 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
 ]]></system-out>
-  <system-err><![CDATA[[?[31m14:23:16.978 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.978 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.978 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.978 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.979 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.987 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
-[?[31m14:23:16.987 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
-[?[31m14:23:16.987 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
-[?[31m14:23:16.987 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
-[?[31m14:23:16.992 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (233,-300)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.992 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (209,-196)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.992 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (143,-112)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.993 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-157,-112)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.993 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-223,-196)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.993 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-247,-300)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.993 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-223,-404)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.993 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-157,-488)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.994 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (143,-488)! Ca déborde de la table :(?[0m
-[?[31m14:23:16.994 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (209,-404)! Ca déborde de la table :(?[0m
-[?[31m14:23:17.182 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.182 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.190 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
-[?[31m14:23:17.191 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
-[?[31m14:23:17.191 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
-[?[31m14:23:17.191 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
-[?[31m14:23:17.344 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.345 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.354 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
-[?[31m14:23:17.354 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
-[?[31m14:23:17.354 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
-[?[31m14:23:17.354 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
-[?[31m14:23:17.512 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.512 STDERR (CRITICAL) on Test worker] ?[0m
+  <system-err><![CDATA[[?[31m16:55:53.391 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:53.674 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:53.679 STDERR (CRITICAL) on Thread-34] java.net.SocketException: Socket closed?[0m
+[?[31m16:55:53.971 STDERR (CRITICAL) on Thread-34] 	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:689)?[0m
+[?[31m16:55:53.972 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:53.975 STDERR (CRITICAL) on Thread-34] 	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:762)?[0m
+[?[31m16:55:53.975 STDERR (CRITICAL) on Thread-34] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:684)?[0m
+[?[31m16:55:53.976 STDERR (CRITICAL) on Thread-34] 	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:650)?[0m
+[?[31m16:55:53.976 STDERR (CRITICAL) on Thread-34] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:626)?[0m
+[?[31m16:55:53.977 STDERR (CRITICAL) on Thread-34] 	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:583)?[0m
+[?[31m16:55:53.977 STDERR (CRITICAL) on Thread-34] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:540)?[0m
+[?[31m16:55:53.978 STDERR (CRITICAL) on Thread-34] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:72)?[0m
+[?[31m16:55:53.979 COMMUNICATION (CRITICAL) on Thread-34 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:88)] Socket error: Socket closed?[0m
+[?[31m16:55:53.980 STDERR (CRITICAL) on Thread-34] java.net.SocketException: Socket is closed?[0m
+[?[31m16:55:53.980 STDERR (CRITICAL) on Thread-34] 	at java.base/java.net.ServerSocket.accept(ServerSocket.java:536)?[0m
+[?[31m16:55:53.981 STDERR (CRITICAL) on Thread-34] 	at utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:72)?[0m
+[?[31m16:55:53.981 COMMUNICATION (CRITICAL) on Thread-34 utils.communication.SocketServerInterface$1.run(SocketServerInterface.java:88)] Socket error: Socket is closed?[0m
+[?[31m16:55:54.055 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m16:55:54.057 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m16:55:54.059 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m16:55:54.063 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m16:55:54.175 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:54.376 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:54.577 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:54.778 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:55.027 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:55.229 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:55.430 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:55.858 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:55.859 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:55.864 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:55.874 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:55.876 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:55.878 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:55.881 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:55.985 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m16:55:55.986 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m16:55:55.987 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m16:55:55.988 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m16:55:56.059 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:56.091 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (233,-300)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.095 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (209,-196)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.104 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (143,-112)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.110 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-157,-112)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.112 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-223,-196)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.115 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-247,-300)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.118 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-223,-404)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.121 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (-157,-488)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.124 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (143,-488)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.126 GRAPHE (CRITICAL) on Test worker data.Graphe.addNode(Graphe.java:213)] Impossible d'ajouter un noeud dans les partitions à la position (209,-404)! Ca déborde de la table :(?[0m
+[?[31m16:55:56.262 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:56.465 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:56.668 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:56.873 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:57.081 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:57.287 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:57.498 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:57.701 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:57.904 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:58.424 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:58.425 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:58.427 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:58.520 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m16:55:58.521 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m16:55:58.521 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m16:55:58.524 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m16:55:58.626 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:58.826 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:59.027 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:59.562 AI (CRITICAL) on AIModule ai.goap.Agent.updateIdleState(Agent.java:113)] Tentative de planification alors qu'il n'y a pas de but donné!?[0m
+[?[31m16:55:59.577 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:59.578 STDERR (CRITICAL) on Test worker] ?[0m
 ]]></system-err>
 </testsuite>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.054s</div>
+<div class="counter">1.040s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,17 +82,17 @@
 </thead>
 <tr>
 <td class="success">finiteStateMachine</td>
-<td class="success">0.013s</td>
+<td class="success">0.206s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">movingState</td>
-<td class="success">0.013s</td>
+<td class="success">0.326s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">planning</td>
-<td class="success">0.028s</td>
+<td class="success">0.508s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -100,170 +100,229 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>[?[34m14:23:17.632 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:17.632 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
-[?[34m14:23:17.632 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+<pre>[?[34m16:55:32.542 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:55:32.549 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                   /*``.           `-:--.`?[0m
+[?[34m16:55:32.550 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  `.-::::/.        .:::::::y?[0m
+[?[34m16:55:32.552 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::o``````.-::::::/h-?[0m
+[?[34m16:55:32.562 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                 `::::::::::::::::::::::/h.?[0m
+[?[34m16:55:32.565 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m                  -::::::://++++//::::::::.?[0m
+[?[34m16:55:32.567 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m               `-::::/oso+/:-....--://:::::-.``.---:`?[0m
+[?[34m16:55:32.571 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      ````   .-:::/so/-      ``````  `.:::::::::::::+ ?[34m``````````````````````````````````````````````````````````````````````?[0m
+[?[34m16:55:32.575 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m    `-:::::--:::os+.?[34m   `/sssssss`   ./syyyyyys+/y+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssy- `-:::://?[0m
+[?[34m16:55:32.577 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   `-:::::::::+y/`?[34mS   .shhhhhdd:   `/hhhhhhhhhdo:/dddddddddddddddddhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddo`.:////sy.?[0m
+[?[34m16:55:32.579 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ::::::::::so`?[34m     :yhhhhhmy`   .ohhhhhhhhhhd  `//oooooo+//////+hhhhhhdd+///////+++++++/////////////////+++++++/////-`-////+h+` `?[0m
+[?[34m16:55:32.583 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  `://:::::y/ ?[34mU   `+hhhhhdm+    -yhhhhhdhhhhhm`  `oyyyyyhs     .shhhhhdh-  ``.-:::////:::-.       ``.-::::////::://  `://///o+:::::::-.?[0m
+[?[34m16:55:32.584 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      `::::y/ ?[34m    .shhhhhdh-   `+hhhhhdd+shhhhd- -yhhhhhmo`    /yhhhhhms` .-://+ssso+++/////o   `.:://+ossoo+++o+oy- -/////+ssoo+//////h?[0m
+[?[34m16:55:32.588 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      .:::/y ?[34mU   :yhhhhhms`   .shhhhhdy?[33m::?[34mhhhhhho+hhhhhdd:    `ohhhhhdd/ .:///oyo::-----////oy `-:///oyo:.`      `-``:////oy+-` `:////+h:?[0m
+[?[34m16:55:32.590 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m      -:::o: ?[34m  `+hhhhhdm/    :yhhhhddo?[33m:::?[34m+hhhhhhhhhhhms.    -yhhhhhdh. -////yo.`ooooooooooss``:////yo.            -/////yo`   .:////ys.?[0m
+[?[34m16:55:32.592 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m   ``.::::+-?[34m S .shhhhhdh-   `+hhhhhdd/?[33m::::?[34m/hhhhhhhhhdd/     /hhhhhhmo` `/////s```..----:+:..  -/////o``````..:.  `:////oh:   `-////+h/?[0m
+[?[34m16:55:32.593 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m`.-::::::::+ ?[34m:yhhhhhms`   .shhhhhmy?[33m:::::::?[34mhhhhhhhhdh.    `ohhhhhdd:    :++////:::///+oys`    `/++/////://++yo` .:////ys`   .:////ys.?[0m
+[?[34m16:55:32.596 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m-::::::::::/-?[34m/oooooo/     -sssyyyo?[33m:+o/++//?[34mhyssssss+`     .sssssss.      `-/++oooo++//:.        .:/+oooo++/:-   /ooooo:     :ooooo/?[0m
+[?[34m16:55:32.598 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m.:::::/o:::::-`               `.--:::os+```.---?[0m
+[?[34m16:55:32.600 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m :+ooo/.`::::::-..`````````.--::::+ss:`?[0m
+[?[34m16:55:32.605 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m  ``     `-/::::::::::::::::::::::s.?[0m
+[?[34m16:55:32.608 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m          `:::::::::::://+::::::::o-?[0m
+[?[34m16:55:32.610 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         `:::::::/h////::.-:::::::y-?[0m
+[?[34m16:55:32.616 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         :::::::ss`        -:/+sso:?[0m
+[?[34m16:55:32.619 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ?[33m         .:/++sy:          `//*/?[0m
+[?[34m16:55:32.635 STDOUT (DEBUG) on Test worker utils.HLInstance.printMessage(HLInstance.java:357)] ______________________________________________________________________________________________________________________________________________?[0m
+[?[34m16:55:32.638 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m16:55:32.641 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
 Initialisation du compteur...
-[?[34m14:23:17.633 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #260 - everything.log'?[0m
-[?[34m14:23:17.633 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260 - everything.log?[0m
-[?[34m14:23:17.633 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260 - everything.log'?[0m
-[?[34m14:23:17.633 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #260.log'?[0m
-[?[34m14:23:17.633 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260.log?[0m
-[?[34m14:23:17.634 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260.log'?[0m
-[?[34m14:23:17.634 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #260 - errors.log'?[0m
-[?[34m14:23:17.634 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260 - errors.log?[0m
-[?[34m14:23:17.634 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #260 - errors.log'?[0m
-[?[34m14:23:17.636 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
-[?[34m14:23:17.643 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing getAxe?[0m
-[?[34m14:23:17.643 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing chopLog?[0m
-[?[34m14:23:17.645 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing collectBranches?[0m
-[?[34m14:23:17.646 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.Action.arePreconditionsMet(Action.java:48)] failed to meet precondition: axe in inventory?[0m
-[?[34m14:23:17.651 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 4 for getAxe usableNodes = chopLog, collectBranches, getAxe?[0m
-[?[34m14:23:17.651 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 4 for chopLog usableNodes = chopLog, collectBranches, getAxe?[0m
-[?[34m14:23:17.651 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 3 for collectBranches usableNodes = chopLog, collectBranches, getAxe?[0m
-[?[34m14:23:17.652 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
-[?[34m14:23:17.652 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe result is true?[0m
-[?[34m14:23:17.652 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog result is true?[0m
-[?[34m14:23:17.652 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.652 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.652 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.655 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 110312 ns (0ms)?[0m
-[?[34m14:23:17.655 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 2971477 ns (2ms)?[0m
-[?[34m14:23:17.656 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
-[?[34m14:23:17.656 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 1343581 ns (1ms)?[0m
-[?[34m14:23:17.659 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:17.660 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:17.660 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
-[?[34m14:23:17.661 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+[?[34m16:55:32.648 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45 - everything.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:32 UTC 2021 #45 - everything.log'?[0m
+[?[34m16:55:32.651 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45 - everything.log?[0m
+[?[34m16:55:32.656 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45 - everything.log'?[0m
+[?[34m16:55:32.659 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:32 UTC 2021 #45.log'?[0m
+[?[34m16:55:32.661 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45.log?[0m
+[?[34m16:55:32.666 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45.log'?[0m
+[?[34m16:55:32.669 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45 - errors.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:32 UTC 2021 #45 - errors.log'?[0m
+[?[34m16:55:32.671 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45 - errors.log?[0m
+[?[34m16:55:32.674 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #45 - errors.log'?[0m
+[?[34m16:55:32.709 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:104)] Version : 07e922f on master - [tests]?[0m
+[?[34m16:55:32.713 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:112)] System : Linux 5.4.0-1038-raspi aarch64?[0m
+[?[34m16:55:32.714 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:114)] Java : Private Build 14.0.2, max memory : 0.5G, available processors : 4?[0m
+[?[34m16:55:32.715 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:117)] ?[0m
+[?[34m16:55:32.716 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:119)]    Remember, with great power comes great current squared times resistance !
+?[0m
+[?[34m16:55:32.717 STDOUT (DEBUG) on Test worker utils.HLInstance.&lt;init&gt;(HLInstance.java:122)] Chargement de la config...?[0m
+[?[34m16:55:32.724 STDOUT (DEBUG) on Test worker pfg.config.Config.readConfigFile(Config.java:166)] Loading config file : /home/ubuntu/TechTheTiller-HighLevel/T3HL-common/../config/config.txt?[0m
+[?[34m16:55:32.745 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:465)] Configuration diff :?[0m
+[?[34m16:55:32.747 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   visualisation = false (default : true)?[0m
+[?[34m16:55:32.750 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingBaliseImage = false (default : true)?[0m
+[?[34m16:55:32.752 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   usingPanel = false (default : true)?[0m
+[?[34m16:55:32.754 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   connectToBuddy = false (default : true)?[0m
+[?[34m16:55:32.757 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   buddyRay = 70 (default : 150)?[0m
+[?[34m16:55:32.759 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   ennemyRay = 150 (default : 220)?[0m
+[?[34m16:55:32.761 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsX = 30 (default : 45)?[0m
+[?[34m16:55:32.770 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsY = 20 (default : 30)?[0m
+[?[34m16:55:32.773 STDOUT (DEBUG) on Test worker pfg.config.Config.printChangedValues(Config.java:469)]   nbrNoeudsCircle = 14 (default : 12)?[0m
+[?[34m16:55:32.775 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m16:55:32.779 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
 Initialisation du compteur...
-[?[34m14:23:17.661 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #261 - everything.log'?[0m
-[?[34m14:23:17.661 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261 - everything.log?[0m
-[?[34m14:23:17.661 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261 - everything.log'?[0m
-[?[34m14:23:17.662 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #261.log'?[0m
-[?[34m14:23:17.662 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261.log?[0m
-[?[34m14:23:17.662 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261.log'?[0m
-[?[34m14:23:17.662 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #261 - errors.log'?[0m
-[?[34m14:23:17.662 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261 - errors.log?[0m
-[?[34m14:23:17.663 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #261 - errors.log'?[0m
-[?[34m14:23:17.664 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
-[?[34m14:23:17.665 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing chopLog?[0m
-[?[34m14:23:17.665 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing getAxe?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing collectBranches?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.Action.arePreconditionsMet(Action.java:48)] failed to meet precondition: axe in inventory?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 1 for getAxe usableNodes = chopLog, collectBranches, getAxe?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 1 for chopLog usableNodes = chopLog, collectBranches, getAxe?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 1 for collectBranches usableNodes = chopLog, collectBranches, getAxe?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog result is true?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe result is true?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
-[?[34m14:23:17.666 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.666 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 81962 ns (0ms)?[0m
-[?[34m14:23:17.667 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 344278 ns (0ms)?[0m
-[?[34m14:23:17.667 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
-[?[34m14:23:17.667 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 332128 ns (0ms)?[0m
-[?[34m14:23:17.669 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 3ms (0.003s)?[0m
-[?[34m14:23:17.669 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing getAxe?[0m
-[?[34m14:23:17.669 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de getAxe?[0m
-[?[34m14:23:17.669 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing chopLog?[0m
-[?[34m14:23:17.669 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de chopLog?[0m
-[?[34m14:23:17.670 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
-[?[34m14:23:17.670 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe result is true?[0m
-[?[34m14:23:17.670 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.671 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog result is true?[0m
-[?[34m14:23:17.671 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.671 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
-[?[34m14:23:17.671 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.672 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 46080 ns (0ms)?[0m
-[?[34m14:23:17.672 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 0 ns (0ms)?[0m
-[?[34m14:23:17.672 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
-[?[34m14:23:17.672 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 0 ns (0ms)?[0m
-[?[34m14:23:17.672 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:200)] But déjà atteint!?[0m
-[?[34m14:23:17.672 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 2ms (0.002s)?[0m
-[?[34m14:23:17.673 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:17.673 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:17.673 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
-[?[34m14:23:17.674 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+[?[34m16:55:32.785 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46 - everything.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:32 UTC 2021 #46 - everything.log'?[0m
+[?[34m16:55:32.788 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46 - everything.log?[0m
+[?[34m16:55:32.791 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46 - everything.log'?[0m
+[?[34m16:55:32.794 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:32 UTC 2021 #46.log'?[0m
+[?[34m16:55:32.799 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46.log?[0m
+[?[34m16:55:32.806 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46.log'?[0m
+[?[34m16:55:32.809 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46 - errors.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:32 UTC 2021 #46 - errors.log'?[0m
+[?[34m16:55:32.815 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46 - errors.log?[0m
+[?[34m16:55:32.817 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:32 UTC 2021 #46 - errors.log'?[0m
+[?[34m16:55:32.847 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
+[?[34m16:55:32.906 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing getAxe?[0m
+[?[34m16:55:32.908 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing chopLog?[0m
+[?[34m16:55:32.920 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing collectBranches?[0m
+[?[34m16:55:32.928 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.Action.arePreconditionsMet(Action.java:48)] failed to meet precondition: axe in inventory?[0m
+[?[34m16:55:32.994 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 23 for chopLog usableNodes = collectBranches, getAxe, chopLog?[0m
+[?[34m16:55:33.004 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog result is true?[0m
+[?[34m16:55:33.010 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 16 for getAxe usableNodes = collectBranches, getAxe, chopLog?[0m
+[?[34m16:55:33.011 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 31 for collectBranches usableNodes = collectBranches, getAxe, chopLog?[0m
+[?[34m16:55:33.012 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
+[?[34m16:55:33.013 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe result is true?[0m
+[?[34m16:55:33.014 AI (DEBUG) on ForkJoinPool-1-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.016 AI (DEBUG) on ForkJoinPool-1-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.017 AI (DEBUG) on ForkJoinPool-1-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.032 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 1943782 ns (1ms)?[0m
+[?[34m16:55:33.034 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 12210946 ns (12ms)?[0m
+[?[34m16:55:33.036 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
+[?[34m16:55:33.039 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 11775434 ns (11ms)?[0m
+[?[34m16:55:33.051 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:33.057 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:55:33.061 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m16:55:33.064 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
 Initialisation du compteur...
-[?[34m14:23:17.674 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262 - everything.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #262 - everything.log'?[0m
-[?[34m14:23:17.674 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262 - everything.log?[0m
-[?[34m14:23:17.674 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262 - everything.log'?[0m
-[?[34m14:23:17.675 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #262.log'?[0m
-[?[34m14:23:17.675 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262.log?[0m
-[?[34m14:23:17.675 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262.log'?[0m
-[?[34m14:23:17.675 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262 - errors.log' à '/home/tsimafei/TechTheTiller-HighLevel/logs/Wed Jun 09 14:23:17 CEST 2021 #262 - errors.log'?[0m
-[?[34m14:23:17.675 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262 - errors.log?[0m
-[?[34m14:23:17.676 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Wed Jun 09 14:23:17 CEST 2021 #262 - errors.log'?[0m
-[?[34m14:23:17.676 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
-[?[34m14:23:17.677 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing chopLog2?[0m
-[?[34m14:23:17.677 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing getAxe2?[0m
-[?[34m14:23:17.677 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing collectBranches?[0m
-[?[34m14:23:17.677 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.Action.arePreconditionsMet(Action.java:48)] failed to meet precondition: axe in inventory?[0m
-[?[34m14:23:17.677 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 0 for collectBranches usableNodes = chopLog2, getAxe2, collectBranches?[0m
-[?[34m14:23:17.677 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 0 for getAxe2 usableNodes = chopLog2, getAxe2, collectBranches?[0m
-[?[34m14:23:17.677 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe2 result is true?[0m
-[?[34m14:23:17.678 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.678 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
-[?[34m14:23:17.678 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 0 for chopLog2 usableNodes = chopLog2, getAxe2, collectBranches?[0m
-[?[34m14:23:17.678 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.678 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog2 result is true?[0m
-[?[34m14:23:17.678 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.678 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 90103 ns (0ms)?[0m
-[?[34m14:23:17.678 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 388921 ns (0ms)?[0m
-[?[34m14:23:17.678 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
-[?[34m14:23:17.678 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 380747 ns (0ms)?[0m
-[?[34m14:23:17.678 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 2ms (0.002s)?[0m
-[?[34m14:23:17.679 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing getAxe2?[0m
-[?[34m14:23:17.680 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action getAxe2: (0,0) &lt;-&gt; (-100,-100) =&gt; in range = false?[0m
-[?[34m14:23:17.680 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:183)] getAxe2 has set target pos: (-100,-100) last = (0,0)?[0m
-[?[34m14:23:17.680 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
-[?[34m14:23:17.681 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:157)] try to move (0,0) / (-100,-100) / (0,0)?[0m
-[?[34m14:23:17.681 AI (DEBUG) on Test worker ai.goap.Agent.tryToMoveTo(Agent.java:166)] Envoi de l'ordre de déplacement vers la position (-100,-100)?[0m
-[?[34m14:23:17.681 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
-[?[34m14:23:17.681 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:144)] MOVING pop?[0m
-[?[34m14:23:17.681 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing getAxe2?[0m
-[?[34m14:23:17.681 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action getAxe2: (-100,-100) &lt;-&gt; (-100,-100) =&gt; in range = true?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de getAxe2?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing chopLog2?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action chopLog2: (-100,-100) &lt;-&gt; (100,100) =&gt; in range = false?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:183)] chopLog2 has set target pos: (100,100) last = (-100,-100)?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:157)] try to move (-100,-100) / (100,100) / (-100,-100)?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.tryToMoveTo(Agent.java:166)] Envoi de l'ordre de déplacement vers la position (100,100)?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:144)] MOVING pop?[0m
-[?[34m14:23:17.682 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing chopLog2?[0m
-[?[34m14:23:17.683 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action chopLog2: (100,100) &lt;-&gt; (100,100) =&gt; in range = true?[0m
-[?[34m14:23:17.683 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de chopLog2?[0m
-[?[34m14:23:17.683 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
-[?[34m14:23:17.683 AI (DEBUG) on ForkJoinPool-5-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
-[?[34m14:23:17.684 AI (DEBUG) on ForkJoinPool-5-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe2 result is true?[0m
-[?[34m14:23:17.684 AI (DEBUG) on ForkJoinPool-5-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.684 AI (DEBUG) on ForkJoinPool-5-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog2 result is true?[0m
-[?[34m14:23:17.685 AI (DEBUG) on ForkJoinPool-5-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.685 AI (DEBUG) on ForkJoinPool-5-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
-[?[34m14:23:17.685 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 31296 ns (0ms)?[0m
-[?[34m14:23:17.686 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 0 ns (0ms)?[0m
-[?[34m14:23:17.686 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
-[?[34m14:23:17.686 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 0 ns (0ms)?[0m
-[?[34m14:23:17.686 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:200)] But déjà atteint!?[0m
-[?[34m14:23:17.686 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 3ms (0.003s)?[0m
-[?[34m14:23:17.686 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:17.686 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:33.072 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47 - everything.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:33 UTC 2021 #47 - everything.log'?[0m
+[?[34m16:55:33.074 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47 - everything.log?[0m
+[?[34m16:55:33.077 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47 - everything.log'?[0m
+[?[34m16:55:33.079 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:33 UTC 2021 #47.log'?[0m
+[?[34m16:55:33.082 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47.log?[0m
+[?[34m16:55:33.084 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47.log'?[0m
+[?[34m16:55:33.087 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47 - errors.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:33 UTC 2021 #47 - errors.log'?[0m
+[?[34m16:55:33.089 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47 - errors.log?[0m
+[?[34m16:55:33.092 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #47 - errors.log'?[0m
+[?[34m16:55:33.104 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
+[?[34m16:55:33.116 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing getAxe?[0m
+[?[34m16:55:33.127 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing chopLog?[0m
+[?[34m16:55:33.129 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 12 for getAxe usableNodes = chopLog, collectBranches, getAxe?[0m
+[?[34m16:55:33.131 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe result is true?[0m
+[?[34m16:55:33.132 AI (DEBUG) on ForkJoinPool-2-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.135 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.Action.arePreconditionsMet(Action.java:48)] failed to meet precondition: axe in inventory?[0m
+[?[34m16:55:33.137 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 9 for chopLog usableNodes = chopLog, collectBranches, getAxe?[0m
+[?[34m16:55:33.140 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog result is true?[0m
+[?[34m16:55:33.142 AI (DEBUG) on ForkJoinPool-2-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.147 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing collectBranches?[0m
+[?[34m16:55:33.149 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 1 for collectBranches usableNodes = chopLog, collectBranches, getAxe?[0m
+[?[34m16:55:33.150 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
+[?[34m16:55:33.151 AI (DEBUG) on ForkJoinPool-2-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.153 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 461195 ns (0ms)?[0m
+[?[34m16:55:33.154 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 2235759 ns (2ms)?[0m
+[?[34m16:55:33.157 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
+[?[34m16:55:33.159 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 2100910 ns (2ms)?[0m
+[?[34m16:55:33.189 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 56ms (0.056s)?[0m
+[?[34m16:55:33.202 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing getAxe?[0m
+[?[34m16:55:33.205 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de getAxe?[0m
+[?[34m16:55:33.207 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing chopLog?[0m
+[?[34m16:55:33.210 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de chopLog?[0m
+[?[34m16:55:33.214 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
+[?[34m16:55:33.223 AI (DEBUG) on ForkJoinPool-3-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog result is true?[0m
+[?[34m16:55:33.228 AI (DEBUG) on ForkJoinPool-3-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.229 AI (DEBUG) on ForkJoinPool-3-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe result is true?[0m
+[?[34m16:55:33.235 AI (DEBUG) on ForkJoinPool-3-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.241 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
+[?[34m16:55:33.242 AI (DEBUG) on ForkJoinPool-3-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.244 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 516362 ns (0ms)?[0m
+[?[34m16:55:33.245 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 0 ns (0ms)?[0m
+[?[34m16:55:33.247 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
+[?[34m16:55:33.249 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 0 ns (0ms)?[0m
+[?[34m16:55:33.251 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:200)] But déjà atteint!?[0m
+[?[34m16:55:33.254 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 39ms (0.039s)?[0m
+[?[34m16:55:33.263 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:33.270 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:55:33.274 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:292)] ?[32mDémarrage du service de log?[0m
+[?[34m16:55:33.275 STDOUT (DEBUG) on Test worker utils.Log.init(Log.java:293)] ?[0m?[0m
+Initialisation du compteur...
+[?[34m16:55:33.282 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48 - everything.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:33 UTC 2021 #48 - everything.log'?[0m
+[?[34m16:55:33.288 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48 - everything.log?[0m
+[?[34m16:55:33.291 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48 - everything.log'?[0m
+[?[34m16:55:33.295 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:33 UTC 2021 #48.log'?[0m
+[?[34m16:55:33.297 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48.log?[0m
+[?[34m16:55:33.299 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48.log'?[0m
+[?[34m16:55:33.301 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:413)] Création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48 - errors.log' à '/home/ubuntu/TechTheTiller-HighLevel/logs/Thu Jul 08 16:55:33 UTC 2021 #48 - errors.log'?[0m
+[?[34m16:55:33.303 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:417)] Réussite de la création du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48 - errors.log?[0m
+[?[34m16:55:33.304 STDOUT (DEBUG) on Test worker utils.Log.attemptInitLogOutput(Log.java:421)] Ouverture du fichier de log './../logs/Thu Jul 08 16:55:33 UTC 2021 #48 - errors.log'?[0m
+[?[34m16:55:33.307 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
+[?[34m16:55:33.322 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing getAxe2?[0m
+[?[34m16:55:33.342 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing collectBranches?[0m
+[?[34m16:55:33.353 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:51)] &gt; Testing chopLog2?[0m
+[?[34m16:55:33.355 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.Action.arePreconditionsMet(Action.java:48)] failed to meet precondition: axe in inventory?[0m
+[?[34m16:55:33.359 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 30 for chopLog2 usableNodes = getAxe2, collectBranches, chopLog2?[0m
+[?[34m16:55:33.364 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog2 result is true?[0m
+[?[34m16:55:33.366 AI (DEBUG) on ForkJoinPool-4-worker-7 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.370 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 26 for getAxe2 usableNodes = getAxe2, collectBranches, chopLog2?[0m
+[?[34m16:55:33.373 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.GoapPathfinder.findPath(GoapPathfinder.java:82)] &gt; 16 for collectBranches usableNodes = getAxe2, collectBranches, chopLog2?[0m
+[?[34m16:55:33.377 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
+[?[34m16:55:33.379 AI (DEBUG) on ForkJoinPool-4-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.381 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe2 result is true?[0m
+[?[34m16:55:33.389 AI (DEBUG) on ForkJoinPool-4-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.390 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 939486 ns (0ms)?[0m
+[?[34m16:55:33.392 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 3534405 ns (3ms)?[0m
+[?[34m16:55:33.393 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
+[?[34m16:55:33.395 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 3068857 ns (3ms)?[0m
+[?[34m16:55:33.397 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 90ms (0.09s)?[0m
+[?[34m16:55:33.403 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing getAxe2?[0m
+[?[34m16:55:33.421 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action getAxe2: (0,0) &lt;-&gt; (-100,-100) =&gt; in range = false?[0m
+[?[34m16:55:33.425 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:183)] getAxe2 has set target pos: (-100,-100) last = (0,0)?[0m
+[?[34m16:55:33.427 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
+[?[34m16:55:33.437 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:157)] try to move (0,0) / (-100,-100) / (0,0)?[0m
+[?[34m16:55:33.439 AI (DEBUG) on Test worker ai.goap.Agent.tryToMoveTo(Agent.java:166)] Envoi de l'ordre de déplacement vers la position (-100,-100)?[0m
+[?[34m16:55:33.440 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
+[?[34m16:55:33.442 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:144)] MOVING pop?[0m
+[?[34m16:55:33.443 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing getAxe2?[0m
+[?[34m16:55:33.447 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action getAxe2: (-100,-100) &lt;-&gt; (-100,-100) =&gt; in range = true?[0m
+[?[34m16:55:33.471 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de getAxe2?[0m
+[?[34m16:55:33.472 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing chopLog2?[0m
+[?[34m16:55:33.475 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action chopLog2: (-100,-100) &lt;-&gt; (100,100) =&gt; in range = false?[0m
+[?[34m16:55:33.485 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:183)] chopLog2 has set target pos: (100,100) last = (-100,-100)?[0m
+[?[34m16:55:33.488 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
+[?[34m16:55:33.495 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:157)] try to move (-100,-100) / (100,100) / (-100,-100)?[0m
+[?[34m16:55:33.509 AI (DEBUG) on Test worker ai.goap.Agent.tryToMoveTo(Agent.java:166)] Envoi de l'ordre de déplacement vers la position (100,100)?[0m
+[?[34m16:55:33.512 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:142)] MOVING?[0m
+[?[34m16:55:33.518 AI (DEBUG) on Test worker ai.goap.Agent.updateMovingState(Agent.java:144)] MOVING pop?[0m
+[?[34m16:55:33.522 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:178)] Potentially Performing chopLog2?[0m
+[?[34m16:55:33.528 AI (DEBUG) on Test worker ai.goap.Agent.checkNotInRange(Agent.java:209)] Check range for action chopLog2: (100,100) &lt;-&gt; (100,100) =&gt; in range = true?[0m
+[?[34m16:55:33.531 AI (DEBUG) on Test worker ai.goap.Agent.updatePerformingState(Agent.java:186)] Fin de chopLog2?[0m
+[?[34m16:55:33.535 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:169)] Début de la planification?[0m
+[?[34m16:55:33.548 AI (DEBUG) on ForkJoinPool-5-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with collectBranches result is true?[0m
+[?[34m16:55:33.549 AI (DEBUG) on ForkJoinPool-5-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.551 AI (DEBUG) on ForkJoinPool-5-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with chopLog2 result is true?[0m
+[?[34m16:55:33.558 AI (DEBUG) on ForkJoinPool-5-worker-3 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.561 AI (DEBUG) on ForkJoinPool-5-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:233)] &gt; Finished with getAxe2 result is true?[0m
+[?[34m16:55:33.562 AI (DEBUG) on ForkJoinPool-5-worker-5 ai.goap.ActionGraph.lambda$buildPathToGoal$2(ActionGraph.java:234)] &gt; Set result true?[0m
+[?[34m16:55:33.564 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:185)] copyWithEffects: 8603450 ns (8ms)?[0m
+[?[34m16:55:33.567 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:188)] checkPrecondsTimeProfiler: 0 ns (0ms)?[0m
+[?[34m16:55:33.571 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:191)] pathfinderProfiler: 0 ns (0ms)?[0m
+[?[34m16:55:33.581 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:194)] precondMet: 0 ns (0ms)?[0m
+[?[34m16:55:33.585 AI (DEBUG) on Test worker ai.goap.ActionGraph.plan(ActionGraph.java:200)] But déjà atteint!?[0m
+[?[34m16:55:33.591 AI (DEBUG) on Test worker ai.goap.Agent.updateIdleState(Agent.java:127)] Planning took 55ms (0.055s)?[0m
+[?[34m16:55:33.597 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:55:33.614 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
 </pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[?[31m14:23:17.632 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.660 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.660 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.673 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.673 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.686 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:17.686 STDERR (CRITICAL) on Test worker] ?[0m
+<pre>[?[31m16:55:32.544 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:32.732 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_ACC, also tried recalageAcc?[0m
+[?[31m16:55:32.734 STDERR (CRITICAL) on Test worker] Unknown key : SECOURS, also tried secours?[0m
+[?[31m16:55:32.737 STDERR (CRITICAL) on Test worker] Unknown key : RECALAGE_MECA_ACC, also tried recalageMecaAcc?[0m
+[?[31m16:55:32.741 STDERR (CRITICAL) on Test worker] Unknown key : MILIEU_ECUEIL_PRIVE_XBLEU, also tried milieuEcueilPriveXbleu?[0m
+[?[31m16:55:33.053 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:33.059 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:33.264 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:33.272 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:33.603 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:55:33.619 STDERR (CRITICAL) on Test worker] ?[0m
 </pre>
 </span>
 </div>
@@ -275,7 +334,7 @@ Initialisation du compteur...
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at Jun 9, 2021, 2:23:19 PM</p>
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Jul 8, 2021, 4:56:25 PM</p>
 </div>
 </div>
 </body>
