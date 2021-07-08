@@ -14,6 +14,8 @@ import utils.math.VectCartesian;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.*;
+import java.util.concurrent.TimeUnit;
+
 import utils.communication.SocketServerInterface;
 public class ScriptLoisSlave extends Script {
     String posstart="Yellow";
@@ -112,6 +114,7 @@ public class ScriptLoisSlave extends Script {
     @Override
     public void execute(int version) {
         try {
+            test(false,false,false);
             if (proto.equals("yes")){ protomatch();}
             if (homoflag.equals("yes")){homologationflag();}
             if (homomov.equals("yes")){homologationmov();}
@@ -826,6 +829,55 @@ public class ScriptLoisSlave extends Script {
         moveLengthwise(500,false);
         moveLengthwise(300,false);
 
+    }
+    public void testhammmer () throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        hammer(1,0,0,0,0);
+        TimeUnit.SECONDS.sleep(1);
+        hammer(0,1,0,0,0);
+        TimeUnit.SECONDS.sleep(1);
+        hammer(0,0,1,0,0);
+        TimeUnit.SECONDS.sleep(1);
+        hammer(0,0,0,1,0);
+        TimeUnit.SECONDS.sleep(1);
+        hammer(0,0,0,0,1);
+        TimeUnit.SECONDS.sleep(1);
+        hammers(0);
+        TimeUnit.SECONDS.sleep(1);
+        hammers(1);
+        TimeUnit.SECONDS.sleep(1);
+    }
+    public void testsuck () throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        suck(0,1);
+        TimeUnit.SECONDS.sleep(1);
+        suck(0,0);
+        TimeUnit.SECONDS.sleep(1);
+        suck(1,1);
+        TimeUnit.SECONDS.sleep(1);
+        suck(1,0);
+        TimeUnit.SECONDS.sleep(1);
+        suck(2,1);
+        TimeUnit.SECONDS.sleep(1);
+        suck(2,0);
+        TimeUnit.SECONDS.sleep(1);
+        suck(3,1);
+        TimeUnit.SECONDS.sleep(1);
+        suck(3,0);
+        TimeUnit.SECONDS.sleep(1);
+        suck(4,1);
+        TimeUnit.SECONDS.sleep(1);
+        suck(4,0);
+        TimeUnit.SECONDS.sleep(1);
+        suckall(0);
+        TimeUnit.SECONDS.sleep(1);
+        suckall(1);
+        TimeUnit.SECONDS.sleep(1);
+    }
+    public void test (boolean hammer, boolean suck, boolean movement) throws UnableToMoveException, InterruptedException {
+        if (hammer) {testhammmer();}
+        if(suck) {testsuck();}
+        if (movement) {moveLengthwise(50,false);turnTowards(Math.PI);moveLengthwise(-50,false);turnTowards(-Math.PI);}
     }
     @Override
     public void finalize(Exception e) {
