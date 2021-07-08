@@ -43,7 +43,7 @@ public class MotionOrders {
     public static final OrderWithArgument Turn = OrderBuilder.createWithArgs("t", FLOAT5);
     /** Aller jusqu'à un point */
     public static final OrderWithArgument MoveToPoint = OrderBuilder.createWithArgs("goto", INTEGER, INTEGER);
-
+    public static final  OrderWithArgument Arm = OrderBuilder.createWithArgs("arm",INTEGER,INTEGER);
     /**S'arrêter*/
     public static final Order Stop = OrderBuilder.createSimple("stop");
     /** On force l'arrêt */

@@ -25,12 +25,12 @@ public class ScriptLoisSlave extends Script {
 
     public Vec2 entryPosition(int version) {
         if (posstart=="Yellow") {
-            posxinit=-1200;
+            posxinit=-1400;
             posyinit=820;
 
         }
         if (posstart== "Blue"){
-            posxinit=1200;
+            posxinit=1400;
             posyinit=820;
         }
         return new Vec2(posxinit,posyinit); }
@@ -107,29 +107,62 @@ public class ScriptLoisSlave extends Script {
     public void execute(int version) {
         try {
             System.out.println("_____POSSSTART_____:" + posstart);
+            Thread one = new Thread() {
+                public void run() {
+                    try {
+                        Thread.sleep(9500);
+                        flag(1);
+                    } catch (InterruptedException v) {}
+                }
+            };
+
+            one.start();
+
             if (posstart == "Blue") {
                 //Portes ouvertes à 135 degrés
                 //wrapper.perform(ActuatorsOrders.Valve7Off);
                 //Recupere gobelet devant
+                turnTowards(Math.PI/2);
+                moveLengthwise(1100,false);
+                turnTowards(Math.PI);
+                wrapper.arm(0,0);
+                wrapper.arm(1,0);
+                moveLengthwise(670,false);
+                wrapper.arm(0,1);
+                wrapper.arm(1,1);
+                turnTowards(-Math.PI/2);
+                moveLengthwise(400,false);
+                turnTowards(-2*Math.PI/3-0.2);
+                moveLengthwise(500,false);
+                moveLengthwise( 500,false);
+                moveLengthwise(500,false);
+                moveLengthwise(300,false);
+
+
+
+/*
                 turnTowards(Math.PI);
                 moveLengthwise(900, false);
-                //Suck(1,1)
+                suck(1,1);
 
                 //Attaque eceuil adversaire
                 turnTowards(Math.PI + 0.60);
                 moveLengthwise(1100, false);
                 turnTowards(-Math.PI / 2);
+                */
+                //PERIMETRE TROP GRAND
+                /*
                 readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/Centre2.py");
                 turnTowards(Math.PI / 2);
-                moveLengthwise(-300, true);
+                moveLengthwise(-300, true);*/
                 //Marteaudescend
                 //Marteauremonte
 
                 //Balayage zone de haut fond
                 turnTowards(0);
-                //Suck(2,1)
-                //Suck(3,1)
-                //Suck(4,1)
+                suck(2,1);
+                suck(3,1);
+                suck(4,1);
                 moveLengthwise(550, false);
                 turnTowards(Math.PI / 2);
                 // robot.recalageMeca(true,-300);
@@ -140,7 +173,7 @@ public class ScriptLoisSlave extends Script {
                 turnTowards(Math.PI / 2);
                 moveLengthwise(130, false);
                 turnTowards(Math.PI);
-                moveLengthwise(900, false);
+                moveLengthwise(1100, false);
 
                 //Sortie zone haut fond
                 turnTowards(-0.65 + Math.PI / 2);
@@ -161,12 +194,12 @@ public class ScriptLoisSlave extends Script {
                 moveLengthwise(650, false);
 
                 //EntreePort
-                moveLengthwise(370, false);
+                moveLengthwise(320, false);
                 turnTowards(Math.PI);
                 try { ecueilTri_slave(); } catch (Exception e){
                     moveLengthwise(300,false);
                     turnTowards(Math.PI/2);
-                    //Suckall(0)
+                    suckall(0);
                     moveLengthwise(500,false);
                     moveLengthwise(-500,false);
                     turnTowards(-Math.PI/2);
@@ -174,10 +207,10 @@ public class ScriptLoisSlave extends Script {
                     turnTowards(Math.PI/2);
                 }
                 moveLengthwise(500, false);
-                //Suck(1,0)
-                //Suck(2,0)
-                //Suck(3,0)
-                //Suck(4,0)
+                suck(1,0);
+                suck(2,0);
+                suck(3,0);
+                suck(4,0);
                 //FIN MATCH
                 if (aruco.equals("North")) {
                     moveLengthwise(-500, false);
@@ -196,23 +229,25 @@ public class ScriptLoisSlave extends Script {
                     //Recupere gobelet devant
                     turnTowards(0);
                     moveLengthwise(900, false);
-                    //Suck(1,1)
+                    suck(1,1);
 
                     //Attaque eceuil adversaire
                     turnTowards(-0.60);
                     moveLengthwise(1100, false);
-                    turnTowards(-Math.PI / 2);
+
+                    //PERIMETRE TROP GRAND
+                    /*turnTowards(-Math.PI / 2);
                     readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/Centre2.py");
                     turnTowards(Math.PI / 2);
                     moveLengthwise(-50, true);
                     //Marteaudescend
                     //Marteauremonte
-
+                    */
                     //Balayage zone de haut fond
                     turnTowards(Math.PI);
-                    //Suck(2,1)
-                    //Suck(3,1)
-                    //Suck(4,1)
+                    suck(2,1);
+                    suck(3,1);
+                    suck(4,1);
                     //Recalage
                     moveLengthwise(550, false);
                     turnTowards(Math.PI / 2);
@@ -248,7 +283,7 @@ public class ScriptLoisSlave extends Script {
                     try { ecueilTri_slave(); } catch (Exception e){
                         moveLengthwise(300,false);
                         turnTowards(Math.PI/2);
-                        //Suckall(0)
+                        suckall(0);
                         moveLengthwise(500,false);
                         moveLengthwise(-500,false);
                         turnTowards(-Math.PI/2);
@@ -257,21 +292,21 @@ public class ScriptLoisSlave extends Script {
                     }
                     turnTowards(Math.PI / 2);
                     moveLengthwise(500, false);
-                    //Suck(1,0)
-                    //Suck(2,0)
-                    //Suck(3,0)
-                    //Suck(4,0)
+                    suck(1,0);
+                    suck(2,0);
+                    suck(3,0);
+                    suck(4,0);
                     if (aruco.equals("North")) {
                         moveLengthwise(-500, false);
                         turnTowards(-Math.PI / 2);
                         moveLengthwise(1200, false);
                         turnTowards(Math.PI);
-                        moveLengthwise(1000, false);
+                        moveLengthwise(1100, false);
                     }
                     if (aruco.equals("South")) {
                         moveLengthwise(-500, false);
                         turnTowards(Math.PI);
-                        moveLengthwise(1000, false);
+                        moveLengthwise(1100, false);
                     }
                 }
 
@@ -302,7 +337,7 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(200,false);
                     turnTowards(0);
                     moveLengthwise(150,false);
-//                    hfTri();
+                    hfTri();
                     moveLengthwise(150,false);
                     turnTowards(Math.PI);
                     moveLengthwise(-150,false);
@@ -318,7 +353,7 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(200,false);
                     turnTowards(0);
                     moveLengthwise(150,false);
-//                    hfTri();
+                    hfTri();
                     moveLengthwise(150,false);
                     turnTowards(Math.PI);
                     moveLengthwise(-150,false);
@@ -330,7 +365,7 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(200,false);
                     turnTowards(0);
                     moveLengthwise(150,false);
-//                    hfTri();
+                    hfTri();
                     moveLengthwise(150,false);
                     turnTowards(Math.PI);
                     moveLengthwise(-150,false);
@@ -346,7 +381,7 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(200,false);
                     turnTowards(Math.PI);
                     moveLengthwise(150,false);
-//                    hfTri();
+                    hfTri();
                     moveLengthwise(150,false);
                     turnTowards(Math.PI);
                     moveLengthwise(-150,false);
@@ -360,7 +395,7 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(200,false);
                     turnTowards(Math.PI);
                     moveLengthwise(150,false);
-//                    hfTri();
+                    hfTri();
                     moveLengthwise(150,false);
                     turnTowards(Math.PI);
                     moveLengthwise(-150,false);
@@ -374,7 +409,7 @@ public class ScriptLoisSlave extends Script {
                     moveLengthwise(200,false);
                     turnTowards(Math.PI);
                     moveLengthwise(150,false);
-//                    hfTri();
+                    hfTri();
                     moveLengthwise(150,false);
                     turnTowards(Math.PI);
                     moveLengthwise(-150,false);
@@ -398,7 +433,7 @@ public class ScriptLoisSlave extends Script {
 //          Cas récup 3 gobelets
                 case "RRR":
                     moveLengthwise(300,false);
-//              suckall(0)
+                suckall(0);
 
                 case "RRV":
                 case "RVR":
