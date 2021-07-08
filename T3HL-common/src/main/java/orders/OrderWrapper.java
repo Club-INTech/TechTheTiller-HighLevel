@@ -164,7 +164,7 @@ public class OrderWrapper implements Module {
             } catch (CommunicationException | InterruptedException e) {
                 return; // not sure
             }
-        } while(!line.equals(Optional.of("@BRotation finished")) && waitingDelay <=8000);
+        } while(!line.equals(Optional.of("@BRotation finished")) && waitingDelay <=1000);
         runAll(parallelActions);
     }
 

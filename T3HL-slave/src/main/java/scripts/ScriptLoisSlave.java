@@ -16,11 +16,12 @@ import java.io.InputStreamReader;
 import java.io.*;
 import utils.communication.SocketServerInterface;
 public class ScriptLoisSlave extends Script {
-    String posstart="Blue";
+    String posstart="Yellow";
     String aruco="North";
     int dt = 500;
     int posxinit;
     int posyinit;
+    String proto = "yes";
 
 
     public Vec2 entryPosition(int version) {
@@ -106,23 +107,26 @@ public class ScriptLoisSlave extends Script {
     @Override
     public void execute(int version) {
         try {
-            System.out.println("_____POSSSTART_____:" + posstart);
-            Thread one = new Thread() {
-                public void run() {
-                    try {
-                        Thread.sleep(9500);
-                        flag(1);
-                    } catch (InterruptedException v) {}
-                }
-            };
+            if (proto.equals("yes")){ protomatch();}
+            else {
+                System.out.println("_____POSSSTART_____:" + posstart);
+                Thread one = new Thread() {
+                    public void run() {
+                        try {
+                            Thread.sleep(9500);
+                            flag(1);
+                        } catch (InterruptedException v) {
+                        }
+                    }
+                };
 
-            one.start();
+                one.start();
 
-            if (posstart == "Blue") {
-                //Portes ouvertes à 135 degrés
-                //wrapper.perform(ActuatorsOrders.Valve7Off);
-                //Recupere gobelet devant
-                turnTowards(Math.PI/2);
+                if (posstart == "Blue") {
+                    //Portes ouvertes à 135 degrés
+                    //wrapper.perform(ActuatorsOrders.Valve7Off);
+                    //Recupere gobelet devant
+  /*              turnTowards(Math.PI/2);
                 moveLengthwise(1100,false);
                 turnTowards(Math.PI);
                 wrapper.arm(0,0);
@@ -137,105 +141,118 @@ public class ScriptLoisSlave extends Script {
                 moveLengthwise( 500,false);
                 moveLengthwise(500,false);
                 moveLengthwise(300,false);
+*/
 
 
+                    turnTowards(Math.PI);
+                    moveLengthwise(900, false);
+                    suck(1, 1);
 
-/*
-                turnTowards(Math.PI);
-                moveLengthwise(900, false);
-                suck(1,1);
+                    //Attaque eceuil adversaire
+                    turnTowards(Math.PI + 0.60);
+                    moveLengthwise(1100, false);
+                    turnTowards(-Math.PI / 2);
 
-                //Attaque eceuil adversaire
-                turnTowards(Math.PI + 0.60);
-                moveLengthwise(1100, false);
-                turnTowards(-Math.PI / 2);
-                */
-                //PERIMETRE TROP GRAND
+                    //PERIMETRE TROP GRAND
                 /*
                 readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/Centre2.py");
                 turnTowards(Math.PI / 2);
                 moveLengthwise(-300, true);*/
-                //Marteaudescend
-                //Marteauremonte
+                    //Marteaudescend
+                    //Marteauremonte
 
-                //Balayage zone de haut fond
-                turnTowards(0);
-                suck(2,1);
-                suck(3,1);
-                suck(4,1);
-                moveLengthwise(550, false);
-                turnTowards(Math.PI / 2);
-                // robot.recalageMeca(true,-300);
-                moveLengthwise(-50, true);
-                turnTowards(0);
-                moveLengthwise(550, false);
-
-                turnTowards(Math.PI / 2);
-                moveLengthwise(130, false);
-                turnTowards(Math.PI);
-                moveLengthwise(1100, false);
-
-                //Sortie zone haut fond
-                turnTowards(-0.65 + Math.PI / 2);
-                moveLengthwise(600, false);
-                //Lecture QRcode
-                turnTowards(-Math.PI/2);
-                executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
-                aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
-                //envoie donnee ARUCO
-                SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000,false);
-                sender.send(aruco);
-                //Fin sortie zone haut fond
-                moveLengthwise(210,false);
-                //hammers
-                moveLengthwise(-210,false);
-                readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/HautFond.py");
-                turnTowards(-0.70 + Math.PI / 2);
-                moveLengthwise(650, false);
-
-                //EntreePort
-                moveLengthwise(320, false);
-                turnTowards(Math.PI);
-                try { ecueilTri_slave(); } catch (Exception e){
-                    moveLengthwise(300,false);
-                    turnTowards(Math.PI/2);
-                    suckall(0);
-                    moveLengthwise(500,false);
-                    moveLengthwise(-500,false);
-                    turnTowards(-Math.PI/2);
-                    //Hammerall(0)
-                    turnTowards(Math.PI/2);
-                }
-                moveLengthwise(500, false);
-                suck(1,0);
-                suck(2,0);
-                suck(3,0);
-                suck(4,0);
-                //FIN MATCH
-                if (aruco.equals("North")) {
-                    moveLengthwise(-500, false);
-                    turnTowards(-Math.PI / 2);
-                    moveLengthwise(1200, false);
+                    //Balayage zone de haut fond
                     turnTowards(0);
-                    moveLengthwise(1000, false);
-                }
-                if (aruco.equals("South")) {
-                    moveLengthwise(-500, false);
+                    suck(2, 1);
+                    suck(3, 1);
+                    suck(4, 1);
+                    moveLengthwise(550, false);
+                    turnTowards(Math.PI / 2);
+                    // robot.recalageMeca(true,-300);
+                    moveLengthwise(-50, true);
                     turnTowards(0);
-                    moveLengthwise(1000, false);
-                }
-            } else {
-                if (posstart == "Yellow") {
-                    //Recupere gobelet devant
-                    turnTowards(0);
-                    moveLengthwise(900, false);
-                    suck(1,1);
+                    moveLengthwise(550, false);
 
-                    //Attaque eceuil adversaire
-                    turnTowards(-0.60);
+                    turnTowards(Math.PI / 2);
+                    moveLengthwise(130, false);
+                    turnTowards(Math.PI);
                     moveLengthwise(1100, false);
 
-                    //PERIMETRE TROP GRAND
+                    //Sortie zone haut fond
+                    turnTowards(-0.65 + Math.PI / 2);
+                    moveLengthwise(600, false);
+                    //Lecture QRcode
+                    turnTowards(-Math.PI / 2);
+                    executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
+                    aruco = readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
+                    //envoie donnee ARUCO
+                    SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000, false);
+                    sender.send(aruco);
+                    //Fin sortie zone haut fond
+                    moveLengthwise(210, false);
+                    //hammers
+                    moveLengthwise(-210, false);
+                    readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/HautFond.py");
+                    turnTowards(-0.70 + Math.PI / 2);
+                    moveLengthwise(650, false);
+
+                    //EntreePort
+                    moveLengthwise(320, false);
+                    turnTowards(Math.PI);
+                    try {
+                        ecueilTri_slave();
+                    } catch (Exception e) {
+                        moveLengthwise(300, false);
+                        turnTowards(Math.PI / 2);
+                        suckall(0);
+                        moveLengthwise(500, false);
+                        moveLengthwise(-500, false);
+                    }
+                    turnTowards(0);
+                    moveLengthwise(1000, false);
+                    turnTowards(Math.PI / 2);
+                    moveLengthwise(500, false);
+                    turnTowards(Math.PI);
+                    wrapper.arm(0, 1);
+                    wrapper.arm(1, 1);
+                    moveLengthwise(100, false);
+                    wrapper.arm(0, 2);
+                    wrapper.arm(1, 2);
+                    moveLengthwise(50, false);
+                    wrapper.arm(0, 1);
+                    wrapper.arm(1, 1);
+                    moveLengthwise(250, false);
+                    wrapper.arm(0, 2);
+                    wrapper.arm(1, 2);
+                    moveLengthwise(50, false);
+                    wrapper.arm(0, 0);
+                    wrapper.arm(1, 0);
+                    turnTowards(-Math.PI / 2);
+                    moveLengthwise(400, false);
+                    //FIN MATCH
+
+                    if (aruco.equals("North")) {
+                        turnTowards(-Math.PI / 2);
+                        moveLengthwise(1200, false);
+                        turnTowards(0);
+                        moveLengthwise(1000, false);
+                    }
+                    if (aruco.equals("South")) {
+                        turnTowards(0);
+                        moveLengthwise(1000, false);
+                    }
+                } else {
+                    if (posstart == "Yellow") {
+                        //Recupere gobelet devant
+                        turnTowards(0);
+                        moveLengthwise(900, false);
+                        suck(1, 1);
+
+                        //Attaque eceuil adversaire
+                        turnTowards(-0.60);
+                        moveLengthwise(1100, false);
+
+                        //PERIMETRE TROP GRAND
                     /*turnTowards(-Math.PI / 2);
                     readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/Centre2.py");
                     turnTowards(Math.PI / 2);
@@ -243,73 +260,82 @@ public class ScriptLoisSlave extends Script {
                     //Marteaudescend
                     //Marteauremonte
                     */
-                    //Balayage zone de haut fond
-                    turnTowards(Math.PI);
-                    suck(2,1);
-                    suck(3,1);
-                    suck(4,1);
-                    //Recalage
-                    moveLengthwise(550, false);
-                    turnTowards(Math.PI / 2);
-                    moveLengthwise(-300, true);
-                    turnTowards(Math.PI);
+                        //Balayage zone de haut fond
+                        turnTowards(Math.PI);
+                        suck(2, 1);
+                        suck(3, 1);
+                        suck(4, 1);
+                        //Recalage
+                        moveLengthwise(550, false);
+                        turnTowards(Math.PI / 2);
+                        moveLengthwise(-50, true);
+                        turnTowards(Math.PI);
 
-                    moveLengthwise(550, false);
-                    turnTowards(Math.PI / 2);
-                    moveLengthwise(130, false);
-                    turnTowards(0);
-                    moveLengthwise(900, false);
+                        moveLengthwise(550, false);
+                        turnTowards(Math.PI / 2);
+                        moveLengthwise(130, false);
+                        turnTowards(0);
+                        moveLengthwise(900, false);
 
-                    //Sortie zone haut fond
-                    turnTowards(Math.PI / 2 + 0.65);
-                    moveLengthwise(600, false);
-                    //Lecture QRcode
-                    turnTowards(-Math.PI / 2);
-                    executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
-                    aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
-                    //envoie donnee ARUCO
-                    SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000,false);
-                    sender.send(aruco);
-                    //retour au jeu
-                    moveLengthwise(210,false);
-                    //hammers
-                    moveLengthwise(-210,false);
-                    readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/HautFond.py");
-                    turnTowards(Math.PI / 2 + 0.70);
-                    moveLengthwise(650, false);
-                    //EntreePort
-                    moveLengthwise(370, false);
-                    turnTowards(0);
-                    try { ecueilTri_slave(); } catch (Exception e){
-                        moveLengthwise(300,false);
-                        turnTowards(Math.PI/2);
-                        suckall(0);
-                        moveLengthwise(500,false);
-                        moveLengthwise(-500,false);
-                        turnTowards(-Math.PI/2);
-                        //Hammerall(0)
-                        turnTowards(Math.PI/2);
-                    }
-                    turnTowards(Math.PI / 2);
-                    moveLengthwise(500, false);
-                    suck(1,0);
-                    suck(2,0);
-                    suck(3,0);
-                    suck(4,0);
-                    if (aruco.equals("North")) {
-                        moveLengthwise(-500, false);
+                        //Sortie zone haut fond
+                        turnTowards(Math.PI / 2 + 0.65);
+                        moveLengthwise(600, false);
+                        //Lecture QRcode
                         turnTowards(-Math.PI / 2);
-                        moveLengthwise(1200, false);
-                        turnTowards(Math.PI);
-                        moveLengthwise(1100, false);
-                    }
-                    if (aruco.equals("South")) {
-                        moveLengthwise(-500, false);
-                        turnTowards(Math.PI);
-                        moveLengthwise(1100, false);
-                    }
-                }
+                        executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
+                        aruco = readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
+                        //envoie donnee ARUCO
+                        SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000, false);
+                        sender.send(aruco);
+                        //retour au jeu
+                        moveLengthwise(210, false);
+                        //hammers
+                        moveLengthwise(-210, false);
+                        readColors("/usr/bin/python /home/brunlois/PycharmProjects/ColorVision/HautFond.py");
+                        turnTowards(Math.PI / 2 + 0.70);
+                        moveLengthwise(650, false);
+                        //EntreePort
+                        moveLengthwise(370, false);
+                        turnTowards(0);
+                        try {
+                            ecueilTri_slave();
+                        } catch (Exception e) {
+                            moveLengthwise(300, false);
+                            turnTowards(Math.PI / 2);
+                            suckall(0);
+                            moveLengthwise(500, false);
+                            moveLengthwise(-500, false);
 
+                        }
+
+                        turnTowards(Math.PI);
+                        moveLengthwise(1000, false);
+                        turnTowards(Math.PI / 2);
+                        moveLengthwise(500, false);
+                        turnTowards(0);
+                        wrapper.arm(0, 0);
+                        wrapper.arm(1, 0);
+                        moveLengthwise(400, false);
+                        wrapper.arm(0, 1);
+                        wrapper.arm(1, 1);
+                        turnTowards(-Math.PI / 2);
+                        moveLengthwise(400, false);
+
+                        if (aruco.equals("North")) {
+                            moveLengthwise(-500, false);
+                            turnTowards(-Math.PI / 2);
+                            moveLengthwise(1200, false);
+                            turnTowards(Math.PI);
+                            moveLengthwise(1100, false);
+                        }
+                        if (aruco.equals("South")) {
+                            moveLengthwise(-500, false);
+                            turnTowards(Math.PI);
+                            moveLengthwise(1100, false);
+                        }
+                    }
+
+                }
             }
 
         } catch (UnableToMoveException e) {
@@ -715,7 +741,62 @@ public class ScriptLoisSlave extends Script {
     }
 
 
+    public void protomatch() throws Exception {
+        if (posstart.equals("Blue")) {
+            turnTowards(Math.PI);
+            suckall(1);
+            moveLengthwise(1100,false);
+            turnTowards(-Math.PI / 2);
+            executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
+            aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
+            //envoie donnee ARUCO
+            SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000,false);
+            sender.send(aruco);
+            //retour au jeu
+            turnTowards(Math.PI/2);
+            moveLengthwise(1000,false);
+            suckall(0);
+            moveLengthwise(-100,false);
+            turnTowards(-Math.PI/2);
+            moveLengthwise(100,false);
+            if (aruco.equals("North")) {
+                moveLengthwise(1200, false);
+                turnTowards(0);
+                moveLengthwise(1000, false);
+            }
+            if (aruco.equals("South")) {
+                turnTowards(0);
+                moveLengthwise(1000, false);
+            }}
 
+        else {
+            turnTowards(0);
+            suckall(1);
+            moveLengthwise(1100,false);
+            turnTowards(-Math.PI / 2);
+            executeBashCommand("/usr/bin/python3 /home/brunlois/IdeaProjects/Aruco_tag-master/detection.py"); // Ici il faut mettre /usr/bin/python /absolute/path/to/your/disk.py
+            aruco=readtextfile("/home/brunlois/IdeaProjects/Aruco_tag-master/arucoresults.txt");
+            //envoie donnee ARUCO
+            SocketClientInterface sender = new SocketClientInterface("192.168.1.0", 3000,false);
+            sender.send(aruco);
+            //retour au jeu
+            turnTowards(Math.PI/2);
+            moveLengthwise(1000,false);
+            suckall(0);
+            moveLengthwise(-100,false);
+            turnTowards(-Math.PI/2);
+            moveLengthwise(100,false);
+            if (aruco.equals("North")) {
+                moveLengthwise(1200, false);
+                turnTowards(Math.PI);
+                moveLengthwise(1000, false);
+            }
+            if (aruco.equals("South")) {
+                turnTowards(Math.PI);
+                moveLengthwise(1000, false);
+            }
+            }
+    }
     //Position en entrée (0,0)=(1500,0) , axe x inversé, zone nord bleue
 
     @Override
