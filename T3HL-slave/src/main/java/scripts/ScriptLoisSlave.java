@@ -22,7 +22,8 @@ public class ScriptLoisSlave extends Script {
     int posxinit;
     int posyinit;
     String proto = "no";
-    String homo = "yes";
+    String homoflag = "no";
+    String homomov = "yes";
 
     public Vec2 entryPosition(int version) {
         if (posstart=="Yellow") {
@@ -33,6 +34,10 @@ public class ScriptLoisSlave extends Script {
         if (posstart== "Blue"){
             posxinit=1400;
             posyinit=820;
+        }
+        if (homomov.equals("yes")){
+            posxinit=-1100;
+            posyinit=1050;
         }
         return new Vec2(posxinit,posyinit); }
 
@@ -108,7 +113,8 @@ public class ScriptLoisSlave extends Script {
     public void execute(int version) {
         try {
             if (proto.equals("yes")){ protomatch();}
-            if (homo.equals("yes")){homologation();}
+            if (homoflag.equals("yes")){homologationflag();}
+            if (homomov.equals("yes")){homologationmov();}
             else {
                 System.out.println("_____POSSSTART_____:" + posstart);
                 Thread one = new Thread() {
@@ -800,7 +806,7 @@ public class ScriptLoisSlave extends Script {
     }
     //Position en entrée (0,0)=(1500,0) , axe x inversé, zone nord bleue
 
-    public void homologation () throws UnableToMoveException {
+    public void homologationflag () throws UnableToMoveException {
         moveLengthwise(400,false);
 
         Thread one = new Thread() {
@@ -813,7 +819,12 @@ public class ScriptLoisSlave extends Script {
             }
         };
         one.start();
-
+    }
+    public void homologationmov () throws UnableToMoveException {
+        turnTowards(1.5*Math.PI/6);
+        moveLengthwise(500,false);
+        moveLengthwise(500,false);
+        moveLengthwise(300,false);
 
     }
     @Override
