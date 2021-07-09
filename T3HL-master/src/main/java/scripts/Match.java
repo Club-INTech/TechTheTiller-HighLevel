@@ -21,7 +21,8 @@ public class Match extends Script {
     int posyinit;
 
     String posstart = "Blue";
-    String proto = "yes";
+    String proto = "no";
+    String homolog = "yes";
 
 
     public Match(HLInstance hl, ScriptManagerMaster scriptManagerMaster, SynchronizationWithBuddy syncBuddy) {
@@ -62,6 +63,7 @@ public class Match extends Script {
 
         try {
             if (proto.equals("yes")) {protomatch();}
+            if (homolog.equals("yes")) {homologationphare();}
             else {
             if (posstart == "Blue") {
 
@@ -247,8 +249,36 @@ public class Match extends Script {
         }
 
     }
+    public void homologationphare() throws UnableToMoveException {
+        /*if (posstart.equals("Blue")) {
+            turnTowards(4 * Math.PI / 3);
+            suck(2, 1);
+            moveLengthwise(300, false);
+            turnTowards(-Math.PI/2);
+            moveLengthwise(300,false);
+            turnTowards(Math.PI/2);
+            moveLengthwise(-100, false);
+            hammers(1);
+            hammers(0);
+            turnTowards(Math.PI/2-0.1);
+            moveLengthwise(500,false);
+            suck(2,0);
+        } else {
+          */  //HOMOLOGATION A FAIRE COTE JAUNE !!!!!!!!!!!!!!!!!!!!!!!!!!!
+            turnTowards(4 * Math.PI / 3);
+            moveLengthwise(400,false);
+            moveLengthwise(-400,false);
+            turnTowards(-Math.PI/2);
+            moveLengthwise(400,false);
+            turnTowards(Math.PI/2);
+            moveLengthwise(-100,false);
+            hammers(0);
+        //}
 
-    //    Fonction pour lire l'ordre des gobelets haut fond
+
+    }
+    //    Fonction pour lire l'ordre des
+    //    gobelets haut fond
     public void readColors(String pathEx) throws Exception {
         executeBashCommand(pathEx);
         Thread.sleep(3000);
@@ -807,4 +837,20 @@ public class Match extends Script {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
