@@ -89,6 +89,17 @@ public class OrderWrapper implements Module {
     public void moveLenghtwise(double distance, boolean expectedWallImpact, Runnable... parallelActions) {
         int d = (int) Math.round(distance);
         sendString(MotionOrders.MoveLengthwise.with(d, expectedWallImpact));
+        Optional<String> line = Optional.of("");
+        int waitingDelay = 0;
+        do {
+            try {
+                line = llConnection.read();
+                Thread.sleep(500);
+                waitingDelay += 500;
+            } catch (CommunicationException | InterruptedException e) {
+                return; // not sure
+            }
+        } while(!line.equals(Optional.of("@BTranslation finished")) && waitingDelay <=3000);
         runAll(parallelActions);
     }
 
@@ -143,7 +154,7 @@ public class OrderWrapper implements Module {
             } catch (CommunicationException | InterruptedException e) {
                 return; // not sure
             }
-        } while(!line.equals(Optional.of("@BRotation finished")) && waitingDelay <=8000);
+        } while(!line.equals(Optional.of("@BRotation finished")) && waitingDelay <=3000);
         runAll(parallelActions);
     }
 
