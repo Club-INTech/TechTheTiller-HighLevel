@@ -1,0 +1,18 @@
+LaunchRobotSlave.java
+ LaunchRobotSlave
+robot/Slave.java
+ robot.Slave
+scripts/MatchSlave.java
+ scripts.MatchSlave
+LaunchSimulatorSlave.java
+ LaunchSimulatorSlave
+MainSlave.java
+ MainSlave
+scripts/ScriptManagerSlave.java
+ scripts.ScriptManagerSlave
+scripts/ScriptNamesSlave.java
+ scripts.ScriptNamesSlave
+scripts/ScriptLoisSlave.java
+ scripts.ScriptLoisSlave
+ scripts.ScriptLoisSlave$1
+ scripts.ScriptLoisSlave$2

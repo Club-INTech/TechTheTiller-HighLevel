@@ -2,7 +2,23 @@
 sudo killall java
 sudo fuser -k 19500
 sudo killall LiDAR_UST_10LX
-./reset_internet_slave
-cd bin/
-sudo route add -net 192.168.0.0 netmask 255.255.255.0 eth0
-java -Dorg.lwjgl.librarypath=lib/ -jar TTHL-slave-1.0.jar
+#./reset_internet_slave
+#cd bin/
+#sudo route add -net 192.168.0.0 netmask 255.255.255.0 eth0
+
+if [ $# -eq 1 ]; then
+    (gradle :T3HL-common:compileJava)
+    (gradle :T3HL-common:processResources)
+    (gradle :T3HL-common:classes)
+    (gradle :T3HL-common:jar)
+    (gradle :T3HL-simulator:compileJava) 
+    (gradle :T3HL-simulator:processResources) 
+    (gradle :T3HL-simulator:classes)
+    (gradle :T3HL-simulator:jar)
+    (gradle :T3HL-slave:compileJava)
+    (gradle :T3HL-slave:processResources)
+    (gradle :T3HL-slave:classes)
+    #(`gradle :T3HL-slave:LaunchRobotSlave.main()`)
+fi
+
+java -jar /home/ubuntu/TechTheTiller-HighLevel/T3HL-slave/build/libs/slave-2019.0.0-all.jar

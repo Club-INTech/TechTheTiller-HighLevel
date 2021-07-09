@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="validation.Test_Obstacle" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-06-09T12:23:16" hostname="tsimafei-ZenBook-14-UX410UFR" time="0.001">
+<testsuite name="validation.Test_Obstacle" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-07-08T16:56:24" hostname="ubuntu" time="0.01">
   <properties/>
-  <testcase name="testIsInObstacle" classname="validation.Test_Obstacle" time="0.0"/>
-  <testcase name="testIntersect" classname="validation.Test_Obstacle" time="0.0"/>
-  <testcase name="testUpdateMobileObstacle" classname="validation.Test_Obstacle" time="0.0"/>
-  <system-out><![CDATA[[?[34m14:23:16.972 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
-[?[34m14:23:16.973 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
-[?[34m14:23:16.973 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:16.974 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:16.974 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:16.974 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:16.974 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
-[?[34m14:23:16.975 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
-[?[34m14:23:16.975 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+  <testcase name="testIsInObstacle" classname="validation.Test_Obstacle" time="0.002"/>
+  <testcase name="testIntersect" classname="validation.Test_Obstacle" time="0.002"/>
+  <testcase name="testUpdateMobileObstacle" classname="validation.Test_Obstacle" time="0.002"/>
+  <system-out><![CDATA[[?[34m16:56:24.565 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:56:24.567 STDOUT (DEBUG) on Finalizer utils.Log.close(Log.java:435)] ?[32mFermeture du service de log?[0m
+[?[34m16:56:24.568 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]     	       _____?[0m
+[?[34m16:56:24.568 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)]     	       _____?[0m
+[?[34m16:56:24.569 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               /     \?[0m
+[?[34m16:56:24.569 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]               vvvvvvv  /|__/|?[0m
+[?[34m16:56:24.569 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I   /O,O   |?[0m
+[?[34m16:56:24.570 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:56:24.570 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  I /_____   |      /|/|?[0m
+[?[34m16:56:24.571 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                 J|/^ ^ ^ \  |    /00  |    _//|?[0m
+[?[34m16:56:24.571 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m16:56:24.572 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)]                   \m___m__|_|    \m_m_|   \mm_|?[0m
+[?[34m16:56:24.572 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)]                  |^ ^ ^ ^ |W|   |/^^\ |   /oo |?[0m
+[?[34m16:56:24.572 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ?[0m
+[?[34m16:56:24.573 STDOUT (DEBUG) on Finalizer utils.HLInstance.printMessage(HLInstance.java:357)] ------------------------- TOTORO'S END -------------------------?[0m
+[?[34m16:56:24.573 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.started(CaptureTestOutputTestResultProcessor.java:51)] ?[0m
+[?[34m16:56:24.575 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
+[?[34m16:56:24.576 STDOUT (DEBUG) on Test worker org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor.completed(CaptureTestOutputTestResultProcessor.java:80)] ?[0m
 ]]></system-out>
-  <system-err><![CDATA[[?[31m14:23:16.973 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.974 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.974 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.974 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.974 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.975 STDERR (CRITICAL) on Test worker] ?[0m
-[?[31m14:23:16.975 STDERR (CRITICAL) on Test worker] ?[0m
+  <system-err><![CDATA[[?[31m16:56:24.567 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:56:24.569 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:56:24.570 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:56:24.572 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:56:24.574 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:56:24.576 STDERR (CRITICAL) on Test worker] ?[0m
+[?[31m16:56:24.577 STDERR (CRITICAL) on Test worker] ?[0m
 ]]></system-err>
 </testsuite>

@@ -3,3 +3,5 @@
 *.jar
 *.class
 logs/
+Cache/*
+CacheData/*

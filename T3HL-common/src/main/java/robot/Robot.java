@@ -301,7 +301,16 @@ public abstract class Robot implements Module {
         this.orderWrapper.hammer(level1, level2, level3, level4, level5, runnables);
     }
 
-
+    /**
+     * Permet au robot de lever/baisser le bras pour le drapeau
+     *
+     * @param level vaut 1 si bras levé et 0 sinon
+     */
+    public void flag(int level, Runnable[] runnables){
+        this.orderWrapper.flag(level,runnables);
+    }
+    
+    
     /**
      * Permet au robot de tourner sur lui-même
      *
@@ -628,6 +637,8 @@ public abstract class Robot implements Module {
     public XYO getXyo() {
         return this.xyo;
     }
+
+
 }
 
 
